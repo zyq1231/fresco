@@ -1,0 +1,1 @@
+frescoR < 23na40ca.in > 23na40ca.out

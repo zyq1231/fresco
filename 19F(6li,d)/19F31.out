@@ -1,0 +1,326 @@
+ FRESCO - FRES 3.2: Coupled Reaction Channels
+ Assuming NAMELIST input.
+
+ 19F(6Li,d)23Na at 16 MeV                                                        
+
+   0.100  30.000   0.100   0.100  18.000   0.000   0.000   0.000   0.000   0.000
+
+ Centre-of-mass Range is    302 * 0.1000 fm., Maximum at  30.00 fm., Interpolating NL forms every  0.10 fm.
+ Non - locality width is    181 * 0.1000 fm., Maximum of  18.00 fm., Centred at  0.00 fm.
+ 2-Nucleon Separation of      0 * 0.1000 fm., Maximum of   0.00 fm., Minimum at  0.00 fm.
+ Maximum single particle bins of 30.0000 fm.
+               M,Mint =          301         301
+
+
+ Range of total J is     0.0 <= J <=    40.0 (at least     0.0) and Absorbtion =>    -1.0000 mb.
+ Dry Run = F, CC set limits =  0  0, Relativistic kinematics =  , Both/Far/Near Analyses =  1
+
+ Cross Sections (and up to T0 for 0=projectile) for Theta from   0.0 to  80.0 in steps of  0.1 degrees, DGAM=0,  Coordinates = 0 (Mads)
+
+ Lower Radial Cutoff = maximum of -2.00*L*h &       0.0 fm.,  Lower Cutoff for Couplings =   0.0  fm.
+
+
+ Iterate Couplings between   0 and   1 times, to  0.001 % if sooner.                                          
+  Block solved exactly =   8 chs., with Pade = 0 & Isocen =  =0, NOSOL = F, initwf =  0
+  NL quadrature with   24 Gaussian points, Calculate multipoles up to    46 from   0
+  M-transfers for lp+lt greater than or equal to  6, Angular Integration Cutoff below  1.5625 %
+
+
+ Trace switches are :  CHANS =  0, LISTCC =  0, TRENEG =  0, CDETR =  0, SMATS =  0, XSTABL =  1, NLPL =  0
+
+                       WAVES =  0, LAMPL =  0, VEFF =  0, KFUS =  0, WDISK =  0, BPM =  0, MELFIL =  0
+
+                       CDCC =  0, NFUS =  0
+
+ Using unit mass = 1.000000 amu and 1/fine-structure constant = 137.03599 ( 1.000000 * true ) with hc = 197.32705 MeV.fm,
+  thus 2*amu/hbar^2 = 0.0478450 = 1/20.9008 and Coulomb constant = 0.1574855 so e^2 = 1.43997, and nuclear magneton= 0.1261183
+
+ Now pre-scan input and save to file 3
+
+  Missing fractional overlaps! for coupling            1
+  Projectile uses: T T
+  Target     uses: F F
+
+
+ *********** PARTITION NUMBER  1 ******************************************************************************************
+
+   PROJ=6Li        MASS=  6.0151 Z=   3.0,        # STATES=   -1T, TARG=19F      MASS= 18.9980 Z=   9.0,     Q-VALUE =   0.0000 MEV.
+
+     1:  J= 1.0+ (B# 1), E=  0.0000, K= 0.0              Potl#  1       J= 0.5+ (B# 1), E=  0.0000, K= 0.5    
+
+
+ *********** PARTITION NUMBER  2 ******************************************************************************************
+
+   PROJ=d          MASS=  2.0141 Z=   1.0,        # STATES=   -1T, TARG=23Na     MASS= 22.9890 Z=  11.0,     Q-VALUE =   8.9930 MEV.
+
+     1:  J= 1.0+ (B# 1), E=  0.0000, K= 0.0              Potl#  2       J= 1.5+ (B# 1), E=  0.0000, K= 0.5    
+
+
+ ************************************************************************************************************************************
+
+ The following POTENTIALS are defined :
+
+  KP#       TYPE      IT    SHAPE      at     V1        r1        a1        V2        r2        a2        A-in     A-used
+
+
+                                            A#1       A#2        r0c       ac                                                h @ 1
+    1    0=Coulomb       0=CHARGE (WS)  1    19.000     6.000    1.3000    0.0000    0.0000    0.0000     0.000    90.248   0.10000
+
+    1    1=Volume        0=Woods-Saxon  2  265.8000    1.0002    0.6924    0.0000    0.0000    0.0000     0.000    90.248
+
+    1    2=Surface       0=Woods-Saxon  3    0.0000    0.0000    0.0000   19.0000    1.2300    0.9700     0.000    90.248
+
+    1    3=Projtl S.O.   0=Woods-Saxon  4    2.0000    1.1600    0.6500    0.0000    0.0000    0.0000     0.000    90.248
+   --------------------------------------------------------------------------------------------------------------------
+
+                                            A#1       A#2        r0c       ac                                                h @ 2
+    2    0=Coulomb       0=CHARGE (WS)  5     8.000     0.000    1.3000    0.0000    0.0000    0.0000     0.000     8.000   0.10000
+
+    2    1=Volume        0=Woods-Saxon  6   89.7500    1.1500    0.7600    1.3400    1.3400    0.5700     0.000     8.000
+
+    2    2=Surface       0=Woods-Saxon  7    0.0000    0.0000    0.0000   10.5100    1.3400    0.5700     0.000     8.000
+
+    2    3=Projtl S.O.   0=Woods-Saxon  8    3.5600    0.9700    1.0100    0.0000    0.0000    0.0000     0.000     8.000
+   --------------------------------------------------------------------------------------------------------------------
+
+                                            A#1       A#2        r0c       ac                                                h @ 0
+    3    0=Coulomb       0=CHARGE (WS)  9     1.000     1.250    0.0000    0.0000    0.0000    0.0000     0.000     8.963   0.10000
+
+    3    1=Volume        0=Woods-Saxon 10   80.0000    1.2500    0.6500    0.0000    0.0000    0.0000     0.000     8.963
+   --------------------------------------------------------------------------------------------------------------------
+
+                                            A#1       A#2        r0c       ac                                                h @ 0
+    4    0=Coulomb       0=CHARGE (WS) 11     1.000     1.250    0.0000    0.0000    0.0000    0.0000     0.000     8.963   0.10000
+
+    4    1=Volume        0=Woods-Saxon 12  140.0000    1.2500    0.6500    0.0000    0.0000    0.0000     0.000     8.963
+   --------------------------------------------------------------------------------------------------------------------
+
+                                            A#1       A#2        r0c       ac                                                h @ 0
+    5    0=Coulomb       0=CHARGE (WS) 13     8.000     0.000    1.3000    0.0000    0.0000    0.0000     0.000     8.000   0.10000
+
+    5    1=Volume        0=Woods-Saxon 14   89.7500    1.1500    0.7600    1.3400    1.3400    0.5700     0.000     8.000
+
+    5    2=Surface       0=Woods-Saxon 15    0.0000    0.0000    0.0000   10.5100    1.3400    0.5700     0.000     8.000
+
+    5    3=Projtl S.O.   0=Woods-Saxon 16    3.5600    0.9700    1.0100    0.0000    0.0000    0.0000     0.000     8.000
+
+
+ ************************************************************************************************************************************
+
+ The following SINGLE-PARTICLE FORM FACTORS are constructed :
+
+
+ No.   P1 P2 IN KIND T N  L  S1 IA J/S  IB BIND XFER  BE    SC PC FIL AFRAC Adjust  to  Z  Mass   K     Norm    rms      D0     D   ANC/Gsp
+   NO SUITABLE CHANNELS FOUND ????  INPUT DATA WERE:
+  1  0 1 2 1 0   2 0 0 1.0 0 0.0 0  3  0  1.4740 -1  3  0  0  0.0000
+  ### VR  potential at   2 permanently scaled by   1.0000
+  ### VR  potential at   3 permanently scaled by   1.0000
+  ### VR  potential at   4 permanently scaled by   1.0000
+  ### VR  potential at   5 permanently scaled by   1.0000
+  ### VR  potential at   6 permanently scaled by   1.0000
+  ### VR  potential at   7 permanently scaled by   1.0000
+  ### VR  potential at   8 permanently scaled by   1.0000
+  ### VR  potential at   9 permanently scaled by   1.0000
+  ### VR  potential at  10 permanently scaled by   1.0000
+  ### VR  potential at  11 permanently scaled by   1.0000
+  ### VR  potential at  12 permanently scaled by   1.0000
+  ### VR  potential at  13 permanently scaled by   1.0000
+  ### VR  potential at  14 permanently scaled by   1.0000
+  ### VR  potential at  15 permanently scaled by   1.0000
+  ### VR  potential at  16 permanently scaled by   1.0000
+
+ No.   P1 P2 IN KIND T N  L  S1 IA J/S  IB BIND XFER  BE    SC PC FIL AFRAC Adjust  to  Z  Mass   K     Norm    rms      D0     D   ANC/Gsp
+
+    Parameters      Mismatch   Nodes -> 4 in ch  1
+
+      1.000000    -0.54656082     2    39
+      2.000000    -2.51353601     4    45
+      2.238697    -1.41100926     4    45
+      2.764651     2.71271549     4    45
+      2.715151     1.06823812     4    45
+      2.662541     0.30318738     4    45
+      2.633684     0.03844442     4    45
+      2.628898     0.00076476     4    45
+      2.628799     0.00000040     4    45
+
+ For Channel #  1 with l = 2,  j =  2.0, around core state #  1
+
+   R    Y(R)
+   0.00  -0.0000E+00,    0.10   2.6038E-03,    0.20   2.0592E-02,    0.30   6.4244E-02,    0.40   1.3594E-01,    0.50   2.2837E-01, 
+   0.60   3.2572E-01,    0.70   4.0708E-01,    0.80   4.5141E-01,    0.90   4.4276E-01,    1.00   3.7448E-01,    1.10   2.5148E-01, 
+   1.20   8.9852E-02,    1.30  -8.5956E-02,    1.40  -2.4782E-01,    1.50  -3.6939E-01,    1.60  -4.3109E-01,    1.70  -4.2365E-01, 
+   1.80  -3.4938E-01,    1.90  -2.2123E-01,    2.00  -5.9897E-02,    2.10   1.1023E-01,    2.20   2.6532E-01,    2.30   3.8572E-01, 
+   2.40   4.5833E-01,    2.50   4.7757E-01,    2.60   4.4493E-01,    2.70   3.6751E-01,    2.80   2.5605E-01,    2.90   1.2290E-01, 
+   3.00  -1.9762E-02,    3.10  -1.6127E-01,    3.20  -2.9317E-01,    3.30  -4.0954E-01,    3.40  -5.0687E-01,    3.50  -5.8373E-01, 
+   3.60  -6.4030E-01,    3.70  -6.7794E-01,    3.80  -6.9872E-01,    3.90  -7.0507E-01,    4.00  -6.9952E-01,    4.10  -6.8452E-01, 
+   4.20  -6.6230E-01,    4.30  -6.3482E-01,    4.40  -6.0375E-01,    4.50  -5.7048E-01,    4.60  -5.3610E-01,    4.70  -5.0150E-01, 
+   4.80  -4.6732E-01,    4.90  -4.3408E-01,    5.00  -4.0211E-01,    5.10  -3.7165E-01,    5.20  -3.4284E-01,    5.30  -3.1576E-01, 
+   5.40  -2.9044E-01,    5.50  -2.6686E-01,    5.60  -2.4497E-01,    5.70  -2.2471E-01,    5.80  -2.0600E-01,    5.90  -1.8875E-01, 
+   6.00  -1.7288E-01,    6.10  -1.5830E-01,    6.20  -1.4491E-01,    6.30  -1.3263E-01,    6.40  -1.2138E-01,    6.50  -1.1107E-01, 
+   6.60  -1.0163E-01,    6.70  -9.2994E-02,    6.80  -8.5090E-02,    6.90  -7.7860E-02,    7.00  -7.1247E-02,    7.10  -6.5199E-02, 
+   7.20  -5.9669E-02,    7.30  -5.4612E-02,    7.40  -4.9987E-02,    7.50  -4.5758E-02,    7.60  -4.1891E-02,    7.70  -3.8354E-02, 
+   7.80  -3.5119E-02,    7.90  -3.2160E-02,    8.00  -2.9453E-02,    8.10  -2.6977E-02,    8.20  -2.4712E-02,    8.30  -2.2639E-02, 
+   8.40  -2.0741E-02,    8.50  -1.9005E-02,    8.60  -1.7416E-02,    8.70  -1.5961E-02,    8.80  -1.4629E-02,    8.90  -1.3409E-02, 
+   9.00  -1.2292E-02,    9.10  -1.1269E-02,    9.20  -1.0332E-02,    9.30  -9.4740E-03,    9.40  -8.6878E-03,    9.50  -7.9674E-03, 
+   9.60  -7.3073E-03,    9.70  -6.7025E-03,    9.80  -6.1481E-03,    9.90  -5.6400E-03,   10.00  -5.1742E-03,   10.10  -4.7473E-03, 
+  10.20  -4.3558E-03,   10.30  -3.9969E-03,   10.40  -3.6678E-03,   10.50  -3.3660E-03,   10.60  -3.0893E-03,   10.70  -2.8354E-03, 
+  10.80  -2.6026E-03,   10.90  -2.3890E-03,   11.00  -2.1931E-03,   11.10  -2.0133E-03,   11.20  -1.8484E-03,   11.30  -1.6970E-03, 
+  11.40  -1.5582E-03,   11.50  -1.4307E-03,   11.60  -1.3138E-03,   11.70  -1.2065E-03,   11.80  -1.1080E-03,   11.90  -1.0175E-03, 
+  12.00  -9.3454E-04,   12.10  -8.5834E-04,   12.20  -7.8839E-04,   12.30  -7.2417E-04,   12.40  -6.6521E-04,   12.50  -6.1108E-04, 
+  12.60  -5.6137E-04,   12.70  -5.1572E-04,   12.80  -4.7380E-04,   12.90  -4.3531E-04,   13.00  -3.9995E-04,   13.10  -3.6748E-04, 
+  13.20  -3.3766E-04,   13.30  -3.1027E-04,   13.40  -2.8511E-04,   13.50  -2.6200E-04,   13.60  -2.4077E-04,   13.70  -2.2126E-04, 
+  13.80  -2.0335E-04,   13.90  -1.8688E-04,   14.00  -1.7176E-04,   14.10  -1.5787E-04,   14.20  -1.4510E-04,   14.30  -1.3337E-04, 
+  14.40  -1.2259E-04,   14.50  -1.1268E-04,   14.60  -1.0358E-04,   14.70  -9.5217E-05,   14.80  -8.7530E-05,   14.90  -8.0466E-05, 
+  15.00  -7.3973E-05,   15.10  -6.8006E-05,   15.20  -6.2522E-05,   15.30  -5.7481E-05,   15.40  -5.2848E-05,   15.50  -4.8590E-05, 
+  15.60  -4.4675E-05,   15.70  -4.1077E-05,   15.80  -3.7770E-05,   15.90  -3.4729E-05,   16.00  -3.1934E-05,   16.10  -2.9364E-05, 
+  16.20  -2.7002E-05,   16.30  -2.4830E-05,   16.40  -2.2833E-05,   16.50  -2.0998E-05,   16.60  -1.9310E-05,   16.70  -1.7758E-05, 
+  16.80  -1.6331E-05,   16.90  -1.5019E-05,   17.00  -1.3813E-05,   17.10  -1.2704E-05,   17.20  -1.1684E-05,   17.30  -1.0746E-05, 
+  17.40  -9.8836E-06,   17.50  -9.0905E-06,   17.60  -8.3612E-06,   17.70  -7.6905E-06,   17.80  -7.0737E-06,   17.90  -6.5065E-06, 
+  18.00  -5.9849E-06,   18.10  -5.5052E-06,   18.20  -5.0639E-06,   18.30  -4.6582E-06,   18.40  -4.2850E-06,   18.50  -3.9417E-06, 
+  18.60  -3.6260E-06,   18.70  -3.3356E-06,   18.80  -3.0685E-06,   18.90  -2.8229E-06,   19.00  -2.5969E-06,   19.10  -2.3891E-06, 
+  19.20  -2.1979E-06,   19.30  -2.0220E-06,   19.40  -1.8602E-06,   19.50  -1.7114E-06,   19.60  -1.5746E-06,   19.70  -1.4486E-06, 
+  19.80  -1.3328E-06,   19.90  -1.2263E-06,   20.00  -1.1282E-06,   20.10  -1.0381E-06,   20.20  -9.5509E-07,   20.30  -8.7877E-07, 
+  20.40  -8.0856E-07,   20.50  -7.4396E-07,   20.60  -6.8453E-07,   20.70  -6.2986E-07,   20.80  -5.7956E-07,   20.90  -5.3328E-07, 
+  21.00  -4.9070E-07,   21.10  -4.5152E-07,   21.20  -4.1548E-07,   21.30  -3.8232E-07,   21.40  -3.5180E-07,   21.50  -3.2373E-07, 
+  21.60  -2.9790E-07,   21.70  -2.7413E-07,   21.80  -2.5226E-07,   21.90  -2.3214E-07,   22.00  -2.1362E-07,   22.10  -1.9659E-07, 
+  22.20  -1.8091E-07,   22.30  -1.6648E-07,   22.40  -1.5321E-07,   22.50  -1.4100E-07,   22.60  -1.2976E-07,   22.70  -1.1941E-07, 
+  22.80  -1.0990E-07,   22.90  -1.0114E-07,   23.00  -9.3078E-08,   23.10  -8.5662E-08,   23.20  -7.8837E-08,   23.30  -7.2556E-08, 
+  23.40  -6.6776E-08,   23.50  -6.1457E-08,   23.60  -5.6563E-08,   23.70  -5.2058E-08,   23.80  -4.7912E-08,   23.90  -4.4097E-08, 
+  24.00  -4.0586E-08,   24.10  -3.7355E-08,   24.20  -3.4381E-08,   24.30  -3.1644E-08,   24.40  -2.9125E-08,   24.50  -2.6807E-08, 
+  24.60  -2.4674E-08,   24.70  -2.2710E-08,   24.80  -2.0903E-08,   24.90  -1.9240E-08,   25.00  -1.7709E-08,   25.10  -1.6300E-08, 
+  25.20  -1.5004E-08,   25.30  -1.3810E-08,   25.40  -1.2712E-08,   25.50  -1.1701E-08,   25.60  -1.0770E-08,   25.70  -9.9136E-09, 
+  25.80  -9.1252E-09,   25.90  -8.3996E-09,   26.00  -7.7318E-09,   26.10  -7.1171E-09,   26.20  -6.5513E-09,   26.30  -6.0305E-09, 
+  26.40  -5.5511E-09,   26.50  -5.1099E-09,   26.60  -4.7038E-09,   26.70  -4.3299E-09,   26.80  -3.9858E-09,   26.90  -3.6691E-09, 
+  27.00  -3.3775E-09,   27.10  -3.1092E-09,   27.20  -2.8621E-09,   27.30  -2.6347E-09,   27.40  -2.4254E-09,   27.50  -2.2328E-09, 
+  27.60  -2.0554E-09,   27.70  -1.8921E-09,   27.80  -1.7418E-09,   27.90  -1.6035E-09,   28.00  -1.4762E-09,   28.10  -1.3589E-09, 
+  28.20  -1.2510E-09,   28.30  -1.1517E-09,   28.40  -1.0602E-09,   28.50  -9.7605E-10,   28.60  -8.9856E-10,   28.70  -8.2722E-10, 
+  28.80  -7.6155E-10,   28.90  -7.0110E-10,   29.00  -6.4545E-10,   29.10  -5.9421E-10,   29.20  -5.4705E-10,   29.30  -5.0363E-10, 
+  29.40  -4.6366E-10,   29.50  -4.2686E-10,   29.60  -3.9299E-10,   29.70  -3.6181E-10,   29.80  -3.3310E-10,   29.90  -3.0667E-10, 
+  30.00  -2.8233E-10, 
+
+ No.   P1 P2 IN KIND T N  L  S1 IA J/S  IB BIND XFER  BE    SC PC FIL AFRAC Adjust  to  Z  Mass   K     Norm    rms      D0     D   ANC/Gsp
+
+    At R=   29.900, ANC in ch  2 is   -18.299    ,   eta,eta*ln(2*rho)+rho =   0.11268        24.929    
+
+    2:  2  1  1  0     4  2 1.0  1 2.0   0   4   0  10.4670  1  3  0 0.0000 VR  2.6288; 2. 4.001 0.8191 1.0000  3.792   59.5  -14.7-18.2988
+
+ ************************************************************************************************************************************
+
+ TWO-way COUPLING # 1 for partitions  2 <-  1 of KIND  7,   1  2  3 -1 -1 & P1,P2 =    0.0000   0.0000 : for J <=    40.5 & R <  29.7 fm.
+
+
+ data =  1  1  1  2  1.0000,  so  < [6Li      #  1] / [d        #  1]  * Eigen-form #  2>  =   1.0000            BE = 10.467     2
+0NO COUPLED PAIRS OF FORM FACTORS ARE FOUND!!!
+
+0Use with 6Li      of the  2 form factors are
+  F T
+0Use with 19F      of the  2 form factors are
+  F F
+ STOPPING, as some coupling failures
+    See WARNING messages above
+
+ ************************************************************************************************************************************
+
+ TWO-way COUPLING # 2 for partitions  2 <-  1 of KIND  8,   1  0  0  0*** & P1,P2 =    0.0000   0.0000 : for J <=    40.5 & R <  29.7 fm.
+
+0NO COUPLED PAIRS OF FORM FACTORS ARE FOUND!!!
+
+0Use with 6Li      of the  2 form factors are
+  F T
+0Use with 19F      of the  2 form factors are
+  F F
+ STOPPING, as some coupling failures
+    See WARNING messages above
+
+ Incoming partition  1 in excitation state # 1,   Laboratory Energy given for partition  1 Nucleus 1 in Excitation pair 1
+
+0Lab. ENERGY ranges :
+
+   from    16.0000     to   0.00000     in     0 intervals
+   from    0.00000     to   0.00000     in     0 intervals
+   from    0.00000     to   0.00000     in     0 intervals
+
+ Largest real,imaginary parts of any form factor at R=   29.00 are   4.97E-02  2.33E-09 MeV
+ Finished all Couplings @    1.56250000E-02          16
+
+ Symmetric Hamiltonian
+1***********************************************************************************************************************************
+************************************************************************************************************************************
+
+        INCOMING 6Li      ;    LABORATORY 6Li      ENERGY =   16.000     MeV.
+
+ ***********************************************************************************************************************************
+ ***********************************************************************************************************************************
+
+ Allocate arrays for            5  channels, of which            5  need wfs.
+ Allocate arrays for            8  channels, of which            8  need wfs.
+ Allocate arrays for            9  channels, of which            9  need wfs.
+ Reaction Xsec    37.5+/36 @ 1 =   0.139/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    37.5+/38 @ 2 =   0.041/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    37.5+/38 @ 3 =   0.041/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    37.5-/37 @ 1 =   0.075/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    37.5-/37 @ 2 =   0.075/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    37.5-/39 @ 3 =   0.022/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    38.5+/38 @ 1 =   0.042/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    38.5+/38 @ 2 =   0.042/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    38.5+/40 @ 3 =   0.012/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    38.5-/37 @ 1 =   0.077/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    38.5-/39 @ 2 =   0.023/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    38.5-/39 @ 3 =   0.023/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    39.5+/38 @ 1 =   0.043/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    39.5+/40 @ 2 =   0.013/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    39.5+/40 @ 3 =   0.013/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    39.5-/39 @ 1 =   0.023/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    39.5-/39 @ 2 =   0.023/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    39.5-/41 @ 3 =   6.796#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    40.5+/40 @ 1 =   0.013/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    40.5+/40 @ 2 =   0.013/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    40.5+/42 @ 3 =   3.664#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    40.5-/39 @ 1 =   0.024/, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    40.5-/41 @ 2 =   6.966#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    40.5-/41 @ 3 =   6.966#, Out:   0.000#   0.000#   0.000f
+ Finished all CC sets @    6.25000000E-02
+0CUMULATIVE REACTION cross section                 = 2449.61095  <L> =     9.64  <L**2> =    109.3
+0CUMULATIVE outgoing cross sections in partition 1 :    0.00000
+0CUMULATIVE outgoing cross sections in partition 2 :    0.00000
+0Cumulative ABSORBTION by Imaginary Potentials     = 2449.61095  <L> =     9.64  <L**2> =    109.3
+   Fusion for specific 6Li      M-states : 2437.793809 2449.597020 2437.793809
+0CUMULATIVE OUTGOING cross section                 =    0.00000
+ To convert to S-factors (MeV.mb = keV.b),  multiply by  1.5810E+08
+
+
+ CROSS SECTIONS FOR OUTGOING 6Li      & 19F      in state #   1 with spins & parities 1.0  + &  0.5  +;  0
+
+
+ CROSS SECTIONS FOR OUTGOING d        & 23Na     in state #   1 with spins & parities 1.0  + &  1.5  +;  0
+
+ Finished all xsecs @    6.25000000E-02
+
+  The following files have been created:
+   3:local copy of User input.            6:standard output.                   
+  12:transfer kernels.                   13:total cross sections/state.        
+  35:Astrophysics S-factors  / Ecm.      39:cross sections for each Ecm.       
+  40:all cross sectns. for each Elab.    46:bs wave functions & ANC ratios.    
+  56:Fusion for each Jtotal.             58:Single-particle wfns.              
+  75:S-factors for lab energies.        
+
+ PARAMETERS : MAXQRN   MFNL   MLOC  LMAX1 MCLIST
+    ALLOWED :      1     81     16     60      6
+    REQUIRED:      0      0     16     44      4
+
+
+ ACCURACY ANALYSIS at    16.000 MeV :
+
+  Elastic h*k = 0.163 so OK       compared with 0.200
+
+   Real(S-el) > 0.01 first at J =       2.5
+   Real(S-el) > 0.10 first at J =       8.5
+   Real(S-el) > 0.50 first at J =      11.5
+   Real(S-el) > 0.90 first at J =      14.5
+   Real(S-el) > 0.99 first at J =      18.5
+   R-turn =    26.50 fm    at J =      40.5
+
+ Forward-angle excitation cut off below   7.287 deg by max JT =      40.5
+                              and below   6.110 deg by max R.
+
+ Total CPU  0 time =       0.06 seconds

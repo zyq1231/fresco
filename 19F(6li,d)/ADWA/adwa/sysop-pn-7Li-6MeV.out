@@ -1,0 +1,111 @@
+**************************************
+p+7Li 6 MeV                                                                     
+
+ Koning-Delaroche global optical model (June 2002)
+
+           proton  on Z=  3 A=  7
+
+ 1. Optical model parameters, E=  6.000 MeV
+
+   V     rv    av     W     rw    aw
+ 56.629 1.092 0.677  0.530 1.092 0.677
+
+   Vd    rvd   avd    Wd    rwd   awd
+  0.000 1.312 0.522  8.133 1.312 0.522
+
+   Vso   rvso  avso   Wso   rwso  awso  rc
+  5.612 0.847 0.590 -0.025 0.847 0.590 1.896
+
+
+
+**************************************
+n+7Li 6 MeV                                                                     
+
+ Koning-Delaroche global optical model (June 2002)
+
+           neutron on Z=  3 A=  7
+
+ 1. Optical model parameters, E=  6.000 MeV
+
+   V     rv    av     W     rw    aw
+ 49.529 1.092 0.677  0.622 1.092 0.677
+
+   Vd    rvd   avd    Wd    rwd   awd
+  0.000 1.312 0.543  6.504 1.312 0.543
+
+   Vso   rvso  avso   Wso   rwso  awso  rc
+  5.550 0.847 0.590 -0.035 0.847 0.590 0.000
+
+
+
+**************************************
+p+8Li 6 MeV                                                                     
+
+ Koning-Delaroche global optical model (June 2002)
+
+           proton  on Z=  3 A=  8
+
+ 1. Optical model parameters, E= 10.300 MeV
+
+   V     rv    av     W     rw    aw
+ 56.850 1.101 0.677  0.872 1.101 0.677
+
+   Vd    rvd   avd    Wd    rwd   awd
+  0.000 1.311 0.523  9.645 1.311 0.523
+
+   Vso   rvso  avso   Wso   rwso  awso  rc
+  5.520 0.862 0.590 -0.041 0.862 0.590 1.778
+
+
+
+**************************************
+p+7Li 6 MeV                                                                     
+ CH89 potential for ap, zp, at =   1.0   1.0   7.0
+ zt =  3.0 at   6.000 MeV 
+  Coulomb radius parameter =    1.302731    
+ 
+  Vv     rvv    avv    Wv     rw     aw
+ 53.600  1.132  0.690  0.978  1.110  0.690
+
+  Vs     rvs    avs    Ws     rws    aws
+  0.000  0.000  0.000  8.852  1.110  0.690
+
+  vso    rvso   avso   wso    rwso   awso
+  5.900  0.713  0.630  0.000  1.000  1.000
+
+
+
+**************************************
+n+7Li 6 MeV                                                                     
+ CH89 potential for ap, zp, at =   1.0   0.0   7.0
+ zt =  3.0 at   6.000 MeV 
+  Coulomb radius parameter =    1.302731    
+ 
+  Vv     rvv    avv    Wv     rw     aw
+ 49.235  1.132  0.690  1.095  1.110  0.690
+
+  Vs     rvs    avs    Ws     rws    aws
+  0.000  0.000  0.000  5.143  1.110  0.690
+
+  vso    rvso   avso   wso    rwso   awso
+  5.900  0.713  0.630  0.000  1.000  1.000
+
+
+
+**************************************
+p+8Li 6 MeV                                                                     
+ CH89 potential for ap, zp, at =   1.0   1.0   8.0
+ zt =  3.0 at  10.300 MeV 
+  Coulomb radius parameter =    1.300000    
+ 
+  Vv     rvv    avv    Wv     rw     aw
+ 53.692  1.137  0.690  1.237  1.120  0.690
+
+  Vs     rvs    avs    Ws     rws    aws
+  0.000  0.000  0.000  9.843  1.120  0.690
+
+  vso    rvso   avso   wso    rwso   awso
+  5.900  0.740  0.630  0.000  1.000  1.000
+
+
+

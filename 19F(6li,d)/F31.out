@@ -1,0 +1,228 @@
+ FRESCO - FRES 3.2: Coupled Reaction Channels
+ Assuming NAMELIST input.
+
+ 19F(6Li,d)23Na at 16 MeV                                                        
+
+   0.100  30.000   0.100   0.100  18.000   0.000   0.000   0.000   0.000   0.000
+
+ Centre-of-mass Range is    302 * 0.1000 fm., Maximum at  30.00 fm., Interpolating NL forms every  0.10 fm.
+ Non - locality width is    181 * 0.1000 fm., Maximum of  18.00 fm., Centred at  0.00 fm.
+ 2-Nucleon Separation of      0 * 0.1000 fm., Maximum of   0.00 fm., Minimum at  0.00 fm.
+ Maximum single particle bins of 30.0000 fm.
+               M,Mint =          301         301
+
+
+ Range of total J is     0.0 <= J <=    40.0 (at least     0.0) and Absorbtion =>     1.0000 mb.
+ Dry Run = F, CC set limits =  0  0, Relativistic kinematics =  , Both/Far/Near Analyses =  1
+
+ Cross Sections (and up to T0 for 0=projectile) for Theta from   0.0 to  80.0 in steps of  0.1 degrees, DGAM=0,  Coordinates = 0 (Mads)
+
+ Lower Radial Cutoff = maximum of -2.00*L*h &       0.0 fm.,  Lower Cutoff for Couplings =   0.0  fm.
+
+
+ Iterate Couplings between   0 and   1 times, to  0.001 % if sooner.                                          
+  Block solved exactly =   8 chs., with Pade = 0 & Isocen =  =0, NOSOL = F, initwf =  0
+  NL quadrature with   24 Gaussian points, Calculate multipoles up to    46 from   0
+  M-transfers for lp+lt greater than or equal to  6, Angular Integration Cutoff below  1.5625 %
+
+
+ Trace switches are :  CHANS =  0, LISTCC =  0, TRENEG =  0, CDETR =  0, SMATS =  0, XSTABL =  1, NLPL =  0
+
+                       WAVES =  0, LAMPL =  0, VEFF =  0, KFUS =  0, WDISK =  0, BPM =  0, MELFIL =  0
+
+                       CDCC =  0, NFUS =  0
+
+ Using unit mass = 1.000000 amu and 1/fine-structure constant = 137.03599 ( 1.000000 * true ) with hc = 197.32705 MeV.fm,
+  thus 2*amu/hbar^2 = 0.0478450 = 1/20.9008 and Coulomb constant = 0.1574855 so e^2 = 1.43997, and nuclear magneton= 0.1261183
+
+ Now pre-scan input and save to file 3
+
+  Missing fractional overlaps! for coupling            1
+  Projectile uses: T
+  Target     uses: F
+
+
+ *********** PARTITION NUMBER  1 ******************************************************************************************
+
+   PROJ=6Li        MASS=  6.0151 Z=   3.0,        # STATES=   -1T, TARG=19F      MASS= 18.9980 Z=   9.0,     Q-VALUE =   0.0000 MEV.
+
+     1:  J= 1.0+ (B# 1), E=  0.0000, K= 0.0              Potl#  1       J= 0.5+ (B# 1), E=  0.0000, K= 0.5    
+
+
+ *********** PARTITION NUMBER  2 ******************************************************************************************
+
+   PROJ=d          MASS=  2.0141 Z=   1.0,        # STATES=   -1T, TARG=23Na     MASS= 22.9890 Z=  11.0,     Q-VALUE =   8.9930 MEV.
+
+     1:  J= 1.0+ (B# 1), E=  0.0000, K= 0.0              Potl#  2       J= 1.5+ (B# 1), E=  0.0000, K= 0.5    
+
+
+ ************************************************************************************************************************************
+
+ The following POTENTIALS are defined :
+
+  KP#       TYPE      IT    SHAPE      at     V1        r1        a1        V2        r2        a2        A-in     A-used
+
+
+                                            A#1       A#2        r0c       ac                                                h @ 1
+    1    0=Coulomb       0=CHARGE (WS)  1    19.000     6.000    1.3000    0.0000    0.0000    0.0000     0.000    90.248   0.10000
+
+    1    1=Volume        0=Woods-Saxon  2  265.8000    1.0002    0.6924    0.0000    0.0000    0.0000     0.000    90.248
+
+    1    2=Surface       0=Woods-Saxon  3   19.0000    1.2300    0.9700    0.0000    0.0000    0.0000     0.000    90.248
+
+    1    3=Projtl S.O.   0=Woods-Saxon  4    2.0000    1.1600    0.6500    0.0000    0.0000    0.0000     0.000    90.248
+   --------------------------------------------------------------------------------------------------------------------
+
+                                            A#1       A#2        r0c       ac                                                h @ 2
+    2    0=Coulomb       0=CHARGE (WS)  5     8.000     0.000    1.3000    0.0000    0.0000    0.0000     0.000     8.000   0.10000
+
+    2    1=Volume        0=Woods-Saxon  6   89.7500    1.1500    0.7600    1.3400    1.3400    0.5700     0.000     8.000
+
+    2    2=Surface       0=Woods-Saxon  7   10.5100    1.3400    0.5700    0.0000    0.0000    0.0000     0.000     8.000
+
+    2    3=Projtl S.O.   0=Woods-Saxon  8    3.5600    0.9700    1.0100    0.0000    0.0000    0.0000     0.000     8.000
+   --------------------------------------------------------------------------------------------------------------------
+
+                                            A#1       A#2        r0c       ac                                                h @ 0
+    3    0=Coulomb       0=CHARGE (WS)  9     1.250     0.000    0.0000    0.0000    0.0000    0.0000     0.000     1.250   0.10000
+
+    3    1=Volume        0=Woods-Saxon 10   90.0000    1.2500    0.6500    0.0000    0.0000    0.0000     0.000     1.250
+   --------------------------------------------------------------------------------------------------------------------
+
+                                            A#1       A#2        r0c       ac                                                h @ 0
+    4    0=Coulomb       0=CHARGE (WS) 11     1.250     0.000    0.0000    0.0000    0.0000    0.0000     0.000     1.250   0.10000
+
+    4    1=Volume        0=Woods-Saxon 12   78.0000    1.2500    0.6500    0.0000    0.0000    0.0000     0.000     1.250
+
+
+ ************************************************************************************************************************************
+
+ The following SINGLE-PARTICLE FORM FACTORS are constructed :
+
+
+ No.   P1 P2 IN KIND T N  L  S1 IA J/S  IB BIND XFER  BE    SC PC FIL AFRAC Adjust  to  Z  Mass   K     Norm    rms      D0     D   ANC/Gsp
+   NO SUITABLE CHANNELS FOUND ????  INPUT DATA WERE:
+  1  0 1 2 1 0   2 0 0 1.0 0 0.0 0  3  0  1.4740  0  0  0  0  0.0000
+
+ ************************************************************************************************************************************
+
+ TWO-way COUPLING # 1 for partitions  2 <-  1 of KIND  7,   1  2  3 -1 -1 & P1,P2 =    0.0000   0.0000 : for J <=    40.5 & R <  29.7 fm.
+
+0NO COUPLED PAIRS OF FORM FACTORS ARE FOUND!!!
+
+0Use with 6Li      of the  0 form factors are
+
+0Use with 19F      of the  0 form factors are
+
+ STOPPING, as some coupling failures
+    See WARNING messages above
+
+ ************************************************************************************************************************************
+
+ TWO-way COUPLING # 2 for partitions  2 <-  1 of KIND  8,   1  0  0  0  0 & P1,P2 =    0.0000   0.0000 : for J <=    40.5 & R <  29.7 fm.
+
+0NO COUPLED PAIRS OF FORM FACTORS ARE FOUND!!!
+
+0Use with 6Li      of the  0 form factors are
+
+0Use with 19F      of the  0 form factors are
+
+ STOPPING, as some coupling failures
+    See WARNING messages above
+
+ Incoming partition  1 in excitation state # 1,   Laboratory Energy given for partition  1 Nucleus 1 in Excitation pair 1
+
+0Lab. ENERGY ranges :
+
+   from    16.0000     to   0.00000     in     0 intervals
+   from    0.00000     to   0.00000     in     0 intervals
+   from    0.00000     to   0.00000     in     0 intervals
+
+ Largest real,imaginary parts of any form factor at R=   29.00 are   4.97E-02  1.18E-20 MeV
+ Finished all Couplings @    0.00000000              12
+
+ Symmetric Hamiltonian
+1***********************************************************************************************************************************
+************************************************************************************************************************************
+
+        INCOMING 6Li      ;    LABORATORY 6Li      ENERGY =   16.000     MeV.
+
+ ***********************************************************************************************************************************
+ ***********************************************************************************************************************************
+
+ Allocate arrays for            5  channels, of which            5  need wfs.
+ Reaction Xsec     0.5-/ 1 @ 1 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     0.5-/ 1 @ 2 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Allocate arrays for            8  channels, of which            8  need wfs.
+ Reaction Xsec     1.5+/ 0 @ 1 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     1.5+/ 2 @ 2 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     1.5+/ 2 @ 3 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     1.5-/ 1 @ 1 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     1.5-/ 1 @ 2 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     1.5-/ 3 @ 3 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Allocate arrays for            9  channels, of which            9  need wfs.
+ Reaction Xsec     2.5+/ 2 @ 1 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     2.5+/ 2 @ 2 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     2.5+/ 4 @ 3 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     2.5-/ 1 @ 1 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     2.5-/ 3 @ 2 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     2.5-/ 3 @ 3 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     3.5+/ 2 @ 1 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     3.5+/ 4 @ 2 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     3.5+/ 4 @ 3 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     3.5-/ 3 @ 1 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     3.5-/ 3 @ 2 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     3.5-/ 5 @ 3 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     4.5+/ 4 @ 1 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     4.5+/ 4 @ 2 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     4.5+/ 6 @ 3 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     4.5-/ 3 @ 1 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     4.5-/ 5 @ 2 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     4.5-/ 5 @ 3 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     5.5+/ 4 @ 1 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     5.5+/ 6 @ 2 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec     5.5+/ 6 @ 3 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Finished all CC sets @    1.56250000E-02
+0CUMULATIVE REACTION cross section                 =    0.00000  <L> =     4.01  <L**2> =     17.8
+0CUMULATIVE outgoing cross sections in partition 1 :    0.00000
+0CUMULATIVE outgoing cross sections in partition 2 :    0.00000
+0Cumulative ABSORBTION by Imaginary Potentials     =    0.00000  <L> =     4.01  <L**2> =     17.8
+   Fusion for specific 6Li      M-states :   70.961142   70.961142   70.961142
+0CUMULATIVE OUTGOING cross section                 =    0.00000
+ To convert to S-factors (MeV.mb = keV.b),  multiply by  1.5810E+08
+
+
+ CROSS SECTIONS FOR OUTGOING 6Li      & 19F      in state #   1 with spins & parities 1.0  + &  0.5  +;  0
+
+
+ CROSS SECTIONS FOR OUTGOING d        & 23Na     in state #   1 with spins & parities 1.0  + &  1.5  +;  0
+
+ Finished all xsecs @    1.56250000E-02
+
+  The following files have been created:
+   3:local copy of User input.            6:standard output.                   
+  12:transfer kernels.                   13:total cross sections/state.        
+  35:Astrophysics S-factors  / Ecm.      39:cross sections for each Ecm.       
+  40:all cross sectns. for each Elab.    56:Fusion for each Jtotal.            
+  75:S-factors for lab energies.        
+
+ PARAMETERS : MAXQRN   MFNL   MLOC  LMAX1 MCLIST
+    ALLOWED :      1     81     12     60      6
+    REQUIRED:      0      0     12      9      4
+
+
+ ACCURACY ANALYSIS at    16.000 MeV :
+
+  Elastic h*k = 0.163 so OK       compared with 0.200
+
+   Real(S-el) > 0.01 first at J =       0.5
+   Real(S-el) > 0.10 first at J =       0.5
+   Real(S-el) > 0.50 first at J =       0.5
+   Real(S-el) > 0.90 first at J =       0.5
+   Real(S-el) > 0.99 first at J =       5.5
+   R-turn =     5.32 fm    at J =       5.5
+
+ Forward-angle excitation cut off below  49.793 deg by max JT =       5.5
+                              and below   6.110 deg by max R.
+
+ Total CPU  0 time =       0.02 seconds

@@ -1,0 +1,28 @@
+Amer 2025 Fit 19F+d
+NAMELIST
+&FRESCO hcm=0.05 rmatch=30.0 jtmin=0.0 jtmax=60.0 absend=0.01
+        thmin=0.0 thmax=180.0 thinc=1.0 chans=1 smats=2 xstabl=1
+        elab=2.1 /
+&PARTITION namep='d' massp=2.014 zp=1.0 nex=1
+           namet='19F' masst=18.998 zt=9.0 qval=0.0 /
+&STATES jp=1.0 ptyp=1 ep=0.0 cpot=1 jt=0.5 ptyt=1 et=0.0 /
+&partition /
+
+! 1. Coulomb
+&POT kp=1 type=0 p(1:3)= 18.998 0.0 1.3030 /
+
+! 2. Real Volume (Amer 2025 Ph-WS)
+&POT kp=1 type=1 p(1:3)= 78.1200 1.1771 0.7650 /
+
+! 3. Imaginary Volume (Amer 2025 Ph-WS)
+&POT kp=1 type=1 p(4:6)= 1.6400 1.1771 0.5670 /
+
+! 4. Imaginary Surface (Amer 2025 Ph-WS)
+&POT kp=1 type=2 p(1:3)= 14.3700 1.1771 0.7640 /
+
+! 5. Spin-Orbit (An & Cai)
+&POT kp=1 type=3 p(1:3)= 3.5570 0.9720 1.0110 /
+
+&pot /
+&overlap /
+&coupling /

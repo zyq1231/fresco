@@ -1,0 +1,26 @@
+Fitting Run
+NAMELIST
+&FRESCO hcm=0.1 rmatch=20.0 jtmin=0.0 jtmax=60.0 absend=0.01
+        thmin=0.0 thmax=180.0 thinc=1.0 chans=1 smats=2 xstabl=1
+        elab=20 /
+&PARTITION namep='p' massp=6.0 zp=3.0 nex=1
+           namet='Cd' masst=19.0 zt=9.0 qval=0.0 /
+&STATES jp=0.5 ptyp=1 ep=0.0 cpot=1 jt=0.0 ptyt=1 et=0.0 /
+&partition /
+
+! Coulomb Potential
+&POT kp=1 type=0 p(1:3)= 19.0 6.0 1.25 /
+
+! Nuclear Volume Real (Type 1) -> Fits V, r0, a0
+&POT kp=1 type=1 p(1:3)= 20.0974 1.0185 0.4126 /
+
+! Nuclear Surface Imaginary (Type 2) -> Fits W, rw, aw
+! FRESCO Type 2 typically takes parameters in p(4:6) if mixed, 
+! or p(1:3) if separate lines. Let's use separate line for clarity.
+&POT kp=1 type=2 p(1:3)= 17.0640 1.5493 0.9878 /
+
+! Spin-Orbit (Fixed for this example)
+&POT kp=1 type=3 p(1:3)= 6.0 1.1 0.75 /
+&pot /
+&overlap /
+&coupling /

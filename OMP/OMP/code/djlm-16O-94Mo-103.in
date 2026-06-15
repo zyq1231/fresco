@@ -1,0 +1,5 @@
+&basicInfo ap=15.9949, zp=8, at=93.9058, zt=42, Elab=103.0, densFileP='16O.den', densFileT='94Mo.den' /
+&calCtrl   rstep=0.01, nrmax=2000, rptmax=20.0, mqr=32, mqmu=32,  tr=1.25, ti=1.35, ilda=1 /
+
+Note: Elab is total energy in MeV, not in MeV/nucleon
+

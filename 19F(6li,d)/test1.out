@@ -1,0 +1,824 @@
+ FRESCO - FRES 2.3: Coupled Reaction Channels
+ Assuming NAMELIST input.
+
+ Search for spectroscopic factor                                                 
+
+   0.050  30.000   0.050   0.100  12.000  -2.200   0.000   0.000   0.000   0.000
+
+ Centre-of-mass Range is    602 * 0.0500 fm., Maximum at  30.00 fm., Interpolating NL forms every  0.05 fm.
+ Non - locality width is    121 * 0.1000 fm., Maximum of  12.00 fm., Centred at -2.20 fm.
+ 2-Nucleon Separation of      0 * 0.0500 fm., Maximum of   0.00 fm., Minimum at  0.00 fm.
+ Maximum single particle bins of 30.0000 fm.
+               M,Mint =  601 601
+
+
+ Range of total J is     0.0 <= J <=    32.0 and Absorbtion =>    -0.1000 mb.
+ Dry Run = F, CC set limits =  0  0, Relativistic kinematics =  , Both/Far/Near Analyses =  1
+
+ Cross Sections (and up to T0 for 0=projectile) for Theta from   0.0 to  90.0 in steps of  0.2 degrees.  Coordinates = 0 (Mads)
+
+ Lower Radial Cutoff = maximum of -1.60*L*h &       0.0 fm.,  Lower Cutoff for Couplings =   0.0  fm.
+
+
+ Iterate Couplings between   0 and   1 times, to  0.000 % if sooner.                                          
+  Block solved exactly =   0 chs., with Pade = 0 & Isocen =  =0, NOSOL = F
+  NL quadrature with   36 Gaussian points, Calculate multipoles up to    38 from   0
+  M-transfers for lp+lt greater than or equal to  6, Angular Integration Cutoff below  0.6944 %
+
+
+ Trace switches are :  CHANS =  0, LISTCC =  0, TRENEG =  0, CDETR =  0, SMATS =  0, XSTABL =  1, NLPL =  0
+
+                       WAVES =  0, LAMPL =  0, VEFF =  0, KFUS =  0, WDISK =  0, BPM =  0, MELFIL =  0
+
+                       CDCC =  0, NFUS =  0
+
+ Using unit mass = 1.000000 amu and 1/fine-structure constant = 137.03599 ( 1.000000 * true ) with hc = 197.32705 MeV.fm,
+  thus 2*amu/hbar^2 = 0.0478450 = 1/20.9008 and Coulomb constant = 0.1574855 so e^2 = 1.43997, and nuclear magneton= 0.1261183
+
+ Now pre-scan input and save to file 3
+
+Allocating FORMF(  602      15) in   0.000 GB
+
+
+ *********** PARTITION NUMBER  1 ******************************************************************************************
+
+   PROJ=6Li        MASS=  6.0151 Z=   3.0,        # STATES= -1T, TARG=19F      MASS= 18.9980 Z=   9.0,     Q-VALUE =   0.0000 MEV.
+
+  1:  J= 1.0+ (B# 1), E=  0.0000, K= 0.0              Potl#  1       J= 0.5+ (B# 1), E=  0.0000, K= 0.5    
+
+
+ *********** PARTITION NUMBER  2 ******************************************************************************************
+
+   PROJ=d          MASS=  2.0141 Z=   1.0,        # STATES=  1T, TARG=23Na     MASS= 22.9890 Z=  11.0,     Q-VALUE =   8.9930 MEV.
+
+  1:  J= 1.0+ (B# 1), E=  0.0000, K= 0.0              Potl#  2       J= 1.5+ (B# 1), E=  9.4300, K= 0.5    
+
+
+ ************************************************************************************************************************************
+
+ The following POTENTIALS are defined :
+
+  KP#       TYPE      IT    SHAPE      at     V1        r1        a1        V2        r2        a2        A-in     A-used
+
+
+                                            A#1       A#2        r0c       ac                                                h @ 1
+    1    0=Coulomb       0=CHARGE (WS)  1     1.480     0.000    0.0000    0.0000    0.0000    0.0000     0.000     1.480   0.05000
+
+    1    1=Volume        0=Woods-Saxon  2   35.5000    1.4200    0.9200    0.0000    0.0000    0.0000     0.000     1.480
+
+    1    2=Surface       0=Woods-Saxon  3    0.0000    0.0000    0.0000   38.0000    1.7100    0.8900     0.000     1.480
+   --------------------------------------------------------------------------------------------------------------------
+
+                                            A#1       A#2        r0c       ac                                                h @ 2
+    2    0=Coulomb       0=CHARGE (WS)  4     1.300     0.000    0.0000    0.0000    0.0000    0.0000     0.000     1.300   0.05000
+
+    2    1=Volume        0=Woods-Saxon  5  105.0000    1.0200    0.8600    0.0000    0.0000    0.0000     0.000     1.300
+
+    2    2=Surface       0=Woods-Saxon  6    0.0000    0.0000    0.0000   87.0000    1.4200    0.6500     0.000     1.300
+
+    2    3=Projtl S.O.   0=Woods-Saxon  7    6.0000    1.0200    0.8600    0.0000    0.0000    0.0000     0.000     1.300
+   --------------------------------------------------------------------------------------------------------------------
+
+                                            A#1       A#2        r0c       ac                                                h @ 0
+    3    0=Coulomb       0=CHARGE (WS)  8     1.300     0.000    0.0000    0.0000    0.0000    0.0000     0.000     1.300   0.05000
+
+    3    1=Volume        0=Woods-Saxon  9   50.0000    1.3000    0.6500    0.0000    0.0000    0.0000     0.000     1.300
+   --------------------------------------------------------------------------------------------------------------------
+
+                                            A#1       A#2        r0c       ac                                                h @ 0
+    4    0=Coulomb       0=CHARGE (WS) 10     2.100     0.000    0.0000    0.0000    0.0000    0.0000     0.000     2.100   0.05000
+
+    4    1=Volume        0=Woods-Saxon 11   50.0000    2.1000    0.6000    0.0000    0.0000    0.0000     0.000     2.100
+   --------------------------------------------------------------------------------------------------------------------
+
+                                            A#1       A#2        r0c       ac                                                h @ 0
+    5    0=Coulomb       0=CHARGE (WS) 12     1.300     0.000    0.0000    0.0000    0.0000    0.0000     0.000     1.300   0.05000
+
+    5    1=Volume        0=Woods-Saxon 13  105.0000    1.0200    0.8600    0.0000    0.0000    0.0000     0.000     1.300
+
+    5    2=Surface       0=Woods-Saxon 14    0.0000    0.0000    0.0000   87.0000    1.4200    0.6500     0.000     1.300
+
+    5    3=Projtl S.O.   0=Woods-Saxon 15    6.0000    1.0200    0.8600    0.0000    0.0000    0.0000     0.000     1.300
+
+
+ ************************************************************************************************************************************
+
+ The following SINGLE-PARTICLE FORM FACTORS are constructed :
+
+
+ No.   P1 P2 IN KIND T N  L  S1 IA J/S  IB BIND XFER  BE    SC PC FIL AFRAC Adjust  to  Z  Mass   K     Norm    rms      D0     D   ANC/Gsp
+0   1:  2  1  1  0     2  0 0.0  1 0.0   0   3   0   1.4740  1  0  0 0.0000 VR  2.2588; 2. 4.001 0.3074 1.0000  3.917   66.2   54.5 -2.3764
+0   2:  1  2  2  0     4  2 0.0  1 2.0   0   4   0   1.0370  1  0  0 0.0000 VR  3.3327; 2. 3.991 0.4045 1.0000  3.594    5.0  -13.8********
+
+ ************************************************************************************************************************************
+
+ TWO-way COUPLING # 1 for partitions  2 <-  1 of KIND  7,   0  0  0 -1 -1 & P1,P2 =    0.0000   0.0000 : for J <=    32.5 & R <  29.9 fm.
+
+
+ data =  1  1  1  1  1.0000,  so  < [6Li      # 1] / [d        # 1]  * Eigen-form #  1>  =   1.0000            BE =  1.474     1
+
+ data =  2  1  1  2  1.0000,  so  < [23Na     # 1] / [19F      # 1]  * Eigen-form #  2>  =   1.0000            BE =  1.037     2
+ KNT =   2, KNP =   1: NK,NG,loc=   1   1   1  16  T  T  F
+
+     So FINITE-RANGE TRANSFER : IP1 = 0 (POST ), IP2= 0 =NONE        ,  for   1 pairs of bound states summed into   1 pairs
+      The main coupling potential is that binding the transferred particle to the d        core.
+
+   A real*8 is  8  bytes
+   NLL,NLN,NLO = 598 601 121
+0File  11 needs RL =   72358    REAL*8 numbers, and NR =    40. i.e.  23.15 Megabytes
+   File  11  RECL = 580800
+0RECOMMENDED NON-LOCAL WIDTH IS GREATER THAN    5.30 FM.,  RECOMMENDED CENTRATION  -0.25, after    0.17 secs.
+0Relative non-local usages (rms) are
+    0.001   0.001   0.001   0.001   0.001   0.001   0.001   0.001   0.001   0.001   0.001   0.001   0.002   0.002   0.002
+    0.002   0.002   0.002   0.003   0.003   0.003   0.004   0.004   0.004   0.005   0.005   0.006   0.006   0.007   0.007
+    0.008   0.009   0.010   0.011   0.012   0.013   0.014   0.016   0.017   0.019   0.020   0.022   0.024   0.025   0.026
+    0.027   0.027   0.025   0.022   0.016   0.011   0.022   0.048   0.089   0.150   0.238   0.365   0.547   0.803   1.161
+    1.656   2.329   3.228   4.400   5.887   7.707   9.832  12.162  14.490  16.479  17.654  17.454  15.407  11.788  10.636
+   18.668  32.832  49.755  67.225  82.986  94.671 100.000  96.957  87.307  72.957  54.774  36.531  21.278  10.562   4.468
+    2.034   1.310   0.828   0.531   0.464   0.458   0.453   0.432   0.382   0.316   0.257   0.215   0.186   0.159   0.131
+    0.103   0.077   0.056   0.039   0.027   0.018   0.012   0.008   0.005   0.003   0.002   0.001   0.001   0.000   0.000
+    0.000
+0Incoming partition  1 in excitation state # 1,   Laboratory Energy given for partition  1 Nucleus 1 in Excitation pair 1
+
+0Lab. ENERGY ranges :
+
+   from    42.0000     to   0.00000     in     0 intervals
+   from    0.00000     to   0.00000     in     0 intervals
+   from    0.00000     to   0.00000     in     0 intervals
+
+ Largest real,imaginary parts of any form factor at R=   29.45 are   4.89E-02  5.78E-12 MeV
+ Finished all Couplings @  0.171875
+
+ Symmetric Hamiltonian
+1***********************************************************************************************************************************
+************************************************************************************************************************************
+
+        INCOMING 6Li      ;    LABORATORY 6Li      ENERGY =   42.000     MeV.
+
+ ***********************************************************************************************************************************
+ ***********************************************************************************************************************************
+
+ Allocate arrays for  5  channels, of which  5  need wfs.
+ Allocate arrays for  8  channels, of which  8  need wfs.
+ Allocate arrays for  9  channels, of which  9  need wfs.
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.3 DIGITS, SO EXPECT ERRORS OF   0.0000 % OF UNITARITY
+
+ 1.84201891144979E+14 9.557203188205121E+7 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.2 DIGITS, SO EXPECT ERRORS OF   0.0000 % OF UNITARITY
+
+ 1.7013385411716428E+14 2310458.466630084 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.4 DIGITS, SO EXPECT ERRORS OF   0.0000 % OF UNITARITY
+
+ 2.5947215699792966E+14 9114298.727514785 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.3 DIGITS, SO EXPECT ERRORS OF   0.0000 % OF UNITARITY
+
+ 1.8692586443761922E+14 2.9800236399530984E+7 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.5 DIGITS, SO EXPECT ERRORS OF   0.0000 % OF UNITARITY
+
+ 3.334976939644608E+14 6.848775397947963E+7 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.3 DIGITS, SO EXPECT ERRORS OF   0.0000 % OF UNITARITY
+
+ 2.1017345133564822E+14 3.806754465647691E+7 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.4 DIGITS, SO EXPECT ERRORS OF   0.0000 % OF UNITARITY
+
+ 2.3973906748879406E+14 1.2772988279231445E+8 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.6 DIGITS, SO EXPECT ERRORS OF   0.0001 % OF UNITARITY
+
+ 4.269768540567956E+14 2.1104992111129704E+9 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.3 DIGITS, SO EXPECT ERRORS OF   0.0001 % OF UNITARITY
+
+ 2.1875229668992125E+14 1.574521385620656E+9 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.8 DIGITS, SO EXPECT ERRORS OF   0.0000 % OF UNITARITY
+
+ 6.545204163115699E+14 4.495229834240913E+7 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.5 DIGITS, SO EXPECT ERRORS OF   0.0001 % OF UNITARITY
+
+ 2.84292719658993E+14 7.588592314928647E+8 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.5 DIGITS, SO EXPECT ERRORS OF   0.0014 % OF UNITARITY
+
+ 3.269194540849984E+14 2.05602814455483E+10 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.2 DIGITS, SO EXPECT ERRORS OF   0.0000 % OF UNITARITY
+
+ 1.6594825708271206E+14 5.645059316044118E+8 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.2 DIGITS, SO EXPECT ERRORS OF   0.0001 % OF UNITARITY
+
+ 1.5822436451022928E+14 9.376873438184254E+8 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.5 DIGITS, SO EXPECT ERRORS OF   0.0002 % OF UNITARITY
+
+ 3.187642620065701E+14 2.4582859263595777E+9 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.5 DIGITS, SO EXPECT ERRORS OF   0.0000 % OF UNITARITY
+
+ 2.922167801129701E+14 9.598373377533838E+7 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.6 DIGITS, SO EXPECT ERRORS OF   0.0001 % OF UNITARITY
+
+ 3.998382960680509E+14 1.5802493937985582E+9 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.3 DIGITS, SO EXPECT ERRORS OF   0.0045 % OF UNITARITY
+
+ 2.0786583996449628E+14 6.77827765475494E+10 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 16.2 DIGITS, SO EXPECT ERRORS OF   0.0001 % OF UNITARITY
+
+ 1.7292762076915808E+16 1.650161075566822E+9 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.3 DIGITS, SO EXPECT ERRORS OF   0.0001 % OF UNITARITY
+
+ 1.9291602548504103E+14 1.9345996091518574E+9 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.2 DIGITS, SO EXPECT ERRORS OF   0.0000 % OF UNITARITY
+
+ 1.447809480345891E+14 7.548529795824961E+7 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.5 DIGITS, SO EXPECT ERRORS OF   0.0000 % OF UNITARITY
+
+ 3.0442558111684994E+14 7.941633568347917E+7 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.8 DIGITS, SO EXPECT ERRORS OF   0.0037 % OF UNITARITY
+
+ 6.56389008628192E+14 5.4967589332489044E+10 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.8 DIGITS, SO EXPECT ERRORS OF   0.0001 % OF UNITARITY
+
+ 5.985555025664108E+14 1.3339608948690739E+9 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.2 DIGITS, SO EXPECT ERRORS OF   0.0002 % OF UNITARITY
+
+ 1.4420068608840988E+14 3.3963529388686094E+9 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.5 DIGITS, SO EXPECT ERRORS OF   0.0000 % OF UNITARITY
+
+ 3.352400989583727E+14 1.4073963899829626E+8 2.220446049250313E-16
+0****** WARNING : ACCURACY LOSS IN ERWIN = 15.2 DIGITS, SO EXPECT ERRORS OF   0.0002 % OF UNITARITY
+
+ 1.440035998174526E+15 2.482583247030143E+9 2.220446049250313E-16
+ Reaction Xsec    29.5+/28 @ 1 =   0.122 , Out:   0.000#   0.063#   0.122f
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.3 DIGITS, SO EXPECT ERRORS OF   0.0001 % OF UNITARITY
+
+ 2.1140795015338066E+14 1.4877158933843877E+9 2.220446049250313E-16
+ Reaction Xsec    29.5+/30 @ 2 =   0.054 , Out:   0.000#   0.019#   0.054f
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.2 DIGITS, SO EXPECT ERRORS OF   0.0000 % OF UNITARITY
+
+ 1.623870916593415E+14 1.4663245141090265E+8 2.220446049250313E-16
+ Reaction Xsec    29.5+/30 @ 3 =   0.054 , Out:   0.000#   0.000#   0.054f
+ Reaction Xsec    29.5-/29 @ 1 =   0.081 , Out:   0.000#   0.132/   0.081f
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.5 DIGITS, SO EXPECT ERRORS OF   0.0001 % OF UNITARITY
+
+ 2.831214800469916E+14 1.978103100499498E+9 2.220446049250313E-16
+ Reaction Xsec    29.5-/29 @ 2 =   0.081 , Out:   0.000#   0.201#   0.081f
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.5 DIGITS, SO EXPECT ERRORS OF   0.0002 % OF UNITARITY
+
+ 2.849450025832443E+14 3.106737538665462E+9 2.220446049250313E-16
+ Reaction Xsec    29.5-/31 @ 3 =   0.036 , Out:   0.000#   0.008#   0.036f
+ Reaction Xsec    30.5+/30 @ 1 =   0.056 , Out:   0.000#   0.033#   0.056f
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.3 DIGITS, SO EXPECT ERRORS OF   0.0000 % OF UNITARITY
+
+ 1.9227027278248738E+14 1.175548867406479E+8 2.220446049250313E-16
+ Reaction Xsec    30.5+/30 @ 2 =   0.056 , Out:   0.000#   0.000#   0.056f
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.6 DIGITS, SO EXPECT ERRORS OF   0.0001 % OF UNITARITY
+
+ 4.234404437765915E+14 1.5266826789835534E+9 2.220446049250313E-16
+ Reaction Xsec    30.5+/32 @ 3 =   0.025 , Out:   0.000#   0.122#   0.025f
+ Reaction Xsec    30.5-/29 @ 1 =   0.084 , Out:   0.000#   0.797#   0.084f
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.3 DIGITS, SO EXPECT ERRORS OF   0.0118 % OF UNITARITY
+
+ 2.165354152847794E+14 1.7639955077929572E+11 2.220446049250313E-16
+ Reaction Xsec    30.5-/31 @ 2 =   0.037 , Out:   0.000#   0.011    0.026f
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.4 DIGITS, SO EXPECT ERRORS OF   0.0003 % OF UNITARITY
+
+ 2.3830438057488134E+14 3.995721721274907E+9 2.220446049250313E-16
+ Reaction Xsec    30.5-/31 @ 3 =   0.037 , Out:   0.000#   0.010/   0.037f
+ Reaction Xsec    31.5+/30 @ 1 =   0.058 , Out:   0.000#   0.369#   0.058f
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.5 DIGITS, SO EXPECT ERRORS OF   0.0203 % OF UNITARITY
+
+ 2.981595767840894E+14 3.0447900700789325E+11 2.220446049250313E-16
+ Reaction Xsec    31.5+/32 @ 2 =   0.026 , Out:   0.000#   0.593/   0.025f
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.4 DIGITS, SO EXPECT ERRORS OF   0.0004 % OF UNITARITY
+
+ 2.2555390946308822E+14 6.670445050356016E+9 2.220446049250313E-16
+ Reaction Xsec    31.5+/32 @ 3 =   0.026 , Out:   0.000#   0.457#   0.026f
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.8 DIGITS, SO EXPECT ERRORS OF   0.0098 % OF UNITARITY
+
+ 5.758476981180303E+14 1.4718353114451984E+11 2.220446049250313E-16
+ Reaction Xsec    31.5-/31 @ 1 =   0.038 , Out:   0.000#   5.866/   0.033f
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.4 DIGITS, SO EXPECT ERRORS OF   0.0002 % OF UNITARITY
+
+ 2.4850979390447434E+14 3.279308299796414E+9 2.220446049250313E-16
+ Reaction Xsec    31.5-/31 @ 2 =   0.038 , Out:   0.000#   9.267#   0.038f
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.2 DIGITS, SO EXPECT ERRORS OF   0.0004 % OF UNITARITY
+
+ 1.4516019724769328E+14 6.461032729714433E+9 2.220446049250313E-16
+ Reaction Xsec    31.5-/33 @ 3 =   0.017 , Out:   0.000#   1.542#   0.017f
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.5 DIGITS, SO EXPECT ERRORS OF   0.0179 % OF UNITARITY
+
+ 2.961504207395875E+14 2.6834100575576794E+11 2.220446049250313E-16
+ Reaction Xsec    32.5+/32 @ 1 =   0.026 , Out:   0.000#   0.064/   0.026f
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.6 DIGITS, SO EXPECT ERRORS OF   0.0004 % OF UNITARITY
+
+ 4.4094137703113925E+14 5.699833085611004E+9 2.220446049250313E-16
+ Reaction Xsec    32.5+/32 @ 2 =   0.026 , Out:   0.000#   0.248#   0.026f
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.5 DIGITS, SO EXPECT ERRORS OF   0.0002 % OF UNITARITY
+
+ 3.1311883118940156E+14 2.494519476407265E+9 2.220446049250313E-16
+ Reaction Xsec    32.5+/34 @ 3 =   0.012 , Out:   0.000#   0.045#   0.012f
+ Reaction Xsec    32.5-/31 @ 1 =   0.040 , Out:   0.000#   0.025/   0.040f
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.5 DIGITS, SO EXPECT ERRORS OF   0.1441 % OF UNITARITY
+
+ 2.870983677979347E+14 2.1627203064521594E+12 2.220446049250313E-16
+ Reaction Xsec    32.5-/33 @ 2 =   0.018 , Out:   0.000#   4.387/   0.013f
+0****** WARNING : ACCURACY LOSS IN ERWIN = 14.2 DIGITS, SO EXPECT ERRORS OF   0.0031 % OF UNITARITY
+
+ 1.6885841061355734E+14 4.684219170965281E+10 2.220446049250313E-16
+ Reaction Xsec    32.5-/33 @ 3 =   0.018 , Out:   0.000#   6.108#   0.018f
+ Finished all CC sets @  6.046875
+0CUMULATIVE REACTION cross section                 = 1090.81060  <L> =    10.74  <L**2> =    138.5
+0CUMULATIVE outgoing cross sections in partition 1 :    0.00000
+0CUMULATIVE outgoing cross sections in partition 2 :    0.27139
+0Cumulative ABSORBTION by Imaginary Potentials     = 1090.53921  <L> =    10.74  <L**2> =    138.5
+   Fusion for specific 6Li      M-states : 1086.039060 1090.529795 1086.039060
+0CUMULATIVE OUTGOING cross section                 =    0.27139
+ To convert to S-factors (MeV.mb = keV.b),  multiply by  7.8489E+05
+
+
+ CROSS SECTIONS FOR OUTGOING 6Li      & 19F      in state # 1 with spins & parities 1.0  + & 0.5  +;  0
+
+
+ CROSS SECTIONS FOR OUTGOING d        & 23Na     in state # 1 with spins & parities 1.0  + & 1.5  +;  0
+
+     0.00 deg.: X-S =     0.298398 mb/sr,
++                                         REAC   2.7139E-01 mb
+     0.20 deg.: X-S =     0.297840 mb/sr,
+     0.40 deg.: X-S =     0.296173 mb/sr,
+     0.60 deg.: X-S =     0.293418 mb/sr,
+     0.80 deg.: X-S =     0.289609 mb/sr,
+     1.00 deg.: X-S =     0.284793 mb/sr,
+     1.20 deg.: X-S =     0.279032 mb/sr,
+     1.40 deg.: X-S =     0.272397 mb/sr,
+     1.60 deg.: X-S =     0.264968 mb/sr,
+     1.80 deg.: X-S =     0.256838 mb/sr,
+     2.00 deg.: X-S =     0.248104 mb/sr,
+     2.20 deg.: X-S =     0.238872 mb/sr,
+     2.40 deg.: X-S =     0.229251 mb/sr,
+     2.60 deg.: X-S =     0.219353 mb/sr,
+     2.80 deg.: X-S =     0.209292 mb/sr,
+     3.00 deg.: X-S =     0.199181 mb/sr,
+     3.20 deg.: X-S =     0.189133 mb/sr,
+     3.40 deg.: X-S =     0.179254 mb/sr,
+     3.60 deg.: X-S =     0.169648 mb/sr,
+     3.80 deg.: X-S =     0.160409 mb/sr,
+     4.00 deg.: X-S =     0.151628 mb/sr,
+     4.20 deg.: X-S =     0.143381 mb/sr,
+     4.40 deg.: X-S =     0.135739 mb/sr,
+     4.60 deg.: X-S =     0.128759 mb/sr,
+     4.80 deg.: X-S =     0.122486 mb/sr,
+     5.00 deg.: X-S =     0.116956 mb/sr,
+     5.20 deg.: X-S =     0.112189 mb/sr,
+     5.40 deg.: X-S =     0.108194 mb/sr,
+     5.60 deg.: X-S =     0.104968 mb/sr,
+     5.80 deg.: X-S =     0.102496 mb/sr,
+     6.00 deg.: X-S =     0.100750 mb/sr,
+     6.20 deg.: X-S =     0.099692 mb/sr,
+     6.40 deg.: X-S =     0.099276 mb/sr,
+     6.60 deg.: X-S =     0.099443 mb/sr,
+     6.80 deg.: X-S =     0.100130 mb/sr,
+     7.00 deg.: X-S =     0.101265 mb/sr,
+     7.20 deg.: X-S =     0.102771 mb/sr,
+     7.40 deg.: X-S =     0.104569 mb/sr,
+     7.60 deg.: X-S =     0.106576 mb/sr,
+     7.80 deg.: X-S =     0.108707 mb/sr,
+     8.00 deg.: X-S =     0.110881 mb/sr,
+     8.20 deg.: X-S =     0.113016 mb/sr,
+     8.40 deg.: X-S =     0.115034 mb/sr,
+     8.60 deg.: X-S =     0.116863 mb/sr,
+     8.80 deg.: X-S =     0.118434 mb/sr,
+     9.00 deg.: X-S =     0.119688 mb/sr,
+     9.20 deg.: X-S =     0.120572 mb/sr,
+     9.40 deg.: X-S =     0.121042 mb/sr,
+     9.60 deg.: X-S =     0.121063 mb/sr,
+     9.80 deg.: X-S =     0.120610 mb/sr,
+    10.00 deg.: X-S =     0.119668 mb/sr,
+    10.20 deg.: X-S =     0.118232 mb/sr,
+    10.40 deg.: X-S =     0.116306 mb/sr,
+    10.60 deg.: X-S =     0.113906 mb/sr,
+    10.80 deg.: X-S =     0.111055 mb/sr,
+    11.00 deg.: X-S =     0.107785 mb/sr,
+    11.20 deg.: X-S =     0.104138 mb/sr,
+    11.40 deg.: X-S =     0.100161 mb/sr,
+    11.60 deg.: X-S =     0.095906 mb/sr,
+    11.80 deg.: X-S =     0.091434 mb/sr,
+    12.00 deg.: X-S =     0.086807 mb/sr,
+    12.20 deg.: X-S =     0.082089 mb/sr,
+    12.40 deg.: X-S =     0.077349 mb/sr,
+    12.60 deg.: X-S =     0.072651 mb/sr,
+    12.80 deg.: X-S =     0.068063 mb/sr,
+    13.00 deg.: X-S =     0.063648 mb/sr,
+    13.20 deg.: X-S =     0.059466 mb/sr,
+    13.40 deg.: X-S =     0.055573 mb/sr,
+    13.60 deg.: X-S =     0.052018 mb/sr,
+    13.80 deg.: X-S =     0.048846 mb/sr,
+    14.00 deg.: X-S =     0.046094 mb/sr,
+    14.20 deg.: X-S =     0.043791 mb/sr,
+    14.40 deg.: X-S =     0.041958 mb/sr,
+    14.60 deg.: X-S =     0.040608 mb/sr,
+    14.80 deg.: X-S =     0.039745 mb/sr,
+    15.00 deg.: X-S =     0.039367 mb/sr,
+    15.20 deg.: X-S =     0.039461 mb/sr,
+    15.40 deg.: X-S =     0.040006 mb/sr,
+    15.60 deg.: X-S =     0.040977 mb/sr,
+    15.80 deg.: X-S =     0.042338 mb/sr,
+    16.00 deg.: X-S =     0.044051 mb/sr,
+    16.20 deg.: X-S =     0.046070 mb/sr,
+    16.40 deg.: X-S =     0.048347 mb/sr,
+    16.60 deg.: X-S =     0.050830 mb/sr,
+    16.80 deg.: X-S =     0.053464 mb/sr,
+    17.00 deg.: X-S =     0.056194 mb/sr,
+    17.20 deg.: X-S =     0.058965 mb/sr,
+    17.40 deg.: X-S =     0.061724 mb/sr,
+    17.60 deg.: X-S =     0.064419 mb/sr,
+    17.80 deg.: X-S =     0.067001 mb/sr,
+    18.00 deg.: X-S =     0.069426 mb/sr,
+    18.20 deg.: X-S =     0.071654 mb/sr,
+    18.40 deg.: X-S =     0.073652 mb/sr,
+    18.60 deg.: X-S =     0.075390 mb/sr,
+    18.80 deg.: X-S =     0.076847 mb/sr,
+    19.00 deg.: X-S =     0.078009 mb/sr,
+    19.20 deg.: X-S =     0.078866 mb/sr,
+    19.40 deg.: X-S =     0.079419 mb/sr,
+    19.60 deg.: X-S =     0.079672 mb/sr,
+    19.80 deg.: X-S =     0.079639 mb/sr,
+    20.00 deg.: X-S =     0.079335 mb/sr,
+    20.20 deg.: X-S =     0.078786 mb/sr,
+    20.40 deg.: X-S =     0.078020 mb/sr,
+    20.60 deg.: X-S =     0.077068 mb/sr,
+    20.80 deg.: X-S =     0.075968 mb/sr,
+    21.00 deg.: X-S =     0.074756 mb/sr,
+    21.20 deg.: X-S =     0.073474 mb/sr,
+    21.40 deg.: X-S =     0.072161 mb/sr,
+    21.60 deg.: X-S =     0.070858 mb/sr,
+    21.80 deg.: X-S =     0.069603 mb/sr,
+    22.00 deg.: X-S =     0.068433 mb/sr,
+    22.20 deg.: X-S =     0.067383 mb/sr,
+    22.40 deg.: X-S =     0.066482 mb/sr,
+    22.60 deg.: X-S =     0.065757 mb/sr,
+    22.80 deg.: X-S =     0.065229 mb/sr,
+    23.00 deg.: X-S =     0.064914 mb/sr,
+    23.20 deg.: X-S =     0.064822 mb/sr,
+    23.40 deg.: X-S =     0.064959 mb/sr,
+    23.60 deg.: X-S =     0.065323 mb/sr,
+    23.80 deg.: X-S =     0.065909 mb/sr,
+    24.00 deg.: X-S =     0.066703 mb/sr,
+    24.20 deg.: X-S =     0.067689 mb/sr,
+    24.40 deg.: X-S =     0.068844 mb/sr,
+    24.60 deg.: X-S =     0.070142 mb/sr,
+    24.80 deg.: X-S =     0.071554 mb/sr,
+    25.00 deg.: X-S =     0.073046 mb/sr,
+    25.20 deg.: X-S =     0.074584 mb/sr,
+    25.40 deg.: X-S =     0.076130 mb/sr,
+    25.60 deg.: X-S =     0.077649 mb/sr,
+    25.80 deg.: X-S =     0.079103 mb/sr,
+    26.00 deg.: X-S =     0.080457 mb/sr,
+    26.20 deg.: X-S =     0.081677 mb/sr,
+    26.40 deg.: X-S =     0.082731 mb/sr,
+    26.60 deg.: X-S =     0.083591 mb/sr,
+    26.80 deg.: X-S =     0.084234 mb/sr,
+    27.00 deg.: X-S =     0.084639 mb/sr,
+    27.20 deg.: X-S =     0.084791 mb/sr,
+    27.40 deg.: X-S =     0.084680 mb/sr,
+    27.60 deg.: X-S =     0.084301 mb/sr,
+    27.80 deg.: X-S =     0.083656 mb/sr,
+    28.00 deg.: X-S =     0.082749 mb/sr,
+    28.20 deg.: X-S =     0.081592 mb/sr,
+    28.40 deg.: X-S =     0.080201 mb/sr,
+    28.60 deg.: X-S =     0.078596 mb/sr,
+    28.80 deg.: X-S =     0.076804 mb/sr,
+    29.00 deg.: X-S =     0.074851 mb/sr,
+    29.20 deg.: X-S =     0.072770 mb/sr,
+    29.40 deg.: X-S =     0.070594 mb/sr,
+    29.60 deg.: X-S =     0.068359 mb/sr,
+    29.80 deg.: X-S =     0.066102 mb/sr,
+    30.00 deg.: X-S =     0.063858 mb/sr,
+    30.20 deg.: X-S =     0.061665 mb/sr,
+    30.40 deg.: X-S =     0.059557 mb/sr,
+    30.60 deg.: X-S =     0.057566 mb/sr,
+    30.80 deg.: X-S =     0.055724 mb/sr,
+    31.00 deg.: X-S =     0.054056 mb/sr,
+    31.20 deg.: X-S =     0.052587 mb/sr,
+    31.40 deg.: X-S =     0.051335 mb/sr,
+    31.60 deg.: X-S =     0.050315 mb/sr,
+    31.80 deg.: X-S =     0.049537 mb/sr,
+    32.00 deg.: X-S =     0.049006 mb/sr,
+    32.20 deg.: X-S =     0.048722 mb/sr,
+    32.40 deg.: X-S =     0.048680 mb/sr,
+    32.60 deg.: X-S =     0.048870 mb/sr,
+    32.80 deg.: X-S =     0.049280 mb/sr,
+    33.00 deg.: X-S =     0.049890 mb/sr,
+    33.20 deg.: X-S =     0.050678 mb/sr,
+    33.40 deg.: X-S =     0.051621 mb/sr,
+    33.60 deg.: X-S =     0.052689 mb/sr,
+    33.80 deg.: X-S =     0.053854 mb/sr,
+    34.00 deg.: X-S =     0.055085 mb/sr,
+    34.20 deg.: X-S =     0.056349 mb/sr,
+    34.40 deg.: X-S =     0.057614 mb/sr,
+    34.60 deg.: X-S =     0.058850 mb/sr,
+    34.80 deg.: X-S =     0.060025 mb/sr,
+    35.00 deg.: X-S =     0.061112 mb/sr,
+    35.20 deg.: X-S =     0.062085 mb/sr,
+    35.40 deg.: X-S =     0.062919 mb/sr,
+    35.60 deg.: X-S =     0.063597 mb/sr,
+    35.80 deg.: X-S =     0.064101 mb/sr,
+    36.00 deg.: X-S =     0.064418 mb/sr,
+    36.20 deg.: X-S =     0.064542 mb/sr,
+    36.40 deg.: X-S =     0.064468 mb/sr,
+    36.60 deg.: X-S =     0.064196 mb/sr,
+    36.80 deg.: X-S =     0.063731 mb/sr,
+    37.00 deg.: X-S =     0.063081 mb/sr,
+    37.20 deg.: X-S =     0.062259 mb/sr,
+    37.40 deg.: X-S =     0.061281 mb/sr,
+    37.60 deg.: X-S =     0.060165 mb/sr,
+    37.80 deg.: X-S =     0.058934 mb/sr,
+    38.00 deg.: X-S =     0.057610 mb/sr,
+    38.20 deg.: X-S =     0.056220 mb/sr,
+    38.40 deg.: X-S =     0.054789 mb/sr,
+    38.60 deg.: X-S =     0.053345 mb/sr,
+    38.80 deg.: X-S =     0.051915 mb/sr,
+    39.00 deg.: X-S =     0.050525 mb/sr,
+    39.20 deg.: X-S =     0.049200 mb/sr,
+    39.40 deg.: X-S =     0.047964 mb/sr,
+    39.60 deg.: X-S =     0.046839 mb/sr,
+    39.80 deg.: X-S =     0.045842 mb/sr,
+    40.00 deg.: X-S =     0.044991 mb/sr,
+    40.20 deg.: X-S =     0.044298 mb/sr,
+    40.40 deg.: X-S =     0.043772 mb/sr,
+    40.60 deg.: X-S =     0.043420 mb/sr,
+    40.80 deg.: X-S =     0.043244 mb/sr,
+    41.00 deg.: X-S =     0.043242 mb/sr,
+    41.20 deg.: X-S =     0.043410 mb/sr,
+    41.40 deg.: X-S =     0.043739 mb/sr,
+    41.60 deg.: X-S =     0.044219 mb/sr,
+    41.80 deg.: X-S =     0.044835 mb/sr,
+    42.00 deg.: X-S =     0.045571 mb/sr,
+    42.20 deg.: X-S =     0.046406 mb/sr,
+    42.40 deg.: X-S =     0.047322 mb/sr,
+    42.60 deg.: X-S =     0.048296 mb/sr,
+    42.80 deg.: X-S =     0.049305 mb/sr,
+    43.00 deg.: X-S =     0.050326 mb/sr,
+    43.20 deg.: X-S =     0.051336 mb/sr,
+    43.40 deg.: X-S =     0.052314 mb/sr,
+    43.60 deg.: X-S =     0.053238 mb/sr,
+    43.80 deg.: X-S =     0.054088 mb/sr,
+    44.00 deg.: X-S =     0.054846 mb/sr,
+    44.20 deg.: X-S =     0.055497 mb/sr,
+    44.40 deg.: X-S =     0.056028 mb/sr,
+    44.60 deg.: X-S =     0.056427 mb/sr,
+    44.80 deg.: X-S =     0.056688 mb/sr,
+    45.00 deg.: X-S =     0.056805 mb/sr,
+    45.20 deg.: X-S =     0.056778 mb/sr,
+    45.40 deg.: X-S =     0.056606 mb/sr,
+    45.60 deg.: X-S =     0.056296 mb/sr,
+    45.80 deg.: X-S =     0.055854 mb/sr,
+    46.00 deg.: X-S =     0.055288 mb/sr,
+    46.20 deg.: X-S =     0.054613 mb/sr,
+    46.40 deg.: X-S =     0.053840 mb/sr,
+    46.60 deg.: X-S =     0.052987 mb/sr,
+    46.80 deg.: X-S =     0.052070 mb/sr,
+    47.00 deg.: X-S =     0.051106 mb/sr,
+    47.20 deg.: X-S =     0.050116 mb/sr,
+    47.40 deg.: X-S =     0.049117 mb/sr,
+    47.60 deg.: X-S =     0.048127 mb/sr,
+    47.80 deg.: X-S =     0.047166 mb/sr,
+    48.00 deg.: X-S =     0.046249 mb/sr,
+    48.20 deg.: X-S =     0.045392 mb/sr,
+    48.40 deg.: X-S =     0.044609 mb/sr,
+    48.60 deg.: X-S =     0.043912 mb/sr,
+    48.80 deg.: X-S =     0.043311 mb/sr,
+    49.00 deg.: X-S =     0.042813 mb/sr,
+    49.20 deg.: X-S =     0.042424 mb/sr,
+    49.40 deg.: X-S =     0.042145 mb/sr,
+    49.60 deg.: X-S =     0.041977 mb/sr,
+    49.80 deg.: X-S =     0.041918 mb/sr,
+    50.00 deg.: X-S =     0.041962 mb/sr,
+    50.20 deg.: X-S =     0.042102 mb/sr,
+    50.40 deg.: X-S =     0.042328 mb/sr,
+    50.60 deg.: X-S =     0.042630 mb/sr,
+    50.80 deg.: X-S =     0.042995 mb/sr,
+    51.00 deg.: X-S =     0.043407 mb/sr,
+    51.20 deg.: X-S =     0.043852 mb/sr,
+    51.40 deg.: X-S =     0.044314 mb/sr,
+    51.60 deg.: X-S =     0.044777 mb/sr,
+    51.80 deg.: X-S =     0.045223 mb/sr,
+    52.00 deg.: X-S =     0.045637 mb/sr,
+    52.20 deg.: X-S =     0.046003 mb/sr,
+    52.40 deg.: X-S =     0.046307 mb/sr,
+    52.60 deg.: X-S =     0.046535 mb/sr,
+    52.80 deg.: X-S =     0.046676 mb/sr,
+    53.00 deg.: X-S =     0.046719 mb/sr,
+    53.20 deg.: X-S =     0.046657 mb/sr,
+    53.40 deg.: X-S =     0.046484 mb/sr,
+    53.60 deg.: X-S =     0.046195 mb/sr,
+    53.80 deg.: X-S =     0.045789 mb/sr,
+    54.00 deg.: X-S =     0.045267 mb/sr,
+    54.20 deg.: X-S =     0.044632 mb/sr,
+    54.40 deg.: X-S =     0.043889 mb/sr,
+    54.60 deg.: X-S =     0.043045 mb/sr,
+    54.80 deg.: X-S =     0.042110 mb/sr,
+    55.00 deg.: X-S =     0.041094 mb/sr,
+    55.20 deg.: X-S =     0.040009 mb/sr,
+    55.40 deg.: X-S =     0.038869 mb/sr,
+    55.60 deg.: X-S =     0.037689 mb/sr,
+    55.80 deg.: X-S =     0.036484 mb/sr,
+    56.00 deg.: X-S =     0.035270 mb/sr,
+    56.20 deg.: X-S =     0.034063 mb/sr,
+    56.40 deg.: X-S =     0.032878 mb/sr,
+    56.60 deg.: X-S =     0.031730 mb/sr,
+    56.80 deg.: X-S =     0.030634 mb/sr,
+    57.00 deg.: X-S =     0.029603 mb/sr,
+    57.20 deg.: X-S =     0.028650 mb/sr,
+    57.40 deg.: X-S =     0.027785 mb/sr,
+    57.60 deg.: X-S =     0.027018 mb/sr,
+    57.80 deg.: X-S =     0.026355 mb/sr,
+    58.00 deg.: X-S =     0.025802 mb/sr,
+    58.20 deg.: X-S =     0.025363 mb/sr,
+    58.40 deg.: X-S =     0.025039 mb/sr,
+    58.60 deg.: X-S =     0.024830 mb/sr,
+    58.80 deg.: X-S =     0.024734 mb/sr,
+    59.00 deg.: X-S =     0.024745 mb/sr,
+    59.20 deg.: X-S =     0.024859 mb/sr,
+    59.40 deg.: X-S =     0.025067 mb/sr,
+    59.60 deg.: X-S =     0.025360 mb/sr,
+    59.80 deg.: X-S =     0.025729 mb/sr,
+    60.00 deg.: X-S =     0.026162 mb/sr,
+    60.20 deg.: X-S =     0.026646 mb/sr,
+    60.40 deg.: X-S =     0.027170 mb/sr,
+    60.60 deg.: X-S =     0.027719 mb/sr,
+    60.80 deg.: X-S =     0.028281 mb/sr,
+    61.00 deg.: X-S =     0.028843 mb/sr,
+    61.20 deg.: X-S =     0.029391 mb/sr,
+    61.40 deg.: X-S =     0.029915 mb/sr,
+    61.60 deg.: X-S =     0.030403 mb/sr,
+    61.80 deg.: X-S =     0.030845 mb/sr,
+    62.00 deg.: X-S =     0.031231 mb/sr,
+    62.20 deg.: X-S =     0.031554 mb/sr,
+    62.40 deg.: X-S =     0.031807 mb/sr,
+    62.60 deg.: X-S =     0.031987 mb/sr,
+    62.80 deg.: X-S =     0.032088 mb/sr,
+    63.00 deg.: X-S =     0.032110 mb/sr,
+    63.20 deg.: X-S =     0.032052 mb/sr,
+    63.40 deg.: X-S =     0.031915 mb/sr,
+    63.60 deg.: X-S =     0.031703 mb/sr,
+    63.80 deg.: X-S =     0.031419 mb/sr,
+    64.00 deg.: X-S =     0.031068 mb/sr,
+    64.20 deg.: X-S =     0.030657 mb/sr,
+    64.40 deg.: X-S =     0.030192 mb/sr,
+    64.60 deg.: X-S =     0.029683 mb/sr,
+    64.80 deg.: X-S =     0.029138 mb/sr,
+    65.00 deg.: X-S =     0.028565 mb/sr,
+    65.20 deg.: X-S =     0.027975 mb/sr,
+    65.40 deg.: X-S =     0.027376 mb/sr,
+    65.60 deg.: X-S =     0.026777 mb/sr,
+    65.80 deg.: X-S =     0.026189 mb/sr,
+    66.00 deg.: X-S =     0.025618 mb/sr,
+    66.20 deg.: X-S =     0.025073 mb/sr,
+    66.40 deg.: X-S =     0.024561 mb/sr,
+    66.60 deg.: X-S =     0.024088 mb/sr,
+    66.80 deg.: X-S =     0.023658 mb/sr,
+    67.00 deg.: X-S =     0.023277 mb/sr,
+    67.20 deg.: X-S =     0.022948 mb/sr,
+    67.40 deg.: X-S =     0.022671 mb/sr,
+    67.60 deg.: X-S =     0.022448 mb/sr,
+    67.80 deg.: X-S =     0.022278 mb/sr,
+    68.00 deg.: X-S =     0.022161 mb/sr,
+    68.20 deg.: X-S =     0.022093 mb/sr,
+    68.40 deg.: X-S =     0.022071 mb/sr,
+    68.60 deg.: X-S =     0.022090 mb/sr,
+    68.80 deg.: X-S =     0.022147 mb/sr,
+    69.00 deg.: X-S =     0.022234 mb/sr,
+    69.20 deg.: X-S =     0.022347 mb/sr,
+    69.40 deg.: X-S =     0.022478 mb/sr,
+    69.60 deg.: X-S =     0.022620 mb/sr,
+    69.80 deg.: X-S =     0.022768 mb/sr,
+    70.00 deg.: X-S =     0.022914 mb/sr,
+    70.20 deg.: X-S =     0.023052 mb/sr,
+    70.40 deg.: X-S =     0.023176 mb/sr,
+    70.60 deg.: X-S =     0.023279 mb/sr,
+    70.80 deg.: X-S =     0.023358 mb/sr,
+    71.00 deg.: X-S =     0.023407 mb/sr,
+    71.20 deg.: X-S =     0.023422 mb/sr,
+    71.40 deg.: X-S =     0.023401 mb/sr,
+    71.60 deg.: X-S =     0.023342 mb/sr,
+    71.80 deg.: X-S =     0.023243 mb/sr,
+    72.00 deg.: X-S =     0.023104 mb/sr,
+    72.20 deg.: X-S =     0.022925 mb/sr,
+    72.40 deg.: X-S =     0.022708 mb/sr,
+    72.60 deg.: X-S =     0.022456 mb/sr,
+    72.80 deg.: X-S =     0.022170 mb/sr,
+    73.00 deg.: X-S =     0.021854 mb/sr,
+    73.20 deg.: X-S =     0.021513 mb/sr,
+    73.40 deg.: X-S =     0.021151 mb/sr,
+    73.60 deg.: X-S =     0.020774 mb/sr,
+    73.80 deg.: X-S =     0.020386 mb/sr,
+    74.00 deg.: X-S =     0.019993 mb/sr,
+    74.20 deg.: X-S =     0.019601 mb/sr,
+    74.40 deg.: X-S =     0.019216 mb/sr,
+    74.60 deg.: X-S =     0.018841 mb/sr,
+    74.80 deg.: X-S =     0.018484 mb/sr,
+    75.00 deg.: X-S =     0.018148 mb/sr,
+    75.20 deg.: X-S =     0.017838 mb/sr,
+    75.40 deg.: X-S =     0.017558 mb/sr,
+    75.60 deg.: X-S =     0.017310 mb/sr,
+    75.80 deg.: X-S =     0.017097 mb/sr,
+    76.00 deg.: X-S =     0.016921 mb/sr,
+    76.20 deg.: X-S =     0.016783 mb/sr,
+    76.40 deg.: X-S =     0.016683 mb/sr,
+    76.60 deg.: X-S =     0.016620 mb/sr,
+    76.80 deg.: X-S =     0.016594 mb/sr,
+    77.00 deg.: X-S =     0.016603 mb/sr,
+    77.20 deg.: X-S =     0.016644 mb/sr,
+    77.40 deg.: X-S =     0.016713 mb/sr,
+    77.60 deg.: X-S =     0.016807 mb/sr,
+    77.80 deg.: X-S =     0.016922 mb/sr,
+    78.00 deg.: X-S =     0.017052 mb/sr,
+    78.20 deg.: X-S =     0.017194 mb/sr,
+    78.40 deg.: X-S =     0.017341 mb/sr,
+    78.60 deg.: X-S =     0.017489 mb/sr,
+    78.80 deg.: X-S =     0.017632 mb/sr,
+    79.00 deg.: X-S =     0.017765 mb/sr,
+    79.20 deg.: X-S =     0.017883 mb/sr,
+    79.40 deg.: X-S =     0.017981 mb/sr,
+    79.60 deg.: X-S =     0.018054 mb/sr,
+    79.80 deg.: X-S =     0.018098 mb/sr,
+    80.00 deg.: X-S =     0.018111 mb/sr,
+    80.20 deg.: X-S =     0.018088 mb/sr,
+    80.40 deg.: X-S =     0.018028 mb/sr,
+    80.60 deg.: X-S =     0.017929 mb/sr,
+    80.80 deg.: X-S =     0.017790 mb/sr,
+    81.00 deg.: X-S =     0.017609 mb/sr,
+    81.20 deg.: X-S =     0.017389 mb/sr,
+    81.40 deg.: X-S =     0.017129 mb/sr,
+    81.60 deg.: X-S =     0.016832 mb/sr,
+    81.80 deg.: X-S =     0.016500 mb/sr,
+    82.00 deg.: X-S =     0.016135 mb/sr,
+    82.20 deg.: X-S =     0.015742 mb/sr,
+    82.40 deg.: X-S =     0.015324 mb/sr,
+    82.60 deg.: X-S =     0.014885 mb/sr,
+    82.80 deg.: X-S =     0.014431 mb/sr,
+    83.00 deg.: X-S =     0.013967 mb/sr,
+    83.20 deg.: X-S =     0.013497 mb/sr,
+    83.40 deg.: X-S =     0.013027 mb/sr,
+    83.60 deg.: X-S =     0.012562 mb/sr,
+    83.80 deg.: X-S =     0.012107 mb/sr,
+    84.00 deg.: X-S =     0.011669 mb/sr,
+    84.20 deg.: X-S =     0.011250 mb/sr,
+    84.40 deg.: X-S =     0.010857 mb/sr,
+    84.60 deg.: X-S =     0.010493 mb/sr,
+    84.80 deg.: X-S =     0.010161 mb/sr,
+    85.00 deg.: X-S =     0.009866 mb/sr,
+    85.20 deg.: X-S =     0.009610 mb/sr,
+    85.40 deg.: X-S =     0.009394 mb/sr,
+    85.60 deg.: X-S =     0.009221 mb/sr,
+    85.80 deg.: X-S =     0.009091 mb/sr,
+    86.00 deg.: X-S =     0.009005 mb/sr,
+    86.20 deg.: X-S =     0.008962 mb/sr,
+    86.40 deg.: X-S =     0.008962 mb/sr,
+    86.60 deg.: X-S =     0.009002 mb/sr,
+    86.80 deg.: X-S =     0.009080 mb/sr,
+    87.00 deg.: X-S =     0.009195 mb/sr,
+    87.20 deg.: X-S =     0.009343 mb/sr,
+    87.40 deg.: X-S =     0.009520 mb/sr,
+    87.60 deg.: X-S =     0.009722 mb/sr,
+    87.80 deg.: X-S =     0.009946 mb/sr,
+    88.00 deg.: X-S =     0.010186 mb/sr,
+    88.20 deg.: X-S =     0.010439 mb/sr,
+    88.40 deg.: X-S =     0.010699 mb/sr,
+    88.60 deg.: X-S =     0.010962 mb/sr,
+    88.80 deg.: X-S =     0.011223 mb/sr,
+    89.00 deg.: X-S =     0.011477 mb/sr,
+    89.20 deg.: X-S =     0.011721 mb/sr,
+    89.40 deg.: X-S =     0.011949 mb/sr,
+    89.60 deg.: X-S =     0.012159 mb/sr,
+    89.80 deg.: X-S =     0.012345 mb/sr,
+    90.00 deg.: X-S =     0.012507 mb/sr,
+ Finished all xsecs @  6.0625
+
+  The following files have been created:
+   3:local copy of User input.            6:standard output.                   
+  12:transfer kernels.                   13:total cross sections/state.        
+  16:tables of cross sections.           35:Astrophysics S-factors  / Ecm.     
+  39:cross sections for each Ecm.        40:all cross sectns. for each Elab.   
+  46:bs wave functions & ANC ratios.     48:concurrency log file.              
+  56:Fusion for each Jtotal.             75:S-factors for lab energies.        
+ 202:Separate cross sections.           
+
+ PARAMETERS : MAXQRN   MFNL   MLOC  LMAX1 MCLIST
+    ALLOWED :      3     81     15     52      6
+    REQUIRED:      1     17     15     36      4
+
+
+ ACCURACY ANALYSIS at    42.000 MeV :
+
+  Elastic h*k = 0.132 so OK       compared with 0.200
+
+   Real(S-el) > 0.01 first at J =       6.5
+   Real(S-el) > 0.10 first at J =       8.5
+   Real(S-el) > 0.50 first at J =      11.5
+   Real(S-el) > 0.90 first at J =      16.5
+   Real(S-el) > 0.99 first at J =      22.5
+   R-turn =    12.93 fm    at J =      32.5
+
+ Forward-angle excitation cut off below   5.588 deg by max JT =      32.5
+                              and below   2.328 deg by max R.
+
+
+ 1: Recommended RNL: non-local width >   5.30 cf:  12.00 fm: OK      
+    Recommended CENTRE: centration   ~  -0.25 cf:  -2.20 fm
+
+ Total CPU  0 time =       6.06 seconds

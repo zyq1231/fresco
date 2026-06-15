@@ -1,0 +1,45 @@
+Search for spectroscopic factor
+NAMELIST
+&FRESCO hcm=0.05 rmatch=30.0 rintp=0.05 hnl=0.10   
+    rnl=12.0 centre=-2.2 rsp=0.0 jtmin=0.0 jtmax=32.0 
+    absend=-0.1 dry=F thmin=0.0 thmax=90.00 thinc=0.2
+    ips=0.0000 it0=0 iter=1 iblock=0 nnu=36   xstabl=1
+    elab=42 /
+
+ &PARTITION namep='6Li' massp=6.0151 zp=3 nex=-1 pwf=T namet='19F' masst=18.998 zt=9 qval=0.0 /
+ &STATES jp=1.0 ptyp=1 ep=0.0 cpot=1 jt=0.5 ptyt=1 et=0.0 fexch=F  /  
+ &PARTITION namep='d' massp=2.0141 zp=1 nex=1 pwf=T namet='23Na' masst=22.989 zt=11 qval=8.993 /         
+ &STATES  jp=1.0 ptyp=1 ep=0.0 cpot=2 jt=1.5 ptyt=1 et=9.43 /     
+ &partition / 
+
+ &pot kp=1 type=0 p(1)=1.48 /
+ &pot kp=1 type=1 p(1:3)=35.5 1.42 0.92 /
+ &pot kp=1 type=2 p(4:6)=38.0 1.71 0.89 /
+
+&pot kp=2 type=0 p(1)=1.30 /
+ &pot kp=2 type=1 p(1:3)=105.0 1.02 0.86 /
+ &pot kp=2 type=2 p(4:6)=87.0 1.42 0.65 /
+ &pot kp=2 type=3 p(1:3)=6.0 1.02 0.86 /
+
+ &pot kp= 3 type= 0  p(1)= 1.3 /  
+ &pot kp= 3 type= 1  p(1:3)= 50.0	1.3	0.65 /          
+
+ &pot kp=4 type=0 p(1)=2.1  /
+ &pot kp=4 type=1 p(1:3)=50.0 2.1 0.60 /
+
+ &pot kp=5 type=0 p(1)=1.30 /
+ &pot kp=5 type=1 p(1:3)=105.0 1.02 0.86 /
+ &pot kp=5 type=2 p(4:6)=87.0 1.42 0.65 /
+ &pot kp=5 type=3 p(1:3)=6.0 1.02 0.86 /
+ &pot /                         
+ 
+ &OVERLAP kn1=1 ic1=2 ic2=1 in=1 nn=2 l=0 sn=0.0 j=0.0 kbpot=3 be=1.474 isc=1 / 
+ &OVERLAP kn1=2 ic1=1 ic2=2 in=2 kind=0 nn=4 l=2 sn=0.0 j=2.0 kbpot=4 be=1.037 isc=1 /
+ &OVERLAP /                                                              
+
+
+ &COUPLING icfrom=1 icto=2 kind=7 ip1=0 ip2=0 ip3=0 / 
+ 
+ &CFP in=1 ib=1 ia=1 kn=1 a=1.0 /
+ &CFP in=2 ib=1 ia=1 kn=2 a=1.0 /
+ &COUPLING /

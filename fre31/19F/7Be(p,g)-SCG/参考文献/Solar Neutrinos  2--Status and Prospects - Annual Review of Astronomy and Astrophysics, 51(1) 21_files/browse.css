@@ -1,0 +1,182 @@
+.browse_journalDisplay {
+    display:block;
+    clear:both;
+}
+.browse_journalDisplay .journalCover {
+    clear:both;
+    float:left;
+    padding:10px 10px 10px 5px;
+}
+.browse_journalDisplay .browseHr {
+  margin:5px;
+}
+.browseByAlphabet .ui_activeTabs-hd {
+    background-color:#D0E3F2;
+
+}
+.browseByAlphabet .ui_activeTabs-hd li.ui_activeTabs-hd-active {
+    background: #E9F2F9;
+    /*display: inline-block;*/
+
+}
+.browseByAlphabet .ui_activeTabs-hd li.ui_activeTabs-hd-active {
+
+    height:20px;
+}
+.browseByAlphabet .ui_activeTabs-hd li.ui_activeTabs-hd-active a {
+    background: #E9F2F9;
+
+    height:22px;
+}
+.browseByAlphabet .ui_activeTabs-hd li a{
+    display:block;
+    padding:0 4px 0 4px;
+    font-size:0.8em;
+    height:23px;
+    line-height:18px;
+}
+.browseByAlphabet .ui_activeTabs-hd li span.jumpToNone {
+    display:block;
+    padding:0 0;
+    font-size:0.8em;
+    height:23px;
+    line-height:18px;
+}
+.browseByAlphabet {
+    margin-top:8px;
+}
+.browseByAlphabet ul.ui_activeTabs-hd {
+    padding:2px 0.3em 0 0.7em;
+}
+.browseByAlphabet .bottomTabs ul.ui_activeTabs-hd {
+    padding:0 0.3em 4px 0.7em;
+
+}
+.browseByAlphabet .bottomTabs ul.ui_activeTabs-hd li {
+    margin:-1px 0 4px 0;
+
+}
+.browseByAlphabet .bottomTabs ul.ui_activeTabs-hd a,
+.browseByAlphabet .bottomTabs .ui_activeTabs-hd li span.jumpToNone {
+    padding-top:3px;
+    height:18px;
+}
+.browseByCategory .ui_activeTabs-hd li.ui_activeTabs-hd-active {
+    background: #D0E3F2;
+
+}
+.browseByCategory .ui_activeTabs-hd .ui_activeTabs-hd-active a {
+    background: #D0E3F2;
+    /*height:20px;*/
+    display:block;
+    padding:1px 5px;
+
+
+}
+#catTabs {
+    border-right: 1px solid #E1E1E1;
+    border-left: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+}
+.browseByCategory .ui_activeTabs .rnd_corners .rnd1,
+.browseByCategory .ui_activeTabs .rnd_corners .rnd2,
+.browseByCategory .ui_activeTabs .rnd_corners .rnd3
+{
+    background:#fff none repeat scroll 0 50%;
+}
+.browseBySection .ui_activeTabs .rnd_corners.tp .rnd1,
+.browseByCategory .ui_activeTabs .rnd_corners.tp .rnd1,
+.browseByAlphabet .ui_activeTabs .rnd_corners.tp .rnd1,
+        .browseBySection .ui_activeTabs .ui_activeTabs-hd-active .rnd_corners.tp .rnd1,
+        .browseByCategory .ui_activeTabs .ui_activeTabs-hd-active .rnd_corners.tp .rnd1,
+        .browseByAlphabet .ui_activeTabs .ui_activeTabs-hd-active .rnd_corners.tp .rnd1
+{
+       margin-top:-2px;
+}
+.browseByCategory .ui_activeTabs .ui_activeTabs-hd-active .rnd_corners .rnd1,
+.browseByCategory .ui_activeTabs .ui_activeTabs-hd-active .rnd_corners .rnd2,
+.browseByCategory .ui_activeTabs .ui_activeTabs-hd-active .rnd_corners .rnd3
+{
+    background:#D0E3F2 none repeat scroll 0 50%;
+}
+
+.browseByAlphabet .ui_activeTabs .rnd_corners .rnd1,
+.browseByAlphabet .ui_activeTabs .rnd_corners .rnd2,
+.browseByAlphabet .ui_activeTabs .rnd_corners .rnd3
+{
+    background:#D0E3F2 none repeat scroll 0 50%;
+}
+.browseByAlphabet .ui_activeTabs .ui_activeTabs-hd-active .rnd_corners .rnd1,
+.browseByAlphabet .ui_activeTabs .ui_activeTabs-hd-active .rnd_corners .rnd2,
+.browseByAlphabet .ui_activeTabs .ui_activeTabs-hd-active .rnd_corners .rnd3
+{
+    background:#E9F2F9 none repeat scroll 0 50%;
+}
+.browseByCategory .ui_activeTabs-hd {
+    background-color:white;
+    height:32px;
+    padding: 6px 0.5em 0 0.5em;
+    font-size:0.9em;
+}
+.browseByCategory .ui_activeTabs-hd li {
+    margin:2px 2px 0;
+    height:20px;
+    /*line-height:33px;*/
+    /*padding:2px 2px 2px 2px;*/
+}
+.browseByCategory .ui_activeTabs-hd li a {
+    height:auto;
+    font-size:0.8em;
+    vertical-align:middle;
+}
+.browseBySection ul.ui_activeTabs-hd {
+    padding-left:0.5em;
+    font-size:0.9em;
+
+}
+.browseBySection ul.ui_activeTabs-hd li a {
+    padding:0 5px 0 5px;
+}
+.browseBySection ul.ui_activeTabs-hd li {
+    margin-left:5px;
+    margin-right:5px;
+}
+.browseBySection .ui_activeTabs-hd li.ui_activeTabs-hd-active {
+    background: white;
+
+}
+.browseBySection .ui_activeTabs-hd li {
+    margin:6px 0 0 0;
+    height:20px;
+    /*line-height:33px;*/
+    /*padding:2px 2px 2px 2px;*/
+}
+
+.journalTile{
+    position:relative;
+}
+.journalImage{
+    display:inline;
+    float:left;
+}
+.browse_journalDisplay .journalInfo .icon{
+display:inline;
+float:left;
+height:100px;
+padding:15px 0;
+}
+.browse_journalDisplay .journalInfo .info{
+    display:inline;
+float:left;
+padding:10px 5px;
+width:325px;
+}
+.browse_journalDisplay .journalInfo .info .name{
+    font-weight:bold;
+}
+.browse_journalDisplay .journalInfo .info .tocLink{
+    font-size:0.8em;
+}
+.browseContent .loginMsg {
+    margin: 10px;
+}

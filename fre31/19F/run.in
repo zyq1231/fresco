@@ -1,0 +1,48 @@
+19F(6Li,d)23Na at 16 MeV
+NAMELIST
+ &FRESCO hcm=0.1 rmatch=30.0
+  rintp=0.1 hnl=0.1 rnl=18 centre=-0.00
+  jtmin=0.0 jtmax=40.0 absend=-1.0 cutl=-2
+  thmin=0.0 thmax=80.0 thinc=0.1
+  ips=0.0010 it0=1 iter=1 iblock=8
+  nnu=24 epc=0.00
+  xstabl=1
+  elab = 16.0 /
+
+ &PARTITION namep='6Li' massp=6.0151  zp=3 nex=-1 pwf=T
+            namet='19F' masst=18.998 zt=9 qval=0.0 /
+ &STATES    jp=1.0 ptyp=1  ep=0.00   cpot=1 jt=0.5 ptyt=1 et=0.0000 /
+
+ &PARTITION namep='d' massp= 2.0141 zp=1 nex=-1 pwf=T
+            namet='23Na' masst=22.989 zt=11 qval=8.993 /
+ &STATES    jp=1 ptyp= 1  ep=0.00   cpot=2 jt=1.5 ptyt=1 et=9.426 /
+
+
+ &POT kp= 1 type= 0  p(1:3)= 19.000  6.00     1.30  /
+ &POT kp= 1 type= 1  p(1:3)= 265.8   1.0002   0.6924 /
+ &POT kp= 1 type= 2  p(4:6)= 19.0    1.23     0.97 /
+ &POT kp= 1 type= 3  p(1:3)= 2.0     1.16     0.65 /
+
+ &POT kp= 2 type= 0  p(1:3)= 8.00  0.00  1.30 /
+ &POT kp= 2 type= 1  p(1:3)= 89.75 1.15  0.76  p(4:6)= 1.34 1.34 0.57 /
+ &POT kp= 2 type= 2  p(4:6)= 10.51 1.34  0.57 /
+ &POT kp= 2 type= 3  p(1:3)= 3.56  0.97  1.01 /
+
+ &POT kp= 3 type= 0 p(1:3)=  1.0     0.0     1.25 /
+ &POT kp= 3 type= 1 p(1:3)= 78       1.25    0.65 /
+
+ &POT kp= 4 type= 0 p(1:3)=  1.0     0.0     1.25 /
+ &POT kp= 4 type= 1 p(1:3)= 78       1.25    0.65 /
+ 
+
+ &OVERLAP kn=1 ic1=1 ic2=2 kind=0
+          nn=1 l=0 sn=1.474 be=1.474 kbpot=3 /
+
+ &OVERLAP kn=2 ic1=1 ic2=2 kind=0
+          nn=3 l=2 sn=1.044 be=1.044 kbpot=4 /
+
+ &OVERLAP /
+
+ &COUPLING icto=2 icfrom=1 kind=1 p1=1 p2=2 p3=1.00 /
+
+ &COUPLING /

@@ -1,0 +1,1054 @@
+ FRESCO - FRES 3.2: Coupled Reaction Channels
+ Assuming NAMELIST input.
+
+ 19F(6Li,d)23Na at 16 MeV                                                        
+
+   0.050  30.000   0.050   0.100   5.000  -0.000   0.000   0.000   0.000   0.000
+
+ Centre-of-mass Range is    602 * 0.0500 fm., Maximum at  30.00 fm., Interpolating NL forms every  0.05 fm.
+ Non - locality width is     51 * 0.1000 fm., Maximum of   5.00 fm., Centred at  0.00 fm.
+ 2-Nucleon Separation of      0 * 0.0500 fm., Maximum of   0.00 fm., Minimum at  0.00 fm.
+ Maximum single particle bins of 30.0000 fm.
+               M,Mint =          601         601
+
+
+ Range of total J is     0.0 <= J <=    50.0 (at least     0.0) and Absorbtion =>    -1.0000 mb.
+ Dry Run = F, CC set limits =  0  0, Relativistic kinematics =  , Both/Far/Near Analyses =  1
+
+ Cross Sections (and up to T0 for 0=projectile) for Theta from   0.1 to  80.0 in steps of  0.1 degrees, DGAM=0,  Coordinates = 0 (Mads)
+
+ Lower Radial Cutoff = maximum of -2.00*L*h &       0.0 fm.,  Lower Cutoff for Couplings =   0.0  fm.
+
+
+ Iterate Couplings between   1 and   1 times, to  0.001 % if sooner.                                          
+  Block solved exactly =   1 chs., with Pade = 0 & Isocen =  =0, NOSOL = F, initwf =  0
+  NL quadrature with   36 Gaussian points, Calculate multipoles up to    56 from   0
+  M-transfers for lp+lt greater than or equal to  6, Angular Integration Cutoff below  0.6944 %
+
+
+ Trace switches are :  CHANS =  0, LISTCC =  0, TRENEG =  0, CDETR =  0, SMATS =  0, XSTABL =  1, NLPL =  0
+
+                       WAVES =  0, LAMPL =  0, VEFF =  0, KFUS =  0, WDISK =  0, BPM =  0, MELFIL =  0
+
+                       CDCC =  0, NFUS =  0
+
+ Using unit mass = 1.000000 amu and 1/fine-structure constant = 137.03599 ( 1.000000 * true ) with hc = 197.32705 MeV.fm,
+  thus 2*amu/hbar^2 = 0.0478450 = 1/20.9008 and Coulomb constant = 0.1574855 so e^2 = 1.43997, and nuclear magneton= 0.1261183
+
+ Now pre-scan input and save to file 3
+
+
+
+ *********** PARTITION NUMBER  1 ******************************************************************************************
+
+   PROJ=6Li        MASS=  6.0151 Z=   3.0,        # STATES=   -1T, TARG=19F      MASS= 18.9980 Z=   9.0,     Q-VALUE =   0.0000 MEV.
+
+     1:  J= 1.0+ (B# 1), E=  0.0000, K= 0.0              Potl#  1       J= 0.5+ (B# 1), E=  0.0000, K= 0.5    
+
+
+ *********** PARTITION NUMBER  2 ******************************************************************************************
+
+   PROJ=d          MASS=  2.0141 Z=   1.0,        # STATES=    1T, TARG=23Na     MASS= 22.9890 Z=  11.0,     Q-VALUE =   8.9930 MEV.
+
+     1:  J= 1.0+ (B# 1), E=  0.0000, K= 0.0              Potl#  2       J= 1.5- (B#-1), E=  9.4300, K= 0.5    
+
+
+ ************************************************************************************************************************************
+
+ The following POTENTIALS are defined :
+
+  KP#       TYPE      IT    SHAPE      at     V1        r1        a1        V2        r2        a2        A-in     A-used
+
+
+                                            A#1       A#2        r0c       ac                                                h @ 1
+    1    0=Coulomb       0=CHARGE (WS)  1    19.000     6.000    1.3000    0.0000    0.0000    0.0000     0.000    90.248   0.05000
+
+    1    1=Volume        0=Woods-Saxon  2  278.8200    1.1200    0.8140    0.0000    0.0000    0.0000     0.000    90.248
+
+    1    1=Volume        0=Woods-Saxon  3    0.0000    0.0000    0.0000   30.1200    1.5370    0.7260     0.000    90.248
+
+    1    2=Surface       0=Woods-Saxon  4    0.0000    0.0000    0.0000   13.4700    1.3110    0.9390     0.000    90.248
+   --------------------------------------------------------------------------------------------------------------------
+
+                                            A#1       A#2        r0c       ac                                                h @ 2
+    2    0=Coulomb       0=CHARGE (WS)  5    23.000     2.000    1.3000    0.0000    0.0000    0.0000     0.000    69.112   0.05000
+
+    2    1=Volume        0=Woods-Saxon  6   89.7500    1.1500    0.7600    1.3400    1.3400    0.5700     0.000    69.112
+
+    2    2=Surface       0=Woods-Saxon  7   10.5100    1.3400    0.5700    0.0000    0.0000    0.0000     0.000    69.112
+
+    2    3=Projtl S.O.   0=Woods-Saxon  8    3.5600    0.9700    1.0100    0.0000    0.0000    0.0000     0.000    69.112
+   --------------------------------------------------------------------------------------------------------------------
+
+                                            A#1       A#2        r0c       ac                                                h @ 0
+    3    0=Coulomb       0=CHARGE (WS)  9     1.250     0.000    0.0000    0.0000    0.0000    0.0000     0.000     1.250   0.05000
+
+    3    1=Volume        0=Woods-Saxon 10   76.0000    1.2500    0.6500    0.0000    0.0000    0.0000     0.000     1.250
+   --------------------------------------------------------------------------------------------------------------------
+
+                                            A#1       A#2        r0c       ac                                                h @ 0
+    4    0=Coulomb       0=CHARGE (WS) 11     1.250     0.000    0.0000    0.0000    0.0000    0.0000     0.000     1.250   0.05000
+
+    4    1=Volume        0=Woods-Saxon 12   70.0000    1.2500    0.6500    0.0000    0.0000    0.0000     0.000     1.250
+   --------------------------------------------------------------------------------------------------------------------
+
+                                            A#1       A#2        r0c       ac                                                h @ 0
+    5    0=Coulomb       0=CHARGE (WS) 13    23.000     2.000    1.3000    0.0000    0.0000    0.0000     0.000    69.112   0.05000
+
+    5    1=Volume        0=Woods-Saxon 14   89.7500    1.1500    0.7600    1.3400    1.3400    0.5700     0.000    69.112
+
+    5    2=Surface       0=Woods-Saxon 15   10.5100    1.3400    0.5700    0.0000    0.0000    0.0000     0.000    69.112
+
+    5    3=Projtl S.O.   0=Woods-Saxon 16    3.5600    0.9700    1.0100    0.0000    0.0000    0.0000     0.000    69.112
+
+
+ ************************************************************************************************************************************
+
+ The following SINGLE-PARTICLE FORM FACTORS are constructed :
+
+
+ No.   P1 P2 IN KIND T N  L  S1 IA J/S  IB BIND XFER  BE    SC PC FIL AFRAC Adjust  to  Z  Mass   K     Norm    rms      D0     D   ANC/Gsp
+   NO SUITABLE CHANNELS FOUND ????  INPUT DATA WERE:
+  1  0 1 2 1 0   1 0 0 1.0 0 0.0 0  3  0  1.4740 -1  2  0  0  0.0000
+  ### VR  potential at   1 permanently scaled by   1.0000
+  ### VR  potential at   2 permanently scaled by   1.0000
+  ### VR  potential at   3 permanently scaled by   1.0000
+  ### VR  potential at   4 permanently scaled by   1.0000
+  ### VR  potential at   5 permanently scaled by   1.0000
+  ### VR  potential at   6 permanently scaled by   1.0000
+  ### VR  potential at   7 permanently scaled by   1.0000
+  ### VR  potential at   8 permanently scaled by   1.0000
+  ### VR  potential at   9 permanently scaled by   1.0000
+  ### VR  potential at  10 permanently scaled by   1.0000
+  ### VR  potential at  11 permanently scaled by   1.0000
+  ### VR  potential at  12 permanently scaled by   1.0000
+  ### VR  potential at  13 permanently scaled by   1.0000
+  ### VR  potential at  14 permanently scaled by   1.0000
+  ### VR  potential at  15 permanently scaled by   1.0000
+
+ No.   P1 P2 IN KIND T N  L  S1 IA J/S  IB BIND XFER  BE    SC PC FIL AFRAC Adjust  to  Z  Mass   K     Norm    rms      D0     D   ANC/Gsp
+
+    2:  1  2  2  0     4  1 1.0  1 1.0   0   4   0   8.9930 -1  0  0 0.0000 VR  5.4617; 2. 3.991 1.1913 1.0000  2.648   71.8 -512.3 -2.13E+03
+  ### VR  potential at  12 permanently scaled by   5.4617
+
+ ************************************************************************************************************************************
+
+ TWO-way COUPLING # 1 for partitions  2 <-  1 of KIND  7,   1  2  5 -1 -1 & P1,P2 =    0.0000   0.0000 : for J <=    50.5 & R <  29.9 fm.
+
+
+ data =  2  1  1  2  1.0000,  so  < [23Na     #  1] / [19F      #  1]  * Eigen-form #  2>  =   1.0000            BE =  8.993     2
+0NO COUPLED PAIRS OF FORM FACTORS ARE FOUND!!!
+
+0Use with 6Li      of the  2 form factors are
+  F F
+0Use with 19F      of the  2 form factors are
+  F T
+ STOPPING, as some coupling failures
+    See WARNING messages above
+
+ ************************************************************************************************************************************
+
+ TWO-way COUPLING # 2 for partitions  2 <-  1 of KIND  8,   1  0  0  0  0 & P1,P2 =    0.0000   0.0000 : for J <=    50.5 & R <  29.9 fm.
+
+0NO COUPLED PAIRS OF FORM FACTORS ARE FOUND!!!
+
+0Use with 6Li      of the  2 form factors are
+  F F
+0Use with 19F      of the  2 form factors are
+  F T
+ STOPPING, as some coupling failures
+    See WARNING messages above
+
+ Incoming partition  1 in excitation state # 1,   Laboratory Energy given for partition  1 Nucleus 1 in Excitation pair 1
+
+0Lab. ENERGY ranges :
+
+   from    16.0000     to   0.00000     in     0 intervals
+   from    0.00000     to   0.00000     in     0 intervals
+   from    0.00000     to   0.00000     in     0 intervals
+
+ Largest real,imaginary parts of any form factor at R=   29.50 are   4.88E-02  6.42E-10 MeV
+ Finished all Couplings @    1.56250000E-02          16
+
+ Symmetric Hamiltonian
+1***********************************************************************************************************************************
+************************************************************************************************************************************
+
+        INCOMING 6Li      ;    LABORATORY 6Li      ENERGY =   16.000     MeV.
+
+ ***********************************************************************************************************************************
+ ***********************************************************************************************************************************
+
+ Allocate arrays for            5  channels, of which            5  need wfs.
+ Allocate arrays for            8  channels, of which            8  need wfs.
+ Allocate arrays for            9  channels, of which            9  need wfs.
+ Reaction Xsec    47.5+/46 @ 1 =   0.113#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    47.5+/48 @ 2 =   0.019#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    47.5+/48 @ 3 =   0.019#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    47.5-/47 @ 1 =   0.048#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    47.5-/47 @ 2 =   0.048#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    47.5-/49 @ 3 =   0.007#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    48.5+/48 @ 1 =   0.019#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    48.5+/48 @ 2 =   0.019#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    48.5+/50 @ 3 =   0.003#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    48.5-/47 @ 1 =   0.049#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    48.5-/49 @ 2 =   0.007#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    48.5-/49 @ 3 =   0.007#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    49.5+/48 @ 1 =   0.020#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    49.5+/50 @ 2 =   0.003#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    49.5+/50 @ 3 =   0.003#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    49.5-/49 @ 1 =   0.007#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    49.5-/49 @ 2 =   0.007#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    49.5-/51 @ 3 =   0.001#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    50.5+/50 @ 1 =   0.003#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    50.5+/50 @ 2 =   0.003#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    50.5+/52 @ 3 =   0.000#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    50.5-/49 @ 1 =   0.008#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    50.5-/51 @ 2 =   0.001#, Out:   0.000#   0.000#   0.000f
+ Reaction Xsec    50.5-/51 @ 3 =   0.001#, Out:   0.000#   0.000#   0.000f
+ Finished all CC sets @    4.68750000E-02
+0CUMULATIVE REACTION cross section                 = 2667.72848  <L> =     9.94  <L**2> =    115.0
+0CUMULATIVE outgoing cross sections in partition 1 :    0.00000
+0CUMULATIVE outgoing cross sections in partition 2 :    0.00000
+0Cumulative ABSORBTION by Imaginary Potentials     = 2667.72848  <L> =     9.94  <L**2> =    115.0
+   Fusion for specific 6Li      M-states : 2655.903402 2667.728485 2655.903402
+0CUMULATIVE OUTGOING cross section                 =    0.00000
+ To convert to S-factors (MeV.mb = keV.b),  multiply by  1.5810E+08
+
+
+ CROSS SECTIONS FOR OUTGOING 6Li      & 19F      in state #   1 with spins & parities 1.0  + &  0.5  +;  0
+
+
+ CROSS SECTIONS FOR OUTGOING d        & 23Na     in state #   1 with spins & parities 1.0  + &  1.5  -;  0
+
+     0.10 deg.: X-S =   0.0000E+00 mb/sr,
++                                         REAC   0.0000E+00 mb
+     0.20 deg.: X-S =   0.0000E+00 mb/sr,
+     0.30 deg.: X-S =   0.0000E+00 mb/sr,
+     0.40 deg.: X-S =   0.0000E+00 mb/sr,
+     0.50 deg.: X-S =   0.0000E+00 mb/sr,
+     0.60 deg.: X-S =   0.0000E+00 mb/sr,
+     0.70 deg.: X-S =   0.0000E+00 mb/sr,
+     0.80 deg.: X-S =   0.0000E+00 mb/sr,
+     0.90 deg.: X-S =   0.0000E+00 mb/sr,
+     1.00 deg.: X-S =   0.0000E+00 mb/sr,
+     1.10 deg.: X-S =   0.0000E+00 mb/sr,
+     1.20 deg.: X-S =   0.0000E+00 mb/sr,
+     1.30 deg.: X-S =   0.0000E+00 mb/sr,
+     1.40 deg.: X-S =   0.0000E+00 mb/sr,
+     1.50 deg.: X-S =   0.0000E+00 mb/sr,
+     1.60 deg.: X-S =   0.0000E+00 mb/sr,
+     1.70 deg.: X-S =   0.0000E+00 mb/sr,
+     1.80 deg.: X-S =   0.0000E+00 mb/sr,
+     1.90 deg.: X-S =   0.0000E+00 mb/sr,
+     2.00 deg.: X-S =   0.0000E+00 mb/sr,
+     2.10 deg.: X-S =   0.0000E+00 mb/sr,
+     2.20 deg.: X-S =   0.0000E+00 mb/sr,
+     2.30 deg.: X-S =   0.0000E+00 mb/sr,
+     2.40 deg.: X-S =   0.0000E+00 mb/sr,
+     2.50 deg.: X-S =   0.0000E+00 mb/sr,
+     2.60 deg.: X-S =   0.0000E+00 mb/sr,
+     2.70 deg.: X-S =   0.0000E+00 mb/sr,
+     2.80 deg.: X-S =   0.0000E+00 mb/sr,
+     2.90 deg.: X-S =   0.0000E+00 mb/sr,
+     3.00 deg.: X-S =   0.0000E+00 mb/sr,
+     3.10 deg.: X-S =   0.0000E+00 mb/sr,
+     3.20 deg.: X-S =   0.0000E+00 mb/sr,
+     3.30 deg.: X-S =   0.0000E+00 mb/sr,
+     3.40 deg.: X-S =   0.0000E+00 mb/sr,
+     3.50 deg.: X-S =   0.0000E+00 mb/sr,
+     3.60 deg.: X-S =   0.0000E+00 mb/sr,
+     3.70 deg.: X-S =   0.0000E+00 mb/sr,
+     3.80 deg.: X-S =   0.0000E+00 mb/sr,
+     3.90 deg.: X-S =   0.0000E+00 mb/sr,
+     4.00 deg.: X-S =   0.0000E+00 mb/sr,
+     4.10 deg.: X-S =   0.0000E+00 mb/sr,
+     4.20 deg.: X-S =   0.0000E+00 mb/sr,
+     4.30 deg.: X-S =   0.0000E+00 mb/sr,
+     4.40 deg.: X-S =   0.0000E+00 mb/sr,
+     4.50 deg.: X-S =   0.0000E+00 mb/sr,
+     4.60 deg.: X-S =   0.0000E+00 mb/sr,
+     4.70 deg.: X-S =   0.0000E+00 mb/sr,
+     4.80 deg.: X-S =   0.0000E+00 mb/sr,
+     4.90 deg.: X-S =   0.0000E+00 mb/sr,
+     5.00 deg.: X-S =   0.0000E+00 mb/sr,
+     5.10 deg.: X-S =   0.0000E+00 mb/sr,
+     5.20 deg.: X-S =   0.0000E+00 mb/sr,
+     5.30 deg.: X-S =   0.0000E+00 mb/sr,
+     5.40 deg.: X-S =   0.0000E+00 mb/sr,
+     5.50 deg.: X-S =   0.0000E+00 mb/sr,
+     5.60 deg.: X-S =   0.0000E+00 mb/sr,
+     5.70 deg.: X-S =   0.0000E+00 mb/sr,
+     5.80 deg.: X-S =   0.0000E+00 mb/sr,
+     5.90 deg.: X-S =   0.0000E+00 mb/sr,
+     6.00 deg.: X-S =   0.0000E+00 mb/sr,
+     6.10 deg.: X-S =   0.0000E+00 mb/sr,
+     6.20 deg.: X-S =   0.0000E+00 mb/sr,
+     6.30 deg.: X-S =   0.0000E+00 mb/sr,
+     6.40 deg.: X-S =   0.0000E+00 mb/sr,
+     6.50 deg.: X-S =   0.0000E+00 mb/sr,
+     6.60 deg.: X-S =   0.0000E+00 mb/sr,
+     6.70 deg.: X-S =   0.0000E+00 mb/sr,
+     6.80 deg.: X-S =   0.0000E+00 mb/sr,
+     6.90 deg.: X-S =   0.0000E+00 mb/sr,
+     7.00 deg.: X-S =   0.0000E+00 mb/sr,
+     7.10 deg.: X-S =   0.0000E+00 mb/sr,
+     7.20 deg.: X-S =   0.0000E+00 mb/sr,
+     7.30 deg.: X-S =   0.0000E+00 mb/sr,
+     7.40 deg.: X-S =   0.0000E+00 mb/sr,
+     7.50 deg.: X-S =   0.0000E+00 mb/sr,
+     7.60 deg.: X-S =   0.0000E+00 mb/sr,
+     7.70 deg.: X-S =   0.0000E+00 mb/sr,
+     7.80 deg.: X-S =   0.0000E+00 mb/sr,
+     7.90 deg.: X-S =   0.0000E+00 mb/sr,
+     8.00 deg.: X-S =   0.0000E+00 mb/sr,
+     8.10 deg.: X-S =   0.0000E+00 mb/sr,
+     8.20 deg.: X-S =   0.0000E+00 mb/sr,
+     8.30 deg.: X-S =   0.0000E+00 mb/sr,
+     8.40 deg.: X-S =   0.0000E+00 mb/sr,
+     8.50 deg.: X-S =   0.0000E+00 mb/sr,
+     8.60 deg.: X-S =   0.0000E+00 mb/sr,
+     8.70 deg.: X-S =   0.0000E+00 mb/sr,
+     8.80 deg.: X-S =   0.0000E+00 mb/sr,
+     8.90 deg.: X-S =   0.0000E+00 mb/sr,
+     9.00 deg.: X-S =   0.0000E+00 mb/sr,
+     9.10 deg.: X-S =   0.0000E+00 mb/sr,
+     9.20 deg.: X-S =   0.0000E+00 mb/sr,
+     9.30 deg.: X-S =   0.0000E+00 mb/sr,
+     9.40 deg.: X-S =   0.0000E+00 mb/sr,
+     9.50 deg.: X-S =   0.0000E+00 mb/sr,
+     9.60 deg.: X-S =   0.0000E+00 mb/sr,
+     9.70 deg.: X-S =   0.0000E+00 mb/sr,
+     9.80 deg.: X-S =   0.0000E+00 mb/sr,
+     9.90 deg.: X-S =   0.0000E+00 mb/sr,
+    10.00 deg.: X-S =   0.0000E+00 mb/sr,
+    10.10 deg.: X-S =   0.0000E+00 mb/sr,
+    10.20 deg.: X-S =   0.0000E+00 mb/sr,
+    10.30 deg.: X-S =   0.0000E+00 mb/sr,
+    10.40 deg.: X-S =   0.0000E+00 mb/sr,
+    10.50 deg.: X-S =   0.0000E+00 mb/sr,
+    10.60 deg.: X-S =   0.0000E+00 mb/sr,
+    10.70 deg.: X-S =   0.0000E+00 mb/sr,
+    10.80 deg.: X-S =   0.0000E+00 mb/sr,
+    10.90 deg.: X-S =   0.0000E+00 mb/sr,
+    11.00 deg.: X-S =   0.0000E+00 mb/sr,
+    11.10 deg.: X-S =   0.0000E+00 mb/sr,
+    11.20 deg.: X-S =   0.0000E+00 mb/sr,
+    11.30 deg.: X-S =   0.0000E+00 mb/sr,
+    11.40 deg.: X-S =   0.0000E+00 mb/sr,
+    11.50 deg.: X-S =   0.0000E+00 mb/sr,
+    11.60 deg.: X-S =   0.0000E+00 mb/sr,
+    11.70 deg.: X-S =   0.0000E+00 mb/sr,
+    11.80 deg.: X-S =   0.0000E+00 mb/sr,
+    11.90 deg.: X-S =   0.0000E+00 mb/sr,
+    12.00 deg.: X-S =   0.0000E+00 mb/sr,
+    12.10 deg.: X-S =   0.0000E+00 mb/sr,
+    12.20 deg.: X-S =   0.0000E+00 mb/sr,
+    12.30 deg.: X-S =   0.0000E+00 mb/sr,
+    12.40 deg.: X-S =   0.0000E+00 mb/sr,
+    12.50 deg.: X-S =   0.0000E+00 mb/sr,
+    12.60 deg.: X-S =   0.0000E+00 mb/sr,
+    12.70 deg.: X-S =   0.0000E+00 mb/sr,
+    12.80 deg.: X-S =   0.0000E+00 mb/sr,
+    12.90 deg.: X-S =   0.0000E+00 mb/sr,
+    13.00 deg.: X-S =   0.0000E+00 mb/sr,
+    13.10 deg.: X-S =   0.0000E+00 mb/sr,
+    13.20 deg.: X-S =   0.0000E+00 mb/sr,
+    13.30 deg.: X-S =   0.0000E+00 mb/sr,
+    13.40 deg.: X-S =   0.0000E+00 mb/sr,
+    13.50 deg.: X-S =   0.0000E+00 mb/sr,
+    13.60 deg.: X-S =   0.0000E+00 mb/sr,
+    13.70 deg.: X-S =   0.0000E+00 mb/sr,
+    13.80 deg.: X-S =   0.0000E+00 mb/sr,
+    13.90 deg.: X-S =   0.0000E+00 mb/sr,
+    14.00 deg.: X-S =   0.0000E+00 mb/sr,
+    14.10 deg.: X-S =   0.0000E+00 mb/sr,
+    14.20 deg.: X-S =   0.0000E+00 mb/sr,
+    14.30 deg.: X-S =   0.0000E+00 mb/sr,
+    14.40 deg.: X-S =   0.0000E+00 mb/sr,
+    14.50 deg.: X-S =   0.0000E+00 mb/sr,
+    14.60 deg.: X-S =   0.0000E+00 mb/sr,
+    14.70 deg.: X-S =   0.0000E+00 mb/sr,
+    14.80 deg.: X-S =   0.0000E+00 mb/sr,
+    14.90 deg.: X-S =   0.0000E+00 mb/sr,
+    15.00 deg.: X-S =   0.0000E+00 mb/sr,
+    15.10 deg.: X-S =   0.0000E+00 mb/sr,
+    15.20 deg.: X-S =   0.0000E+00 mb/sr,
+    15.30 deg.: X-S =   0.0000E+00 mb/sr,
+    15.40 deg.: X-S =   0.0000E+00 mb/sr,
+    15.50 deg.: X-S =   0.0000E+00 mb/sr,
+    15.60 deg.: X-S =   0.0000E+00 mb/sr,
+    15.70 deg.: X-S =   0.0000E+00 mb/sr,
+    15.80 deg.: X-S =   0.0000E+00 mb/sr,
+    15.90 deg.: X-S =   0.0000E+00 mb/sr,
+    16.00 deg.: X-S =   0.0000E+00 mb/sr,
+    16.10 deg.: X-S =   0.0000E+00 mb/sr,
+    16.20 deg.: X-S =   0.0000E+00 mb/sr,
+    16.30 deg.: X-S =   0.0000E+00 mb/sr,
+    16.40 deg.: X-S =   0.0000E+00 mb/sr,
+    16.50 deg.: X-S =   0.0000E+00 mb/sr,
+    16.60 deg.: X-S =   0.0000E+00 mb/sr,
+    16.70 deg.: X-S =   0.0000E+00 mb/sr,
+    16.80 deg.: X-S =   0.0000E+00 mb/sr,
+    16.90 deg.: X-S =   0.0000E+00 mb/sr,
+    17.00 deg.: X-S =   0.0000E+00 mb/sr,
+    17.10 deg.: X-S =   0.0000E+00 mb/sr,
+    17.20 deg.: X-S =   0.0000E+00 mb/sr,
+    17.30 deg.: X-S =   0.0000E+00 mb/sr,
+    17.40 deg.: X-S =   0.0000E+00 mb/sr,
+    17.50 deg.: X-S =   0.0000E+00 mb/sr,
+    17.60 deg.: X-S =   0.0000E+00 mb/sr,
+    17.70 deg.: X-S =   0.0000E+00 mb/sr,
+    17.80 deg.: X-S =   0.0000E+00 mb/sr,
+    17.90 deg.: X-S =   0.0000E+00 mb/sr,
+    18.00 deg.: X-S =   0.0000E+00 mb/sr,
+    18.10 deg.: X-S =   0.0000E+00 mb/sr,
+    18.20 deg.: X-S =   0.0000E+00 mb/sr,
+    18.30 deg.: X-S =   0.0000E+00 mb/sr,
+    18.40 deg.: X-S =   0.0000E+00 mb/sr,
+    18.50 deg.: X-S =   0.0000E+00 mb/sr,
+    18.60 deg.: X-S =   0.0000E+00 mb/sr,
+    18.70 deg.: X-S =   0.0000E+00 mb/sr,
+    18.80 deg.: X-S =   0.0000E+00 mb/sr,
+    18.90 deg.: X-S =   0.0000E+00 mb/sr,
+    19.00 deg.: X-S =   0.0000E+00 mb/sr,
+    19.10 deg.: X-S =   0.0000E+00 mb/sr,
+    19.20 deg.: X-S =   0.0000E+00 mb/sr,
+    19.30 deg.: X-S =   0.0000E+00 mb/sr,
+    19.40 deg.: X-S =   0.0000E+00 mb/sr,
+    19.50 deg.: X-S =   0.0000E+00 mb/sr,
+    19.60 deg.: X-S =   0.0000E+00 mb/sr,
+    19.70 deg.: X-S =   0.0000E+00 mb/sr,
+    19.80 deg.: X-S =   0.0000E+00 mb/sr,
+    19.90 deg.: X-S =   0.0000E+00 mb/sr,
+    20.00 deg.: X-S =   0.0000E+00 mb/sr,
+    20.10 deg.: X-S =   0.0000E+00 mb/sr,
+    20.20 deg.: X-S =   0.0000E+00 mb/sr,
+    20.30 deg.: X-S =   0.0000E+00 mb/sr,
+    20.40 deg.: X-S =   0.0000E+00 mb/sr,
+    20.50 deg.: X-S =   0.0000E+00 mb/sr,
+    20.60 deg.: X-S =   0.0000E+00 mb/sr,
+    20.70 deg.: X-S =   0.0000E+00 mb/sr,
+    20.80 deg.: X-S =   0.0000E+00 mb/sr,
+    20.90 deg.: X-S =   0.0000E+00 mb/sr,
+    21.00 deg.: X-S =   0.0000E+00 mb/sr,
+    21.10 deg.: X-S =   0.0000E+00 mb/sr,
+    21.20 deg.: X-S =   0.0000E+00 mb/sr,
+    21.30 deg.: X-S =   0.0000E+00 mb/sr,
+    21.40 deg.: X-S =   0.0000E+00 mb/sr,
+    21.50 deg.: X-S =   0.0000E+00 mb/sr,
+    21.60 deg.: X-S =   0.0000E+00 mb/sr,
+    21.70 deg.: X-S =   0.0000E+00 mb/sr,
+    21.80 deg.: X-S =   0.0000E+00 mb/sr,
+    21.90 deg.: X-S =   0.0000E+00 mb/sr,
+    22.00 deg.: X-S =   0.0000E+00 mb/sr,
+    22.10 deg.: X-S =   0.0000E+00 mb/sr,
+    22.20 deg.: X-S =   0.0000E+00 mb/sr,
+    22.30 deg.: X-S =   0.0000E+00 mb/sr,
+    22.40 deg.: X-S =   0.0000E+00 mb/sr,
+    22.50 deg.: X-S =   0.0000E+00 mb/sr,
+    22.60 deg.: X-S =   0.0000E+00 mb/sr,
+    22.70 deg.: X-S =   0.0000E+00 mb/sr,
+    22.80 deg.: X-S =   0.0000E+00 mb/sr,
+    22.90 deg.: X-S =   0.0000E+00 mb/sr,
+    23.00 deg.: X-S =   0.0000E+00 mb/sr,
+    23.10 deg.: X-S =   0.0000E+00 mb/sr,
+    23.20 deg.: X-S =   0.0000E+00 mb/sr,
+    23.30 deg.: X-S =   0.0000E+00 mb/sr,
+    23.40 deg.: X-S =   0.0000E+00 mb/sr,
+    23.50 deg.: X-S =   0.0000E+00 mb/sr,
+    23.60 deg.: X-S =   0.0000E+00 mb/sr,
+    23.70 deg.: X-S =   0.0000E+00 mb/sr,
+    23.80 deg.: X-S =   0.0000E+00 mb/sr,
+    23.90 deg.: X-S =   0.0000E+00 mb/sr,
+    24.00 deg.: X-S =   0.0000E+00 mb/sr,
+    24.10 deg.: X-S =   0.0000E+00 mb/sr,
+    24.20 deg.: X-S =   0.0000E+00 mb/sr,
+    24.30 deg.: X-S =   0.0000E+00 mb/sr,
+    24.40 deg.: X-S =   0.0000E+00 mb/sr,
+    24.50 deg.: X-S =   0.0000E+00 mb/sr,
+    24.60 deg.: X-S =   0.0000E+00 mb/sr,
+    24.70 deg.: X-S =   0.0000E+00 mb/sr,
+    24.80 deg.: X-S =   0.0000E+00 mb/sr,
+    24.90 deg.: X-S =   0.0000E+00 mb/sr,
+    25.00 deg.: X-S =   0.0000E+00 mb/sr,
+    25.10 deg.: X-S =   0.0000E+00 mb/sr,
+    25.20 deg.: X-S =   0.0000E+00 mb/sr,
+    25.30 deg.: X-S =   0.0000E+00 mb/sr,
+    25.40 deg.: X-S =   0.0000E+00 mb/sr,
+    25.50 deg.: X-S =   0.0000E+00 mb/sr,
+    25.60 deg.: X-S =   0.0000E+00 mb/sr,
+    25.70 deg.: X-S =   0.0000E+00 mb/sr,
+    25.80 deg.: X-S =   0.0000E+00 mb/sr,
+    25.90 deg.: X-S =   0.0000E+00 mb/sr,
+    26.00 deg.: X-S =   0.0000E+00 mb/sr,
+    26.10 deg.: X-S =   0.0000E+00 mb/sr,
+    26.20 deg.: X-S =   0.0000E+00 mb/sr,
+    26.30 deg.: X-S =   0.0000E+00 mb/sr,
+    26.40 deg.: X-S =   0.0000E+00 mb/sr,
+    26.50 deg.: X-S =   0.0000E+00 mb/sr,
+    26.60 deg.: X-S =   0.0000E+00 mb/sr,
+    26.70 deg.: X-S =   0.0000E+00 mb/sr,
+    26.80 deg.: X-S =   0.0000E+00 mb/sr,
+    26.90 deg.: X-S =   0.0000E+00 mb/sr,
+    27.00 deg.: X-S =   0.0000E+00 mb/sr,
+    27.10 deg.: X-S =   0.0000E+00 mb/sr,
+    27.20 deg.: X-S =   0.0000E+00 mb/sr,
+    27.30 deg.: X-S =   0.0000E+00 mb/sr,
+    27.40 deg.: X-S =   0.0000E+00 mb/sr,
+    27.50 deg.: X-S =   0.0000E+00 mb/sr,
+    27.60 deg.: X-S =   0.0000E+00 mb/sr,
+    27.70 deg.: X-S =   0.0000E+00 mb/sr,
+    27.80 deg.: X-S =   0.0000E+00 mb/sr,
+    27.90 deg.: X-S =   0.0000E+00 mb/sr,
+    28.00 deg.: X-S =   0.0000E+00 mb/sr,
+    28.10 deg.: X-S =   0.0000E+00 mb/sr,
+    28.20 deg.: X-S =   0.0000E+00 mb/sr,
+    28.30 deg.: X-S =   0.0000E+00 mb/sr,
+    28.40 deg.: X-S =   0.0000E+00 mb/sr,
+    28.50 deg.: X-S =   0.0000E+00 mb/sr,
+    28.60 deg.: X-S =   0.0000E+00 mb/sr,
+    28.70 deg.: X-S =   0.0000E+00 mb/sr,
+    28.80 deg.: X-S =   0.0000E+00 mb/sr,
+    28.90 deg.: X-S =   0.0000E+00 mb/sr,
+    29.00 deg.: X-S =   0.0000E+00 mb/sr,
+    29.10 deg.: X-S =   0.0000E+00 mb/sr,
+    29.20 deg.: X-S =   0.0000E+00 mb/sr,
+    29.30 deg.: X-S =   0.0000E+00 mb/sr,
+    29.40 deg.: X-S =   0.0000E+00 mb/sr,
+    29.50 deg.: X-S =   0.0000E+00 mb/sr,
+    29.60 deg.: X-S =   0.0000E+00 mb/sr,
+    29.70 deg.: X-S =   0.0000E+00 mb/sr,
+    29.80 deg.: X-S =   0.0000E+00 mb/sr,
+    29.90 deg.: X-S =   0.0000E+00 mb/sr,
+    30.00 deg.: X-S =   0.0000E+00 mb/sr,
+    30.10 deg.: X-S =   0.0000E+00 mb/sr,
+    30.20 deg.: X-S =   0.0000E+00 mb/sr,
+    30.30 deg.: X-S =   0.0000E+00 mb/sr,
+    30.40 deg.: X-S =   0.0000E+00 mb/sr,
+    30.50 deg.: X-S =   0.0000E+00 mb/sr,
+    30.60 deg.: X-S =   0.0000E+00 mb/sr,
+    30.70 deg.: X-S =   0.0000E+00 mb/sr,
+    30.80 deg.: X-S =   0.0000E+00 mb/sr,
+    30.90 deg.: X-S =   0.0000E+00 mb/sr,
+    31.00 deg.: X-S =   0.0000E+00 mb/sr,
+    31.10 deg.: X-S =   0.0000E+00 mb/sr,
+    31.20 deg.: X-S =   0.0000E+00 mb/sr,
+    31.30 deg.: X-S =   0.0000E+00 mb/sr,
+    31.40 deg.: X-S =   0.0000E+00 mb/sr,
+    31.50 deg.: X-S =   0.0000E+00 mb/sr,
+    31.60 deg.: X-S =   0.0000E+00 mb/sr,
+    31.70 deg.: X-S =   0.0000E+00 mb/sr,
+    31.80 deg.: X-S =   0.0000E+00 mb/sr,
+    31.90 deg.: X-S =   0.0000E+00 mb/sr,
+    32.00 deg.: X-S =   0.0000E+00 mb/sr,
+    32.10 deg.: X-S =   0.0000E+00 mb/sr,
+    32.20 deg.: X-S =   0.0000E+00 mb/sr,
+    32.30 deg.: X-S =   0.0000E+00 mb/sr,
+    32.40 deg.: X-S =   0.0000E+00 mb/sr,
+    32.50 deg.: X-S =   0.0000E+00 mb/sr,
+    32.60 deg.: X-S =   0.0000E+00 mb/sr,
+    32.70 deg.: X-S =   0.0000E+00 mb/sr,
+    32.80 deg.: X-S =   0.0000E+00 mb/sr,
+    32.90 deg.: X-S =   0.0000E+00 mb/sr,
+    33.00 deg.: X-S =   0.0000E+00 mb/sr,
+    33.10 deg.: X-S =   0.0000E+00 mb/sr,
+    33.20 deg.: X-S =   0.0000E+00 mb/sr,
+    33.30 deg.: X-S =   0.0000E+00 mb/sr,
+    33.40 deg.: X-S =   0.0000E+00 mb/sr,
+    33.50 deg.: X-S =   0.0000E+00 mb/sr,
+    33.60 deg.: X-S =   0.0000E+00 mb/sr,
+    33.70 deg.: X-S =   0.0000E+00 mb/sr,
+    33.80 deg.: X-S =   0.0000E+00 mb/sr,
+    33.90 deg.: X-S =   0.0000E+00 mb/sr,
+    34.00 deg.: X-S =   0.0000E+00 mb/sr,
+    34.10 deg.: X-S =   0.0000E+00 mb/sr,
+    34.20 deg.: X-S =   0.0000E+00 mb/sr,
+    34.30 deg.: X-S =   0.0000E+00 mb/sr,
+    34.40 deg.: X-S =   0.0000E+00 mb/sr,
+    34.50 deg.: X-S =   0.0000E+00 mb/sr,
+    34.60 deg.: X-S =   0.0000E+00 mb/sr,
+    34.70 deg.: X-S =   0.0000E+00 mb/sr,
+    34.80 deg.: X-S =   0.0000E+00 mb/sr,
+    34.90 deg.: X-S =   0.0000E+00 mb/sr,
+    35.00 deg.: X-S =   0.0000E+00 mb/sr,
+    35.10 deg.: X-S =   0.0000E+00 mb/sr,
+    35.20 deg.: X-S =   0.0000E+00 mb/sr,
+    35.30 deg.: X-S =   0.0000E+00 mb/sr,
+    35.40 deg.: X-S =   0.0000E+00 mb/sr,
+    35.50 deg.: X-S =   0.0000E+00 mb/sr,
+    35.60 deg.: X-S =   0.0000E+00 mb/sr,
+    35.70 deg.: X-S =   0.0000E+00 mb/sr,
+    35.80 deg.: X-S =   0.0000E+00 mb/sr,
+    35.90 deg.: X-S =   0.0000E+00 mb/sr,
+    36.00 deg.: X-S =   0.0000E+00 mb/sr,
+    36.10 deg.: X-S =   0.0000E+00 mb/sr,
+    36.20 deg.: X-S =   0.0000E+00 mb/sr,
+    36.30 deg.: X-S =   0.0000E+00 mb/sr,
+    36.40 deg.: X-S =   0.0000E+00 mb/sr,
+    36.50 deg.: X-S =   0.0000E+00 mb/sr,
+    36.60 deg.: X-S =   0.0000E+00 mb/sr,
+    36.70 deg.: X-S =   0.0000E+00 mb/sr,
+    36.80 deg.: X-S =   0.0000E+00 mb/sr,
+    36.90 deg.: X-S =   0.0000E+00 mb/sr,
+    37.00 deg.: X-S =   0.0000E+00 mb/sr,
+    37.10 deg.: X-S =   0.0000E+00 mb/sr,
+    37.20 deg.: X-S =   0.0000E+00 mb/sr,
+    37.30 deg.: X-S =   0.0000E+00 mb/sr,
+    37.40 deg.: X-S =   0.0000E+00 mb/sr,
+    37.50 deg.: X-S =   0.0000E+00 mb/sr,
+    37.60 deg.: X-S =   0.0000E+00 mb/sr,
+    37.70 deg.: X-S =   0.0000E+00 mb/sr,
+    37.80 deg.: X-S =   0.0000E+00 mb/sr,
+    37.90 deg.: X-S =   0.0000E+00 mb/sr,
+    38.00 deg.: X-S =   0.0000E+00 mb/sr,
+    38.10 deg.: X-S =   0.0000E+00 mb/sr,
+    38.20 deg.: X-S =   0.0000E+00 mb/sr,
+    38.30 deg.: X-S =   0.0000E+00 mb/sr,
+    38.40 deg.: X-S =   0.0000E+00 mb/sr,
+    38.50 deg.: X-S =   0.0000E+00 mb/sr,
+    38.60 deg.: X-S =   0.0000E+00 mb/sr,
+    38.70 deg.: X-S =   0.0000E+00 mb/sr,
+    38.80 deg.: X-S =   0.0000E+00 mb/sr,
+    38.90 deg.: X-S =   0.0000E+00 mb/sr,
+    39.00 deg.: X-S =   0.0000E+00 mb/sr,
+    39.10 deg.: X-S =   0.0000E+00 mb/sr,
+    39.20 deg.: X-S =   0.0000E+00 mb/sr,
+    39.30 deg.: X-S =   0.0000E+00 mb/sr,
+    39.40 deg.: X-S =   0.0000E+00 mb/sr,
+    39.50 deg.: X-S =   0.0000E+00 mb/sr,
+    39.60 deg.: X-S =   0.0000E+00 mb/sr,
+    39.70 deg.: X-S =   0.0000E+00 mb/sr,
+    39.80 deg.: X-S =   0.0000E+00 mb/sr,
+    39.90 deg.: X-S =   0.0000E+00 mb/sr,
+    40.00 deg.: X-S =   0.0000E+00 mb/sr,
+    40.10 deg.: X-S =   0.0000E+00 mb/sr,
+    40.20 deg.: X-S =   0.0000E+00 mb/sr,
+    40.30 deg.: X-S =   0.0000E+00 mb/sr,
+    40.40 deg.: X-S =   0.0000E+00 mb/sr,
+    40.50 deg.: X-S =   0.0000E+00 mb/sr,
+    40.60 deg.: X-S =   0.0000E+00 mb/sr,
+    40.70 deg.: X-S =   0.0000E+00 mb/sr,
+    40.80 deg.: X-S =   0.0000E+00 mb/sr,
+    40.90 deg.: X-S =   0.0000E+00 mb/sr,
+    41.00 deg.: X-S =   0.0000E+00 mb/sr,
+    41.10 deg.: X-S =   0.0000E+00 mb/sr,
+    41.20 deg.: X-S =   0.0000E+00 mb/sr,
+    41.30 deg.: X-S =   0.0000E+00 mb/sr,
+    41.40 deg.: X-S =   0.0000E+00 mb/sr,
+    41.50 deg.: X-S =   0.0000E+00 mb/sr,
+    41.60 deg.: X-S =   0.0000E+00 mb/sr,
+    41.70 deg.: X-S =   0.0000E+00 mb/sr,
+    41.80 deg.: X-S =   0.0000E+00 mb/sr,
+    41.90 deg.: X-S =   0.0000E+00 mb/sr,
+    42.00 deg.: X-S =   0.0000E+00 mb/sr,
+    42.10 deg.: X-S =   0.0000E+00 mb/sr,
+    42.20 deg.: X-S =   0.0000E+00 mb/sr,
+    42.30 deg.: X-S =   0.0000E+00 mb/sr,
+    42.40 deg.: X-S =   0.0000E+00 mb/sr,
+    42.50 deg.: X-S =   0.0000E+00 mb/sr,
+    42.60 deg.: X-S =   0.0000E+00 mb/sr,
+    42.70 deg.: X-S =   0.0000E+00 mb/sr,
+    42.80 deg.: X-S =   0.0000E+00 mb/sr,
+    42.90 deg.: X-S =   0.0000E+00 mb/sr,
+    43.00 deg.: X-S =   0.0000E+00 mb/sr,
+    43.10 deg.: X-S =   0.0000E+00 mb/sr,
+    43.20 deg.: X-S =   0.0000E+00 mb/sr,
+    43.30 deg.: X-S =   0.0000E+00 mb/sr,
+    43.40 deg.: X-S =   0.0000E+00 mb/sr,
+    43.50 deg.: X-S =   0.0000E+00 mb/sr,
+    43.60 deg.: X-S =   0.0000E+00 mb/sr,
+    43.70 deg.: X-S =   0.0000E+00 mb/sr,
+    43.80 deg.: X-S =   0.0000E+00 mb/sr,
+    43.90 deg.: X-S =   0.0000E+00 mb/sr,
+    44.00 deg.: X-S =   0.0000E+00 mb/sr,
+    44.10 deg.: X-S =   0.0000E+00 mb/sr,
+    44.20 deg.: X-S =   0.0000E+00 mb/sr,
+    44.30 deg.: X-S =   0.0000E+00 mb/sr,
+    44.40 deg.: X-S =   0.0000E+00 mb/sr,
+    44.50 deg.: X-S =   0.0000E+00 mb/sr,
+    44.60 deg.: X-S =   0.0000E+00 mb/sr,
+    44.70 deg.: X-S =   0.0000E+00 mb/sr,
+    44.80 deg.: X-S =   0.0000E+00 mb/sr,
+    44.90 deg.: X-S =   0.0000E+00 mb/sr,
+    45.00 deg.: X-S =   0.0000E+00 mb/sr,
+    45.10 deg.: X-S =   0.0000E+00 mb/sr,
+    45.20 deg.: X-S =   0.0000E+00 mb/sr,
+    45.30 deg.: X-S =   0.0000E+00 mb/sr,
+    45.40 deg.: X-S =   0.0000E+00 mb/sr,
+    45.50 deg.: X-S =   0.0000E+00 mb/sr,
+    45.60 deg.: X-S =   0.0000E+00 mb/sr,
+    45.70 deg.: X-S =   0.0000E+00 mb/sr,
+    45.80 deg.: X-S =   0.0000E+00 mb/sr,
+    45.90 deg.: X-S =   0.0000E+00 mb/sr,
+    46.00 deg.: X-S =   0.0000E+00 mb/sr,
+    46.10 deg.: X-S =   0.0000E+00 mb/sr,
+    46.20 deg.: X-S =   0.0000E+00 mb/sr,
+    46.30 deg.: X-S =   0.0000E+00 mb/sr,
+    46.40 deg.: X-S =   0.0000E+00 mb/sr,
+    46.50 deg.: X-S =   0.0000E+00 mb/sr,
+    46.60 deg.: X-S =   0.0000E+00 mb/sr,
+    46.70 deg.: X-S =   0.0000E+00 mb/sr,
+    46.80 deg.: X-S =   0.0000E+00 mb/sr,
+    46.90 deg.: X-S =   0.0000E+00 mb/sr,
+    47.00 deg.: X-S =   0.0000E+00 mb/sr,
+    47.10 deg.: X-S =   0.0000E+00 mb/sr,
+    47.20 deg.: X-S =   0.0000E+00 mb/sr,
+    47.30 deg.: X-S =   0.0000E+00 mb/sr,
+    47.40 deg.: X-S =   0.0000E+00 mb/sr,
+    47.50 deg.: X-S =   0.0000E+00 mb/sr,
+    47.60 deg.: X-S =   0.0000E+00 mb/sr,
+    47.70 deg.: X-S =   0.0000E+00 mb/sr,
+    47.80 deg.: X-S =   0.0000E+00 mb/sr,
+    47.90 deg.: X-S =   0.0000E+00 mb/sr,
+    48.00 deg.: X-S =   0.0000E+00 mb/sr,
+    48.10 deg.: X-S =   0.0000E+00 mb/sr,
+    48.20 deg.: X-S =   0.0000E+00 mb/sr,
+    48.30 deg.: X-S =   0.0000E+00 mb/sr,
+    48.40 deg.: X-S =   0.0000E+00 mb/sr,
+    48.50 deg.: X-S =   0.0000E+00 mb/sr,
+    48.60 deg.: X-S =   0.0000E+00 mb/sr,
+    48.70 deg.: X-S =   0.0000E+00 mb/sr,
+    48.80 deg.: X-S =   0.0000E+00 mb/sr,
+    48.90 deg.: X-S =   0.0000E+00 mb/sr,
+    49.00 deg.: X-S =   0.0000E+00 mb/sr,
+    49.10 deg.: X-S =   0.0000E+00 mb/sr,
+    49.20 deg.: X-S =   0.0000E+00 mb/sr,
+    49.30 deg.: X-S =   0.0000E+00 mb/sr,
+    49.40 deg.: X-S =   0.0000E+00 mb/sr,
+    49.50 deg.: X-S =   0.0000E+00 mb/sr,
+    49.60 deg.: X-S =   0.0000E+00 mb/sr,
+    49.70 deg.: X-S =   0.0000E+00 mb/sr,
+    49.80 deg.: X-S =   0.0000E+00 mb/sr,
+    49.90 deg.: X-S =   0.0000E+00 mb/sr,
+    50.00 deg.: X-S =   0.0000E+00 mb/sr,
+    50.10 deg.: X-S =   0.0000E+00 mb/sr,
+    50.20 deg.: X-S =   0.0000E+00 mb/sr,
+    50.30 deg.: X-S =   0.0000E+00 mb/sr,
+    50.40 deg.: X-S =   0.0000E+00 mb/sr,
+    50.50 deg.: X-S =   0.0000E+00 mb/sr,
+    50.60 deg.: X-S =   0.0000E+00 mb/sr,
+    50.70 deg.: X-S =   0.0000E+00 mb/sr,
+    50.80 deg.: X-S =   0.0000E+00 mb/sr,
+    50.90 deg.: X-S =   0.0000E+00 mb/sr,
+    51.00 deg.: X-S =   0.0000E+00 mb/sr,
+    51.10 deg.: X-S =   0.0000E+00 mb/sr,
+    51.20 deg.: X-S =   0.0000E+00 mb/sr,
+    51.30 deg.: X-S =   0.0000E+00 mb/sr,
+    51.40 deg.: X-S =   0.0000E+00 mb/sr,
+    51.50 deg.: X-S =   0.0000E+00 mb/sr,
+    51.60 deg.: X-S =   0.0000E+00 mb/sr,
+    51.70 deg.: X-S =   0.0000E+00 mb/sr,
+    51.80 deg.: X-S =   0.0000E+00 mb/sr,
+    51.90 deg.: X-S =   0.0000E+00 mb/sr,
+    52.00 deg.: X-S =   0.0000E+00 mb/sr,
+    52.10 deg.: X-S =   0.0000E+00 mb/sr,
+    52.20 deg.: X-S =   0.0000E+00 mb/sr,
+    52.30 deg.: X-S =   0.0000E+00 mb/sr,
+    52.40 deg.: X-S =   0.0000E+00 mb/sr,
+    52.50 deg.: X-S =   0.0000E+00 mb/sr,
+    52.60 deg.: X-S =   0.0000E+00 mb/sr,
+    52.70 deg.: X-S =   0.0000E+00 mb/sr,
+    52.80 deg.: X-S =   0.0000E+00 mb/sr,
+    52.90 deg.: X-S =   0.0000E+00 mb/sr,
+    53.00 deg.: X-S =   0.0000E+00 mb/sr,
+    53.10 deg.: X-S =   0.0000E+00 mb/sr,
+    53.20 deg.: X-S =   0.0000E+00 mb/sr,
+    53.30 deg.: X-S =   0.0000E+00 mb/sr,
+    53.40 deg.: X-S =   0.0000E+00 mb/sr,
+    53.50 deg.: X-S =   0.0000E+00 mb/sr,
+    53.60 deg.: X-S =   0.0000E+00 mb/sr,
+    53.70 deg.: X-S =   0.0000E+00 mb/sr,
+    53.80 deg.: X-S =   0.0000E+00 mb/sr,
+    53.90 deg.: X-S =   0.0000E+00 mb/sr,
+    54.00 deg.: X-S =   0.0000E+00 mb/sr,
+    54.10 deg.: X-S =   0.0000E+00 mb/sr,
+    54.20 deg.: X-S =   0.0000E+00 mb/sr,
+    54.30 deg.: X-S =   0.0000E+00 mb/sr,
+    54.40 deg.: X-S =   0.0000E+00 mb/sr,
+    54.50 deg.: X-S =   0.0000E+00 mb/sr,
+    54.60 deg.: X-S =   0.0000E+00 mb/sr,
+    54.70 deg.: X-S =   0.0000E+00 mb/sr,
+    54.80 deg.: X-S =   0.0000E+00 mb/sr,
+    54.90 deg.: X-S =   0.0000E+00 mb/sr,
+    55.00 deg.: X-S =   0.0000E+00 mb/sr,
+    55.10 deg.: X-S =   0.0000E+00 mb/sr,
+    55.20 deg.: X-S =   0.0000E+00 mb/sr,
+    55.30 deg.: X-S =   0.0000E+00 mb/sr,
+    55.40 deg.: X-S =   0.0000E+00 mb/sr,
+    55.50 deg.: X-S =   0.0000E+00 mb/sr,
+    55.60 deg.: X-S =   0.0000E+00 mb/sr,
+    55.70 deg.: X-S =   0.0000E+00 mb/sr,
+    55.80 deg.: X-S =   0.0000E+00 mb/sr,
+    55.90 deg.: X-S =   0.0000E+00 mb/sr,
+    56.00 deg.: X-S =   0.0000E+00 mb/sr,
+    56.10 deg.: X-S =   0.0000E+00 mb/sr,
+    56.20 deg.: X-S =   0.0000E+00 mb/sr,
+    56.30 deg.: X-S =   0.0000E+00 mb/sr,
+    56.40 deg.: X-S =   0.0000E+00 mb/sr,
+    56.50 deg.: X-S =   0.0000E+00 mb/sr,
+    56.60 deg.: X-S =   0.0000E+00 mb/sr,
+    56.70 deg.: X-S =   0.0000E+00 mb/sr,
+    56.80 deg.: X-S =   0.0000E+00 mb/sr,
+    56.90 deg.: X-S =   0.0000E+00 mb/sr,
+    57.00 deg.: X-S =   0.0000E+00 mb/sr,
+    57.10 deg.: X-S =   0.0000E+00 mb/sr,
+    57.20 deg.: X-S =   0.0000E+00 mb/sr,
+    57.30 deg.: X-S =   0.0000E+00 mb/sr,
+    57.40 deg.: X-S =   0.0000E+00 mb/sr,
+    57.50 deg.: X-S =   0.0000E+00 mb/sr,
+    57.60 deg.: X-S =   0.0000E+00 mb/sr,
+    57.70 deg.: X-S =   0.0000E+00 mb/sr,
+    57.80 deg.: X-S =   0.0000E+00 mb/sr,
+    57.90 deg.: X-S =   0.0000E+00 mb/sr,
+    58.00 deg.: X-S =   0.0000E+00 mb/sr,
+    58.10 deg.: X-S =   0.0000E+00 mb/sr,
+    58.20 deg.: X-S =   0.0000E+00 mb/sr,
+    58.30 deg.: X-S =   0.0000E+00 mb/sr,
+    58.40 deg.: X-S =   0.0000E+00 mb/sr,
+    58.50 deg.: X-S =   0.0000E+00 mb/sr,
+    58.60 deg.: X-S =   0.0000E+00 mb/sr,
+    58.70 deg.: X-S =   0.0000E+00 mb/sr,
+    58.80 deg.: X-S =   0.0000E+00 mb/sr,
+    58.90 deg.: X-S =   0.0000E+00 mb/sr,
+    59.00 deg.: X-S =   0.0000E+00 mb/sr,
+    59.10 deg.: X-S =   0.0000E+00 mb/sr,
+    59.20 deg.: X-S =   0.0000E+00 mb/sr,
+    59.30 deg.: X-S =   0.0000E+00 mb/sr,
+    59.40 deg.: X-S =   0.0000E+00 mb/sr,
+    59.50 deg.: X-S =   0.0000E+00 mb/sr,
+    59.60 deg.: X-S =   0.0000E+00 mb/sr,
+    59.70 deg.: X-S =   0.0000E+00 mb/sr,
+    59.80 deg.: X-S =   0.0000E+00 mb/sr,
+    59.90 deg.: X-S =   0.0000E+00 mb/sr,
+    60.00 deg.: X-S =   0.0000E+00 mb/sr,
+    60.10 deg.: X-S =   0.0000E+00 mb/sr,
+    60.20 deg.: X-S =   0.0000E+00 mb/sr,
+    60.30 deg.: X-S =   0.0000E+00 mb/sr,
+    60.40 deg.: X-S =   0.0000E+00 mb/sr,
+    60.50 deg.: X-S =   0.0000E+00 mb/sr,
+    60.60 deg.: X-S =   0.0000E+00 mb/sr,
+    60.70 deg.: X-S =   0.0000E+00 mb/sr,
+    60.80 deg.: X-S =   0.0000E+00 mb/sr,
+    60.90 deg.: X-S =   0.0000E+00 mb/sr,
+    61.00 deg.: X-S =   0.0000E+00 mb/sr,
+    61.10 deg.: X-S =   0.0000E+00 mb/sr,
+    61.20 deg.: X-S =   0.0000E+00 mb/sr,
+    61.30 deg.: X-S =   0.0000E+00 mb/sr,
+    61.40 deg.: X-S =   0.0000E+00 mb/sr,
+    61.50 deg.: X-S =   0.0000E+00 mb/sr,
+    61.60 deg.: X-S =   0.0000E+00 mb/sr,
+    61.70 deg.: X-S =   0.0000E+00 mb/sr,
+    61.80 deg.: X-S =   0.0000E+00 mb/sr,
+    61.90 deg.: X-S =   0.0000E+00 mb/sr,
+    62.00 deg.: X-S =   0.0000E+00 mb/sr,
+    62.10 deg.: X-S =   0.0000E+00 mb/sr,
+    62.20 deg.: X-S =   0.0000E+00 mb/sr,
+    62.30 deg.: X-S =   0.0000E+00 mb/sr,
+    62.40 deg.: X-S =   0.0000E+00 mb/sr,
+    62.50 deg.: X-S =   0.0000E+00 mb/sr,
+    62.60 deg.: X-S =   0.0000E+00 mb/sr,
+    62.70 deg.: X-S =   0.0000E+00 mb/sr,
+    62.80 deg.: X-S =   0.0000E+00 mb/sr,
+    62.90 deg.: X-S =   0.0000E+00 mb/sr,
+    63.00 deg.: X-S =   0.0000E+00 mb/sr,
+    63.10 deg.: X-S =   0.0000E+00 mb/sr,
+    63.20 deg.: X-S =   0.0000E+00 mb/sr,
+    63.30 deg.: X-S =   0.0000E+00 mb/sr,
+    63.40 deg.: X-S =   0.0000E+00 mb/sr,
+    63.50 deg.: X-S =   0.0000E+00 mb/sr,
+    63.60 deg.: X-S =   0.0000E+00 mb/sr,
+    63.70 deg.: X-S =   0.0000E+00 mb/sr,
+    63.80 deg.: X-S =   0.0000E+00 mb/sr,
+    63.90 deg.: X-S =   0.0000E+00 mb/sr,
+    64.00 deg.: X-S =   0.0000E+00 mb/sr,
+    64.10 deg.: X-S =   0.0000E+00 mb/sr,
+    64.20 deg.: X-S =   0.0000E+00 mb/sr,
+    64.30 deg.: X-S =   0.0000E+00 mb/sr,
+    64.40 deg.: X-S =   0.0000E+00 mb/sr,
+    64.50 deg.: X-S =   0.0000E+00 mb/sr,
+    64.60 deg.: X-S =   0.0000E+00 mb/sr,
+    64.70 deg.: X-S =   0.0000E+00 mb/sr,
+    64.80 deg.: X-S =   0.0000E+00 mb/sr,
+    64.90 deg.: X-S =   0.0000E+00 mb/sr,
+    65.00 deg.: X-S =   0.0000E+00 mb/sr,
+    65.10 deg.: X-S =   0.0000E+00 mb/sr,
+    65.20 deg.: X-S =   0.0000E+00 mb/sr,
+    65.30 deg.: X-S =   0.0000E+00 mb/sr,
+    65.40 deg.: X-S =   0.0000E+00 mb/sr,
+    65.50 deg.: X-S =   0.0000E+00 mb/sr,
+    65.60 deg.: X-S =   0.0000E+00 mb/sr,
+    65.70 deg.: X-S =   0.0000E+00 mb/sr,
+    65.80 deg.: X-S =   0.0000E+00 mb/sr,
+    65.90 deg.: X-S =   0.0000E+00 mb/sr,
+    66.00 deg.: X-S =   0.0000E+00 mb/sr,
+    66.10 deg.: X-S =   0.0000E+00 mb/sr,
+    66.20 deg.: X-S =   0.0000E+00 mb/sr,
+    66.30 deg.: X-S =   0.0000E+00 mb/sr,
+    66.40 deg.: X-S =   0.0000E+00 mb/sr,
+    66.50 deg.: X-S =   0.0000E+00 mb/sr,
+    66.60 deg.: X-S =   0.0000E+00 mb/sr,
+    66.70 deg.: X-S =   0.0000E+00 mb/sr,
+    66.80 deg.: X-S =   0.0000E+00 mb/sr,
+    66.90 deg.: X-S =   0.0000E+00 mb/sr,
+    67.00 deg.: X-S =   0.0000E+00 mb/sr,
+    67.10 deg.: X-S =   0.0000E+00 mb/sr,
+    67.20 deg.: X-S =   0.0000E+00 mb/sr,
+    67.30 deg.: X-S =   0.0000E+00 mb/sr,
+    67.40 deg.: X-S =   0.0000E+00 mb/sr,
+    67.50 deg.: X-S =   0.0000E+00 mb/sr,
+    67.60 deg.: X-S =   0.0000E+00 mb/sr,
+    67.70 deg.: X-S =   0.0000E+00 mb/sr,
+    67.80 deg.: X-S =   0.0000E+00 mb/sr,
+    67.90 deg.: X-S =   0.0000E+00 mb/sr,
+    68.00 deg.: X-S =   0.0000E+00 mb/sr,
+    68.10 deg.: X-S =   0.0000E+00 mb/sr,
+    68.20 deg.: X-S =   0.0000E+00 mb/sr,
+    68.30 deg.: X-S =   0.0000E+00 mb/sr,
+    68.40 deg.: X-S =   0.0000E+00 mb/sr,
+    68.50 deg.: X-S =   0.0000E+00 mb/sr,
+    68.60 deg.: X-S =   0.0000E+00 mb/sr,
+    68.70 deg.: X-S =   0.0000E+00 mb/sr,
+    68.80 deg.: X-S =   0.0000E+00 mb/sr,
+    68.90 deg.: X-S =   0.0000E+00 mb/sr,
+    69.00 deg.: X-S =   0.0000E+00 mb/sr,
+    69.10 deg.: X-S =   0.0000E+00 mb/sr,
+    69.20 deg.: X-S =   0.0000E+00 mb/sr,
+    69.30 deg.: X-S =   0.0000E+00 mb/sr,
+    69.40 deg.: X-S =   0.0000E+00 mb/sr,
+    69.50 deg.: X-S =   0.0000E+00 mb/sr,
+    69.60 deg.: X-S =   0.0000E+00 mb/sr,
+    69.70 deg.: X-S =   0.0000E+00 mb/sr,
+    69.80 deg.: X-S =   0.0000E+00 mb/sr,
+    69.90 deg.: X-S =   0.0000E+00 mb/sr,
+    70.00 deg.: X-S =   0.0000E+00 mb/sr,
+    70.10 deg.: X-S =   0.0000E+00 mb/sr,
+    70.20 deg.: X-S =   0.0000E+00 mb/sr,
+    70.30 deg.: X-S =   0.0000E+00 mb/sr,
+    70.40 deg.: X-S =   0.0000E+00 mb/sr,
+    70.50 deg.: X-S =   0.0000E+00 mb/sr,
+    70.60 deg.: X-S =   0.0000E+00 mb/sr,
+    70.70 deg.: X-S =   0.0000E+00 mb/sr,
+    70.80 deg.: X-S =   0.0000E+00 mb/sr,
+    70.90 deg.: X-S =   0.0000E+00 mb/sr,
+    71.00 deg.: X-S =   0.0000E+00 mb/sr,
+    71.10 deg.: X-S =   0.0000E+00 mb/sr,
+    71.20 deg.: X-S =   0.0000E+00 mb/sr,
+    71.30 deg.: X-S =   0.0000E+00 mb/sr,
+    71.40 deg.: X-S =   0.0000E+00 mb/sr,
+    71.50 deg.: X-S =   0.0000E+00 mb/sr,
+    71.60 deg.: X-S =   0.0000E+00 mb/sr,
+    71.70 deg.: X-S =   0.0000E+00 mb/sr,
+    71.80 deg.: X-S =   0.0000E+00 mb/sr,
+    71.90 deg.: X-S =   0.0000E+00 mb/sr,
+    72.00 deg.: X-S =   0.0000E+00 mb/sr,
+    72.10 deg.: X-S =   0.0000E+00 mb/sr,
+    72.20 deg.: X-S =   0.0000E+00 mb/sr,
+    72.30 deg.: X-S =   0.0000E+00 mb/sr,
+    72.40 deg.: X-S =   0.0000E+00 mb/sr,
+    72.50 deg.: X-S =   0.0000E+00 mb/sr,
+    72.60 deg.: X-S =   0.0000E+00 mb/sr,
+    72.70 deg.: X-S =   0.0000E+00 mb/sr,
+    72.80 deg.: X-S =   0.0000E+00 mb/sr,
+    72.90 deg.: X-S =   0.0000E+00 mb/sr,
+    73.00 deg.: X-S =   0.0000E+00 mb/sr,
+    73.10 deg.: X-S =   0.0000E+00 mb/sr,
+    73.20 deg.: X-S =   0.0000E+00 mb/sr,
+    73.30 deg.: X-S =   0.0000E+00 mb/sr,
+    73.40 deg.: X-S =   0.0000E+00 mb/sr,
+    73.50 deg.: X-S =   0.0000E+00 mb/sr,
+    73.60 deg.: X-S =   0.0000E+00 mb/sr,
+    73.70 deg.: X-S =   0.0000E+00 mb/sr,
+    73.80 deg.: X-S =   0.0000E+00 mb/sr,
+    73.90 deg.: X-S =   0.0000E+00 mb/sr,
+    74.00 deg.: X-S =   0.0000E+00 mb/sr,
+    74.10 deg.: X-S =   0.0000E+00 mb/sr,
+    74.20 deg.: X-S =   0.0000E+00 mb/sr,
+    74.30 deg.: X-S =   0.0000E+00 mb/sr,
+    74.40 deg.: X-S =   0.0000E+00 mb/sr,
+    74.50 deg.: X-S =   0.0000E+00 mb/sr,
+    74.60 deg.: X-S =   0.0000E+00 mb/sr,
+    74.70 deg.: X-S =   0.0000E+00 mb/sr,
+    74.80 deg.: X-S =   0.0000E+00 mb/sr,
+    74.90 deg.: X-S =   0.0000E+00 mb/sr,
+    75.00 deg.: X-S =   0.0000E+00 mb/sr,
+    75.10 deg.: X-S =   0.0000E+00 mb/sr,
+    75.20 deg.: X-S =   0.0000E+00 mb/sr,
+    75.30 deg.: X-S =   0.0000E+00 mb/sr,
+    75.40 deg.: X-S =   0.0000E+00 mb/sr,
+    75.50 deg.: X-S =   0.0000E+00 mb/sr,
+    75.60 deg.: X-S =   0.0000E+00 mb/sr,
+    75.70 deg.: X-S =   0.0000E+00 mb/sr,
+    75.80 deg.: X-S =   0.0000E+00 mb/sr,
+    75.90 deg.: X-S =   0.0000E+00 mb/sr,
+    76.00 deg.: X-S =   0.0000E+00 mb/sr,
+    76.10 deg.: X-S =   0.0000E+00 mb/sr,
+    76.20 deg.: X-S =   0.0000E+00 mb/sr,
+    76.30 deg.: X-S =   0.0000E+00 mb/sr,
+    76.40 deg.: X-S =   0.0000E+00 mb/sr,
+    76.50 deg.: X-S =   0.0000E+00 mb/sr,
+    76.60 deg.: X-S =   0.0000E+00 mb/sr,
+    76.70 deg.: X-S =   0.0000E+00 mb/sr,
+    76.80 deg.: X-S =   0.0000E+00 mb/sr,
+    76.90 deg.: X-S =   0.0000E+00 mb/sr,
+    77.00 deg.: X-S =   0.0000E+00 mb/sr,
+    77.10 deg.: X-S =   0.0000E+00 mb/sr,
+    77.20 deg.: X-S =   0.0000E+00 mb/sr,
+    77.30 deg.: X-S =   0.0000E+00 mb/sr,
+    77.40 deg.: X-S =   0.0000E+00 mb/sr,
+    77.50 deg.: X-S =   0.0000E+00 mb/sr,
+    77.60 deg.: X-S =   0.0000E+00 mb/sr,
+    77.70 deg.: X-S =   0.0000E+00 mb/sr,
+    77.80 deg.: X-S =   0.0000E+00 mb/sr,
+    77.90 deg.: X-S =   0.0000E+00 mb/sr,
+    78.00 deg.: X-S =   0.0000E+00 mb/sr,
+    78.10 deg.: X-S =   0.0000E+00 mb/sr,
+    78.20 deg.: X-S =   0.0000E+00 mb/sr,
+    78.30 deg.: X-S =   0.0000E+00 mb/sr,
+    78.40 deg.: X-S =   0.0000E+00 mb/sr,
+    78.50 deg.: X-S =   0.0000E+00 mb/sr,
+    78.60 deg.: X-S =   0.0000E+00 mb/sr,
+    78.70 deg.: X-S =   0.0000E+00 mb/sr,
+    78.80 deg.: X-S =   0.0000E+00 mb/sr,
+    78.90 deg.: X-S =   0.0000E+00 mb/sr,
+    79.00 deg.: X-S =   0.0000E+00 mb/sr,
+    79.10 deg.: X-S =   0.0000E+00 mb/sr,
+    79.20 deg.: X-S =   0.0000E+00 mb/sr,
+    79.30 deg.: X-S =   0.0000E+00 mb/sr,
+    79.40 deg.: X-S =   0.0000E+00 mb/sr,
+    79.50 deg.: X-S =   0.0000E+00 mb/sr,
+    79.60 deg.: X-S =   0.0000E+00 mb/sr,
+    79.70 deg.: X-S =   0.0000E+00 mb/sr,
+    79.80 deg.: X-S =   0.0000E+00 mb/sr,
+    79.90 deg.: X-S =   0.0000E+00 mb/sr,
+    80.00 deg.: X-S =   0.0000E+00 mb/sr,
+ Finished all xsecs @    6.25000000E-02
+
+  The following files have been created:
+   3:local copy of User input.            6:standard output.                   
+  12:transfer kernels.                   13:total cross sections/state.        
+  16:tables of cross sections.           35:Astrophysics S-factors  / Ecm.     
+  39:cross sections for each Ecm.        40:all cross sectns. for each Elab.   
+  46:bs wave functions & ANC ratios.     56:Fusion for each Jtotal.            
+  75:S-factors for lab energies.        202:Separate cross sections.           
+
+ PARAMETERS : MAXQRN   MFNL   MLOC  LMAX1 MCLIST
+    ALLOWED :      2     81     16     70      6
+    REQUIRED:      0      0     16     54      4
+
+
+ ACCURACY ANALYSIS at    16.000 MeV :
+
+  Elastic h*k = 0.081 so OK       compared with 0.200
+
+   Real(S-el) > 0.01 first at J =       3.5
+   Real(S-el) > 0.10 first at J =       9.5
+   Real(S-el) > 0.50 first at J =      12.5
+   Real(S-el) > 0.90 first at J =      14.5
+   Real(S-el) > 0.99 first at J =      18.5
+   R-turn =    32.62 fm    at J =      50.5
+
+ Forward-angle excitation cut off below   5.858 deg by max JT =      50.5
+                              and below   6.110 deg by max R.
+
+ Total CPU  0 time =       0.06 seconds

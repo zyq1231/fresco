@@ -1,0 +1,511 @@
+\documentclass{SCGE}
+\usepackage{float}
+\usepackage{graphicx}
+\begin{document}
+
+
+%%%%%%新版式要加上这组
+\begin{picture}(0, 0){\rm
+\put(0, -20){\makebox[160truemm][l]{\bf {\sanhao\raisebox{2pt}{.}}
+Article  {\sanhao\raisebox{1.5pt}{.}}}}}
+\put(0, -34){\jiuwuhao {\textcolor[rgb]{0.5, 0.5, 0.5}{\sf %Special Topic: Fluid Mechanics
+}}}%%(11月注释：调\textcolor[rgb]{x, x, x} 中的数字x越大越灰)
+\end{picture}
+
+%\input psfig.sty
+\def\bm{\boldsymbol}
+
+\def\dl{\displaystyle}
+\def\du{\end{document}}
+\def\d{{\rm d}}
+\def\e{{\rm e}}
+\def\i{{\rm i}}
+
+% The author doesn't need fill in it.
+\Year{2015} %
+\Month{January} %
+\Vol{58} %  卷号
+\No{3} %  期号
+\BeginPage{1} % 起页码
+\EndPage{7} %  止页码
+\AuthorMark{{\rm Du X C},  et al.}  %(11月注释：页眉上的作者)
+\AuthorMarkCite{{\rm DU XianChao,  GUO Bing,  LI ZhiHong,  PANG DanYang, LI ErTao, LIU WeiPing},  et al.} %(11月注释：citation 中的作者)
+\DOI{} % The author doesn't need fill in it.
+
+% \title[short text for running head]{full title}{comments for title}
+\title{Determination of astrophysical $^{7}\textrm{Be}(\textrm{p},\,\gamma)^{8}\textrm{B}$ reaction rates from the $^{7}$Li(d,\,p)$^8$Li reaction}%标题
+
+\author[1]{DU XianChao}{}
+%\footnote{*Corresponding author (email: dlzhangyu@yahoo.com.cn)}%手动E-mail地址
+\author[1]{GUO Bing}{Corresponding author (email: guobing@ciae.ac.cn)}
+\author[1]{LI ZhiHong}{}
+\author[2,3]{PANG DanYang}{}
+\author[4]{LI ErTao}{}
+\author[1]{LIU WeiPing}{Contributed by LIU WeiPing}
+
+\address[{\rm1}]{China Institute of Atomic Energy, P. O. Box 275(10), Beijing 102413, China;}
+\address[{\rm2}]{School of Physics and Nuclear Energy Engineering, Beihang University, Beijing 100191,  China;}
+\address[{\rm3}]{International Research Center for Nuclei and
+Particles in the Cosmos, Beihang University, Beijing 100191,
+China;}
+\address[{\rm4}]{College of Physics Science and Technology, Shenzhen University, Shenzhen 518060,  China}
+
+\maketitle \vspace{-3.5mm}{\footnotesize\begin{center} Received Month date, Year; accepted Month date, Year% 收稿日期
+\end{center}}\vspace*{-5mm}
+
+\begin{center}
+\rule{16.5cm}{0.4pt}
+\parbox{16.5cm}
+{\begin{abstract}
+The $^7$Be(p,\,$\gamma$)$^8$B reaction plays a central role not only in the evaluation of solar neutrino fluxes but also in the evolution of the first stars. Study of this reaction requires the asymptotic normalization coefficient (ANC) for the virtual decay $^8\textrm{B}_{g.s.}$ $\rightarrow$ $^7\textrm{Be}$ + p. By using the charge symmetry relation, we obtain this proton ANC with the single neutron ANC of $^8\textrm{Li}_{g.s.} \rightarrow$$^7\textrm{Li}\,+$ n, which is determined with the distorted wave Born approximation (DWBA) and adiabatic distorted wave approximation (ADWA) analysis of the $^{7}\textrm{Li}$(d,\,p)$^{8}\textrm{Li}$ angular distribution. The astrophysical S-factors and reaction rates of the direct capture process in the $^{7}$Be(p,\,$\gamma$)$^{8}$B reaction are further deduced at energies of astrophysical relevance. The astrophysical S-factor at zero energy for direct capture, $S_{17}$(0), is derived to be 19.9 $\pm$ 3.5 eV b in good agreement with the most recent recommended value. The contributions of the 1$^+$ and 3$^+$ resonances to the S-factor and reaction rate are also evaluated. The present result demonstrates that the direct capture dominates the $^7$Be(p,\,$\gamma$)$^8$B reaction in the whole temperature range. This work provides an independent examination to the current results of the $^7$Be(p,\,$\gamma$)$^8$B reaction.
+\end{abstract}}
+\end{center}\vspace*{-0.6cm}
+
+\begin{center}
+\parbox{16.5cm}
+{\bf\jiuhao $\bold{^7Li(d,\,p)^8Li}$, $\bold{\emph{E}_\emph{d} = 12~MeV}$, DWBA analysis, mirror system, $^7$Be(p,\,$\gamma$)$^8$B, astrophysical S-factors and reaction rates}% 关键词
+\end{center}
+
+\begin{center}
+{\PACS{\rm 25.60.Je; 21.10.Jx; 25.40.Lw; 26.20.+f}}%分类号
+%\CITA    %%(11月注释：Citation内容自动生成)
+\Cit{~~~Du X C, Guo B, Li Z H,  et al. Determination of
+astrophysical $^7$Be(p,\,$\gamma$)$^8$B reaction
+rates from the $^{7}\textrm{Li}(\textrm{d},\,\textrm{p})^{8}\textrm{Li}$ reaction. Sci China-Phys Mech Astron, 2015, 58: 1--7, doi: }%%(11 月注释：Citation 内容需手动填写)
+\end{center}
+
+
+\textwidth=178truemm \textheight=236truemm%%%%%% 新版式要加上
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\wuhao\vspace*{1.5mm}
+
+\begin{multicols}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Text of article.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Section headings
+\renewcommand{\baselinestretch}{1.08} \baselineskip 12.2pt\parindent=10.8pt
+
+\renewcommand{\thefootnote}
+
+\section{Introduction}\label{sec:intro}%“sec:intro” 是给该节的命名（可换其他），引用时用\ref{sec:intro}
+
+The $^7$Be(p,\,$\gamma$)$^8$B reaction plays a crucial role in constraining the properties of neutrino oscillations and solar composition through solar-neutrino experiments~\cite{ade11,hax13} since $^8$B is the major source of the high-energy solar neutrinos. Recent experiments were able to determine the neutrino flux emitted from $^8$B decay with a precision of 9\%~\cite{ahm04}, while the theoretical predictions have uncertainties of the order of 20\%~\cite{bah04}. Theoretical neutrino flux critically depends on the $^7$Be(p,\,$\gamma$)$^8$B reaction.
+
+The $^7$Be(p,\,$\gamma$)$^8$B reaction also plays an important role in the evolution of the first stars which formed at the end of the cosmic dark ages \cite{bro04}. Various simulations suggest that the first stars could have appeared between 100 and 250 million years after the Big Bang. A classic question on the evolution of these supermassive stars is whether they contributed any significant material to later generations of stars by supernova explosions. In 1986, the evolution of non-rotating supermassive stars was studied with a hydrodynamic code KEPLER \cite{ful86} which concluded that these stars will collapse into black holes without experiencing a supernova explosion. This is
+because the triple alpha process (3$\alpha \rightarrow $ $^{12}$C)
+does not produce sufficient amounts of CNO seed nuclei so that the
+hot CNO cycle and rp-process are unable to generate the nuclear
+energy enough to explode the stars. In 1989, the rap-processes were suggested as alternative paths which would permit these stars to bypass the 3$\alpha$ process
+and to yield the CNO material \cite{wie89}. The $^7$Be(p,\,$\gamma$)$^8$B reaction is one of the key reactions in these rap-processes.
+
+Due to its importance, the $^7$Be(p,\,$\gamma$)$^8$B reaction has increasingly attracted both theoretical and experimental studies in past years. As for the experiment, the direct measurements were performed with the proton beam on the $^7\textrm{Be}$ target~\cite{fil83l,bab03l,jun03,fil83c}, or with the radioactive $^7$Be beam on the H$_2$ target~\cite{ter01,gia00}. In addition, indirect measurements were carried out through Coulomb dissociation method~\cite{bau86,iwa99,dav01,sch06,sch03} and the transfer reaction method~\cite{wpliu96,oga03,das06,azh06}. As for the theoretical side, several methods were utilized, including the R-matrix parametrization ~\cite{bar95}, the potential model ~\cite{rob73,typ97},  the microscopic cluster models ~\cite{des94,cso95,des04}, and the ab initio calculations ~\cite{nav06,nav11}.
+
+In this work, we derive the neutron asymptotic normalization coefficient (ANC) for the virtual decay $^8\textrm{Li} \rightarrow$ $^7\textrm{Li} +$ n by reanalysing the existing angular distribution of the $^{7}\textrm{Li}$(d,\,p)$^{8}\textrm{Li}$ reaction at $E_d$=12~MeV \cite{sch67} based on the distorted wave Born approximation (DWBA) and adiabatic distorted wave approximation (ADWA) approaches, and then deduce the proton ANC for the virtual decay $^8\textrm{B} \rightarrow $ $^7\textrm{Be} +$ p based on charge symmetry of mirror nuclei. The $^7$Be(p,\,$\gamma$)$^8$B astrophysical S-factors and reaction rates of direct capture into ground state of $^8\textrm{B}$ are then obtained. We have also calculated the contributions from the $1^+$ and $3^+$ resonances at $E_x$ = 0.774 MeV and 2.320 MeV. The relationship of the ANCs for mirror systems has been well established~\cite{tim03,tim05}, and successfully utilized to study the $^8$B(p,\,$\gamma$)$^9$C, $^{11}$C(p,\,$\gamma$)$^{12}$N and $^{26}$Si(p,\,$\gamma$)$^{27}$P reactions \cite{guo05,guo06,guo07}.
+
+\section{The neutron ANC for virtual decay $\bm{^8\textrm{Li}$$_{g.s.}$ $\rightarrow}$ $^7$Li + n}
+
+When the $^{7}\textrm{Li}$(d,\,p)$^{8}\textrm{Li}$ reaction is measured at conditions when it is peripheral, such as at sufficiently low incident energies, the single neutron ANC of $^8\textrm{Li}_{g.s.}$ $\rightarrow$ $^7$Li + n can be extracted by matching the theoretical calculations (in this work, we use the DWBA and ADWA methods) to the experimental differential cross sections:
+\begin{equation}\label{eq1}
+(\frac{\textrm{d}\sigma}{\textrm{d}\Omega})_{\exp}=\sum\limits_{j_ij_f}(C_{l_ij_i}^d)^2(C_{l_fj_f}^{^8\textrm{Li}})^2R_{l_ij_il_fj_f},
+\end{equation}
+where
+\begin{equation}\label{eq2}
+R_{l_ij_il_fj_f}=\frac{\sigma_{l_ij_il_fj_f}^{th}}{(b_{l_ij_i}^d)^2(b_{l_ij_i}^{^8\textrm{Li}})^2},
+\end{equation}
+$(\frac{\textrm{d}\sigma}{\textrm{d}\Omega})_{\exp}$ and $\sigma_{l_ij_il_fj_f}^{th}$~are the experimental and theoretical differential cross sections, respectively. $C_{l_ij_i}^d$, $C_{l_fj_f}^{^8\textrm{Li}}$, $b_{l_ij_i}^d$ and $b_{l_ij_i}^{^8\textrm{Li}}$ represent nuclear and corresponding single-particle ANCs for virtual decays of d $\rightarrow$ p + n and $^8$Li $\rightarrow$ $^7$Li $+$ n, respectively. $l_i$, $j_i$ and $l_f$, $j_f$ are the orbital and total angular momenta of the transferred neutron in d and $^8$Li, respectively. $R_{l_ij_il_fj_f}$ is model independent under the condition of peripheral transfer reaction.
+
+\begin{table}[H]
+\caption{Optical potential parameters used in the DWBA calculations, where $V$ and $W$ are in MeV, $r$ and $a$ in fm.}
+\label{tab:table1}
+\begin{center}\footnotesize \doublerulesep 0.2pt \tabcolsep 18pt
+\begin{tabular*}{0.38\paperwidth}{ccccc}
+\toprule[0.35pt]\hline
+   &\multicolumn{2}{c}{Entrance}&\multicolumn{2}{c}{Exit}\\
+\cline{2-3\ }
+Set No.&DWBA1&DWBA2& \\\hline
+$V$      &118&78&45\\
+$r_V$  &0.886&0.9&1.32\\
+$a_V$   &0.907&0.95&0.57\\
+$W_s$  &5.8&30&11\\
+$r_s$&1.57&0.9&1.32\\
+$a_s$  &0.777&0.8&0.345\\
+$V_{so}$ &5.8&5.8&5.0\\
+$r_{so}$  &0.886&0.9&1.32\\
+$a_{so}$ &0.907&0.95&0.57\\\hline
+\bottomrule[0.35pt]
+\end{tabular*}
+\end{center}
+\end{table}
+
+In this work, theoretical calculations of the transfer cross sections are made with the finite-range DWBA method using the computer code FRESCO \cite{ian88}. The optical potential parameters used in the DWBA calculation are listed in Table \ref{tab:table1}, which were taken from Ref.~\cite{sch67}.
+
+To include the breakup effects of deuteron in the entrance channel, the transfer cross sections are also calculated within the Johnson-Soper adiabatic approximation to the neutron, proton and target three-body system \cite{joh70,wal76}. The adiabatic distorting potential governing the centre-of-mass motion of the deuteron is well described by the sum of the neutron- and proton-target optical potentials. Hence this method is called the adiabatic distorted wave approximation (ADWA). In the present calculation, the optical potentials of nucleon-target are taken from Ref. \cite{var91} (ADWA1) and Ref. \cite{kon03} (ADWA2).
+
+$C_d^2$ is taken to be 0.76 fm$^{-1}$ from Ref.~\cite{blo77}. Two components, corresponding to the neutron transfers to the 1$p_{1/2}$ and 1$p_{3/2}$ orbits, contribute to the $^{7}\textrm{Li}$(d,\,p)$^{8}\textrm{Li}_{g.s.}$ reaction. The ratio $(C^{^8\textrm{Li}}_{p_{1/2}})^2$/$(C^{^8\textrm{Li}}_{p_{3/2}})^2$ is taken to be 0.13(2) from Ref. \cite{tra03}. In Fig.~\ref{fig:figure1} we display the resulting DWBA and ADWA angular distributions of the $^{7}\textrm{Li}$(d,\,p)$^{8}\textrm{Li}$ reaction with these four sets of optical potential parameters, together with the experimental data. In order to verify if the $^{7}\textrm{Li}$(d,\,p)$^{8}\textrm{Li}$ reaction is peripheral, the ANCs and spectroscopic factors are calculated using the different geometry parameters of the Woods-Saxon potential for the single-particle bound state with the DWBA1 optical potential, as shown in Fig.~\ref{fig:figure2}. One see that the spectroscopic factors vary significantly, while the ANCs are nearly a constant, indicating the $^{7}\textrm{Li}$(d,\,p)$^{8}\textrm{Li}_{g.s.}$ reaction is dominated by peripheral process at the present energy.
+
+\begin{figure}[H]%“[]”中为位置参数，四个参数tbph 依次是置顶、置底、浮动、当前位置，，选用的参数优先顺序为h-t-b-p
+\centering
+\includegraphics[scale=0.7]{gscs.eps}%"scale" 后的数字为图形的宽度，也可用"width=1.0\columnwidth" 定义
+\caption{(Color online) Angular distributions of the $^7$Li(d,p)$^8$Li$_{g.s.}$ reaction at $E_d$ = 12 MeV.} % 图题
+\label{fig:figure1}
+\end{figure}
+
+\begin{figure}[H]%“[]”中为位置参数，四个参数tbph 依次是置顶、置底、浮动、当前位置，，选用的参数优先顺序为h-t-b-p
+\centering
+\includegraphics[scale=0.45]{SingleANC.eps}%"scale" 后的数字为图形的宽度，也可用"width=1.0\columnwidth" 定义
+\caption{Dependence of the spectroscopic factor (S) and the square of ANC ($C^2$)~for~$1p_{3/2}$ orbit of~$^8$Li ground state on the single particle ANC.}
+\label{fig:figure2}
+\end{figure}
+
+The ANC for the virtual decay $^8$Li$_{g.s.}$ $\rightarrow$ $^7$Li + n is extracted to be 0.53 $\pm$ 0.09 fm$^{-1} $using these four sets of optical potential parameters, as listed in Table~\ref{tab:table2}. The error arises from the experiment, the optical potential parameters and the $(C^{^8\textrm{Li}}_{p_{1/2}})^2$/$(C^{^8\textrm{Li}}_{p_{3/2}})^2$ ratio.
+
+%Table 2%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[H]
+\caption{The ANCs for the virtual decay $^8$Li$_{g.s.}$ $\rightarrow$ $^7$Li + n.}
+\label{tab:table2}
+\footnotesize \doublerulesep 0.2pt \tabcolsep 9pt
+\begin{tabular*}{0.38\paperwidth}{ccccc}
+\toprule[0.35pt]\hline
+   &\multicolumn{3}{c}{\centering ANC$^2$ (fm$^{-1}$)}\\
+\cline{2-4\ }
+Set NO.&$1p_{3/2}$&$1p_{1/2}$&Total\\\hline
+
+DWBA1&0.49 $\pm$ 0.08&0.064 $\pm$ 0.011&0.56 $\pm$ 0.09\\
+DWBA2&0.48 $\pm$ 0.09&0.062 $\pm$ 0.012&0.54 $\pm$ 0.10\\
+ADWA1&0.49 $\pm$ 0.09&0.063 $\pm$ 0.011&0.55 $\pm$ 0.09\\
+ADWA2&0.41 $\pm$ 0.07&0.054 $\pm$ 0.009&0.47 $\pm$ 0.07\\
+
+AVERAGE&0.47 $\pm$ 0.08&0.061 $\pm$ 0.010&0.53 $\pm$ 0.09\\\hline
+
+\bottomrule[0.35pt]
+\end{tabular*}
+\end{table}
+
+\section{The proton ANC for virtual decay $^8$B$_{g.s.}$ $\rightarrow$ $^7$Be + p}
+
+The proton ANC of $^8\textrm{B}$ can be extracted from the neutron ANC of $^8\textrm{Li}$. The relationship between the proton ANC of $^8\textrm{B}\rightarrow$$^7\textrm{Be} +$ p and the neutron ANC of $^8\textrm{Li} \rightarrow$$^7\textrm{Li}$ + n can be expressed as
+\begin{equation}\label{eq3}
+(C_{l_fj_f}^{^8\textrm{B}})^2=R(C_{l_fj_f}^{^8\textrm{Li}})^2,
+\end{equation}
+where the ratio $R$ can be computed with \cite{tim03,tim05}
+\begin{equation}\label{eq4}
+R=|\frac{F_l(ik_pR_N)}{k_pR_Nj_l(ik_nR_N)}|^2,
+\end{equation}
+where $F_l$ and $j_l$ are the regular Coulomb wave function and the spherical Bessel function, respectively. The wave numbers of proton and neutron $k_p$ ($k_n$) are determined by the proton (neutron) separation energy $\varepsilon_p$($\varepsilon_n$) via $k=(2\mu\varepsilon/\hbar^2)^{1/2}$.
+
+On the other hand, if we assume that the single-particle spectroscopic factors $S_p$ and $S_n$ are approximately equal for mirror system, the ANC ratio $R$ can also be derived with (based on the relationship of spectroscopic factor and ANC,  $C_{p(n)}=\sqrt{S_{p(n)}}b_{p(n)}$)
+\begin{equation}\label{eq5}
+R = \frac{(b_{l_fj_f}^{^8\textrm{B}})^2}{(b_{l_fj_f}^{^8\textrm{Li}})^2},
+\end{equation}
+where the single-particle ANCs $b_{l_fj_f}^{^8\textrm{B}}$ and $b_{l_fj_f}^{^8\textrm{Li}}$ can be derived from the single-particle wave functions calculated with the optical potential model. The ratio $R$ is then extracted to be $1.13$ and $1.03$ from equations \ref{eq4} and \ref{eq5}, respectively. We use the same geometry parameters $r_0$ and $a$, the same spin-orbit interaction for Woods-Saxon potential, and the depths adjusted to reproduce the neutron or proton binding energy in $^8\textrm{Li}$ or $^8\textrm{B}$.
+
+The average of above two ratios is derived to be 1.08 $\pm$ 0.07. The squared ANCs for $^8$B$_{g.s.}$ $\rightarrow$ $^7$Be + p are then derived to be $(C_{p3/2}^{^8\textrm{B}})^2 = 0.51 \pm 0.08$ fm$^{-1}$, $(C_{p1/2}^{^8\textrm{B}})^2 = 0.066 \pm 0.011$ fm$^{-1}$ and $(C_{total}^{^8\textrm{B}})^2 = 0.57 \pm 0.10$ fm$^{-1}$. The error results from the uncertainties of the ANC $(C_{l_fj_f}^{^8\textrm{Li}})^2$ and the ratio $R$.
+
+\section{The astrophysical S-factors and reaction rates of $^7$Be(p,\,$\gamma$)$^8$B}
+
+At the temperatures of astrophysical interest, the direct capture into the $^8\textrm{B}$ ground state proceeds mainly by the E1 transition from the incoming s- and d-waves to the bound p state. In the present work, the direct capture cross sections and astrophysical S-factors are computed based on the proton ANC for $^8$B$_{g.s.}$ $\rightarrow$ $^7$Be + p by using the RADCAP code \cite{ber03}, which is a potential model tool for direct capture reactions.
+
+The S-factors for the captures via the $1^+$ and $3^+$ resonances at $E_x$ = 0.774 MeV and 2.320 MeV are calculated with Breit-Wigner formula,
+\begin{equation}\label{eq6}
+\begin{aligned}
+S_{res}(E)=&\pi \frac{(\hbar c)^2}{2{\mu c}^2} \frac{2J+1}{(2J_1+1)(2J_2+1)}\\
+&\times\frac{\Gamma_p(E)\Gamma_{\gamma}(E)}{(E-E_R)^2+(\Gamma _{\textrm{tot}}/2)^2}\exp(\frac{E_G}{E})^{1/2} ,
+\end{aligned}
+\end{equation}
+where $E_R$ represents the resonance energy, $J$, $J_1$ and $J_2$ are the spins of $^8\textrm{B}$, proton and $^7\textrm{Be}$, respectively; $\Gamma _p$, $\Gamma _\gamma$ and $\Gamma _{\textrm{tot}}$ are the proton-, gamma- and total widths. The energy dependence of these widths is given by \cite{rol88}
+\begin{equation}\label{eq7}
+\Gamma _p(E) = \Gamma_p(E_R)\frac{\exp[-(E_G / E)^{1/2}]}{\exp[-(E_G/E_R)^{1/2}]} ,
+\end{equation}
+and
+\begin{equation}\label{eq8}
+\Gamma _{\gamma}(E) = \Gamma_{\gamma}(E_R)\frac{(Q+E)^{2l+1}}{(Q+E_R)^{2l+1}} ,
+\end{equation}
+where $Q$ is the reaction $Q$ value and $l$ represents the multipolarity of the $\gamma $ transition, $E_G = 0.978Z^2_1Z^2_2\mu$ MeV is the Gamow energy. The widths used in our calculation are $\Gamma_{p}(E_R)$ = 37 $\pm$ 5 keV and $\Gamma_{\gamma}(E_R)$ = 25 $\pm$ 4 meV \cite{fil83c} for the $1^+$ resonance and $\Gamma_{p}(E_R)$ = 350 $\pm$ 40 keV \cite{ajz88} and $\Gamma_{\gamma}(E_R)$ = 150 $\pm$ 30 meV \cite{jun03} for the $3^+$ resonance.
+
+\begin{figure}[H]%“[]”中为位置参数，四个参数tbph 依次是置顶、置底、浮动、当前位置，，选用的参数优先顺序为h-t-b-p
+\centering
+\includegraphics[scale=0.45]{Sfactor.eps}%"scale" 后的数字为图形的宽度，也可用"width=1.0\columnwidth" 定义
+\caption{(Color online) Astrophysical S-factor for the $^7$Be(p,\,$\gamma$)$^8$B reaction. The experimental data are taken from Refs. \cite{fil83c,hamm98,bab03c,hamm01,str01,jun10}.} % 图题
+\label{fig:figure3}%{}中“fig:example1”为图名，引用时用\ref{fig:example1}
+\end{figure}
+
+In Figure~\ref{fig:figure3} we show the present S-factors of the direct capture and the $1^+$ and $3^+$ resonances and total S-factors, together with the experimental data from Refs. \cite{fil83c,hamm98,bab03c,hamm01,str01,jun10}. It is seen that the present S-factors well reproduce the experimental data for a wide energy range between 0.1 MeV to 2.5 MeV. The direct capture S-factor at zero energy S$_{17}$(0) is then found to be 19.9 $\pm$ 3.5 eV b. In Figure~\ref{fig:figure4} we compare the present S$_{17}$(0) factor with the recommended values \cite{eri98,ade11}, as well as the previous results from direct measurements \cite{fil83l,hamm98,bab03l,jun10}, transfer reactions \cite{wpliu96,das06,azh06,oga03}, Coulomb dissociation experiments \cite{moto94,iwa99,sch03} and charge symmetry method \cite{tra03,howe13}. One can see that the present result agrees with the most recent recommended values \cite{eri98,ade11}, and presents an independent examination to the current results of the $^7$Be(p,\,$\gamma$)$^8$B reaction.
+
+\begin{figure}[H]%“[]”中为位置参数，四个参数tbph 依次是置顶、置底、浮动、当前位置，，选用的参数优先顺序为h-t-b-p
+\centering
+\includegraphics[scale=0.7]{Scompare.eps}%"scale" 后的数字为图形的宽度，也可用"width=1.0\columnwidth" 定义
+\caption{(Color online) Comparison of the present $S_{17}(0)$ factor with the previous results. The direct measurements are performed by Filippone et al. \cite{fil83l}, Hammache et al. \cite{hamm98}, Baby et al. \cite{bab03l}, and Junghans et al. \cite{jun10}. The transfer reaction was carried out by Liu et al. \cite{wpliu96}, Azhari et al. \cite{azh06} and Das et al. \cite{das06}. Ogata et al. \cite{oga03} reanalyzed the transfer reaction data from Ref. \cite{wpliu96} and renewed the $S_{17}(0)$ factor. The Coulomb dissociation experiments are performed by Motobayashi et al. \cite{moto94}, Iwasa et al. \cite{iwa99}, Sch\"{u}mann et al. \cite{sch03}. The work via charge symmetry method includes the $^{13}$C($^7$Li,\,$^8$Li)$^{12}$C reaction by Trache et al. \cite{tra03}, the $^7$Li($^8$Li,\,$^7$Li)$^8$Li reaction by Howell et al. \cite{howe13}, and the $^7$Li(d,\,p)$^8$Li reaction in the present work (the red star). The light grey and the dark grey shadows represent the recommended values by Adelberger et al. (1998) \cite{eri98} and by Adelberger et al. (2011) \cite{ade11}, respectively.}
+\label{fig:figure4}
+\end{figure}
+
+The astrophysical $^7$Be(p,\,$\gamma$)$^8$B reaction rates for
+the direct capture and the broad $3^+$ resonance can be calculated with
+\begin{equation}\label{eq9}
+\begin{aligned}
+N_A<\sigma \upsilon> _{nr} =&N_A(\frac{8}{\pi\mu})^{1/2}\frac{1}{(kT)^{3/2}}\\
+&\times\int_0^\infty S(E)\exp[-(\frac{E_G}{E})^{1/2}-\frac{E}{kT}]\textrm{d}E ,
+\end{aligned}
+\end{equation}
+where $N_A$ is Avogadro's number. For the narrow $1^+$ resonance, the reaction rate can be approximated by
+\begin{eqnarray}
+\label{eq10}%
+N_A \langle\sigma v\rangle_{res} = N_A \big({2\pi \over \mu kT}
+\big)^{3/2}\hbar^2\omega\gamma\exp(-E_R/kT),
+\end{eqnarray}
+where the resonance strength $\omega\gamma$ is given by
+\begin{eqnarray}
+\label{eq11} \omega\gamma={2J+1 \over
+(2J_{1}+1)(2J_{2}+1)}{\Gamma_{p}(E_R)\Gamma_{\gamma}(E_R) \over
+\Gamma_{\textrm{tot}}},
+\end{eqnarray}
+The present reaction rates of the direct capture and the $1^+$ and $3^+$ resonances and total reaction rates are listed in Table \ref{tab:table3}. The direct capture dominates the $^7$Be(p,\,$\gamma$)$^8$B reaction in the whole temperature range of $T_9$ = 0.003-10, especially at temperatures of $T_9 \leq 0.5$ the direct component accounts for more than 99.5\%.
+
+In Figure~\ref{fig:figure5} we compare the present rate with the previous compilations of REACLIB~\cite{reaclib}, NACRE~\cite{nacre1} and NACRE II~\cite{nacre2}. The present rate is about 20\% slower than the REACLIB rate, while it is in good agreement with the NACRE and the NACRE II rates.
+
+%Table 2%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table*}[]
+\caption{The present $^7$Be(p,\,$\gamma$)$^8$B reaction rate in cm$^3$mol$^{-1}$s$^{-1}$ and the percent of different components.}
+\label{tab:table3}
+\begin{center}\footnotesize \doublerulesep 0.2pt \tabcolsep 7.2pt
+\begin{tabular*}{0.6\paperwidth}{cccccccc}
+\toprule[0.35pt]\hline
+ &\multicolumn{2}{c}{Direct capture}&\multicolumn{2}{c}{1$^+$ resonance}&\multicolumn{2}{c}{3$^+$ resonance}&Total\\\cline{2-3\ }\cline{4-5\ }\cline{6-7\ }\cline{8-8\ }
+$T_9$&rate&percent&rate&percent&rate&percent&rate \\\hline
+0.003 & 1.52E-24 & 100.00\% & 0.00E+00 & 0.00\% & 8.82E-30 & 0.00\% & 1.52E-24 \\
+    0.004 & 8.41E-22 & 100.00\% & 0.00E+00 & 0.00\% & 4.98E-27 & 0.00\% & 8.41E-22 \\
+    0.005 & 7.46E-20 & 100.00\% & 0.00E+00 & 0.00\% & 4.50E-25 & 0.00\% & 7.46E-20 \\
+    0.006 & 2.27E-18 & 100.00\% & 0.00E+00 & 0.00\% & 1.40E-23 & 0.00\% & 2.27E-18 \\
+    0.007 & 3.47E-17 & 100.00\% & 0.00E+00 & 0.00\% & 2.17E-22 & 0.00\% & 3.47E-17 \\
+    0.008 & 3.28E-16 & 100.00\% & 0.00E+00 & 0.00\% & 2.08E-21 & 0.00\% & 3.28E-16 \\
+    0.009 & 2.19E-15 & 100.00\% & 0.00E+00 & 0.00\% & 1.41E-20 & 0.00\% & 2.19E-15 \\
+    0.01  & 1.12E-14 & 100.00\% & 0.00E+00 & 0.00\% & 7.31E-20 & 0.00\% & 1.12E-14 \\
+    0.011 & 4.65E-14 & 100.00\% & 2.36E-284 & 0.00\% & 3.08E-19 & 0.00\% & 4.65E-14 \\
+    0.012 & 1.64E-13 & 100.00\% & 3.05E-260 & 0.00\% & 1.10E-18 & 0.00\% & 1.64E-13 \\
+    0.013 & 5.06E-13 & 100.00\% & 7.64E-240 & 0.00\% & 3.45E-18 & 0.00\% & 5.06E-13 \\
+    0.014 & 1.40E-12 & 100.00\% & 2.31E-222 & 0.00\% & 9.63E-18 & 0.00\% & 1.40E-12 \\
+    0.015 & 3.51E-12 & 100.00\% & 3.25E-207 & 0.00\% & 2.45E-17 & 0.00\% & 3.51E-12 \\
+    0.016 & 8.14E-12 & 100.00\% & 5.78E-194 & 0.00\% & 5.76E-17 & 0.00\% & 8.14E-12 \\
+    0.018 & 3.61E-11 & 100.00\% & 6.92E-172 & 0.00\% & 2.61E-16 & 0.00\% & 3.61E-11 \\
+    0.02  & 1.30E-10 & 100.00\% & 3.13E-154 & 0.00\% & 9.61E-16 & 0.00\% & 1.30E-10 \\
+    0.025 & 1.68E-09 & 100.00\% & 1.79E-122 & 0.00\% & 1.31E-14 & 0.00\% & 1.68E-09 \\
+    0.03  & 1.17E-08 & 100.00\% & 2.53E-101 & 0.00\% & 9.63E-14 & 0.00\% & 1.17E-08 \\
+    0.04  & 1.97E-07 & 100.00\% & 6.34E-75 & 0.00\% & 1.77E-12 & 0.00\% & 1.97E-07 \\
+    0.05  & 1.46E-06 & 100.00\% & 4.06E-59 & 0.00\% & 1.42E-11 & 0.00\% & 1.46E-06 \\
+    0.06  & 6.64E-06 & 100.00\% & 1.33E-48 & 0.00\% & 6.96E-11 & 0.00\% & 6.64E-06 \\
+    0.07  & 2.22E-05 & 100.00\% & 4.16E-41 & 0.00\% & 2.49E-10 & 0.00\% & 2.22E-05 \\
+    0.08  & 5.99E-05 & 100.00\% & 1.70E-35 & 0.00\% & 7.18E-10 & 0.00\% & 5.99E-05 \\
+    0.09  & 1.38E-04 & 100.00\% & 3.83E-31 & 0.00\% & 1.76E-09 & 0.00\% & 1.38E-04 \\
+    0.1   & 2.83E-04 & 100.00\% & 1.15E-27 & 0.00\% & 3.82E-09 & 0.00\% & 2.83E-04 \\
+    0.11  & 5.30E-04 & 100.00\% & 7.91E-25 & 0.00\% & 7.55E-09 & 0.00\% & 5.30E-04 \\
+    0.12  & 9.21E-04 & 100.00\% & 1.81E-22 & 0.00\% & 1.38E-08 & 0.00\% & 9.21E-04 \\
+    0.14  & 2.35E-03 & 100.00\% & 9.03E-19 & 0.00\% & 3.89E-08 & 0.00\% & 2.35E-03 \\
+    0.15  & 3.51E-03 & 100.00\% & 2.69E-17 & 0.00\% & 6.10E-08 & 0.00\% & 3.51E-03 \\
+    0.16  & 5.07E-03 & 100.00\% & 5.21E-16 & 0.00\% & 9.22E-08 & 0.00\% & 5.07E-03 \\
+    0.18  & 9.69E-03 & 100.00\% & 7.18E-14 & 0.00\% & 1.92E-07 & 0.00\% & 9.69E-03 \\
+    0.2   & 1.69E-02 & 100.00\% & 3.63E-12 & 0.00\% & 3.63E-07 & 0.00\% & 1.69E-02 \\
+    0.25  & 5.11E-02 & 100.00\% & 4.02E-09 & 0.00\% & 1.32E-06 & 0.00\% & 5.11E-02 \\
+    0.3   & 1.18E-01 & 100.00\% & 4.10E-07 & 0.00\% & 3.62E-06 & 0.00\% & 1.18E-01 \\
+    0.35  & 2.30E-01 & 99.99\% & 1.08E-05 & 0.00\% & 8.22E-06 & 0.00\% & 2.30E-01 \\
+    0.4   & 3.97E-01 & 99.97\% & 1.21E-04 & 0.03\% & 1.64E-05 & 0.00\% & 3.97E-01 \\
+    0.45  & 6.29E-01 & 99.87\% & 7.82E-04 & 0.12\% & 2.96E-05 & 0.00\% & 6.29E-01 \\
+    0.5   & 9.32E-01 & 99.63\% & 3.42E-03 & 0.37\% & 4.97E-05 & 0.01\% & 9.36E-01 \\
+    0.6   & 1.78E+00 & 98.33\% & 3.01E-02 & 1.66\% & 1.19E-04 & 0.01\% & 1.81E+00 \\
+    0.7   & 2.97E+00 & 95.58\% & 1.37E-01 & 4.42\% & 2.46E-04 & 0.01\% & 3.11E+00 \\
+    0.8   & 4.53E+00 & 91.56\% & 4.17E-01 & 8.43\% & 4.56E-04 & 0.01\% & 4.95E+00 \\
+    0.9   & 6.46E+00 & 86.93\% & 9.70E-01 & 13.06\% & 7.83E-04 & 0.01\% & 7.43E+00 \\
+    1     & 8.76E+00 & 82.37\% & 1.87E+00 & 17.62\% & 1.27E-03 & 0.01\% & 1.06E+01 \\
+    1.25  & 1.61E+01 & 73.41\% & 5.82E+00 & 26.58\% & 3.56E-03 & 0.02\% & 2.19E+01 \\
+    1.5   & 2.55E+01 & 68.39\% & 1.18E+01 & 31.59\% & 8.69E-03 & 0.02\% & 3.73E+01 \\
+    1.75  & 3.69E+01 & 66.19\% & 1.88E+01 & 33.77\% & 2.01E-02 & 0.04\% & 5.58E+01 \\
+    2     & 5.01E+01 & 65.73\% & 2.61E+01 & 34.21\% & 4.48E-02 & 0.06\% & 7.62E+01 \\
+    2.5   & 8.10E+01 & 67.47\% & 3.89E+01 & 32.38\% & 1.84E-01 & 0.15\% & 1.20E+02 \\
+    3     & 1.17E+02 & 70.61\% & 4.83E+01 & 29.06\% & 5.47E-01 & 0.33\% & 1.66E+02 \\
+    3.5   & 1.58E+02 & 73.98\% & 5.44E+01 & 25.44\% & 1.24E+00 & 0.58\% & 2.14E+02 \\
+    4     & 2.03E+02 & 77.13\% & 5.78E+01 & 21.99\% & 2.31E+00 & 0.88\% & 2.63E+02 \\
+    5     & 3.03E+02 & 82.28\% & 5.97E+01 & 16.25\% & 5.42E+00 & 1.48\% & 3.68E+02 \\
+    6     & 4.14E+02 & 86.01\% & 5.81E+01 & 12.06\% & 9.32E+00 & 1.94\% & 4.82E+02 \\
+    7     & 5.36E+02 & 88.71\% & 5.49E+01 & 9.08\% & 1.34E+01 & 2.21\% & 6.05E+02 \\
+    8     & 6.68E+02 & 90.71\% & 5.12E+01 & 6.95\% & 1.72E+01 & 2.34\% & 7.37E+02 \\
+    9     & 8.08E+02 & 92.23\% & 4.75E+01 & 5.42\% & 2.06E+01 & 2.35\% & 8.76E+02 \\
+    10    & 9.55E+02 & 93.40\% & 4.40E+01 & 4.31\% & 2.34E+01 & 2.29\% & 1.02E+03 \\\hline
+
+\bottomrule[0.35pt]
+\end{tabular*}
+\end{center}
+\end{table*}
+
+\begin{figure}[H]%“[]”中为位置参数，四个参数tbph 依次是置顶、置底、浮动、当前位置，，选用的参数优先顺序为h-t-b-p
+\centering
+\includegraphics[scale=0.45]{rate.eps}%"scale" 后的数字为图形的宽度，也可用"width=1.0\columnwidth" 定义
+\caption{(Color online) Comparison of the present reaction rate with the previous compilations of REACLIB \cite{reaclib}, NACRE \cite{nacre1} and NACRE II \cite{nacre2}.} % 图题
+\label{fig:figure5}%{}中“fig:example1”为图名，引用时用\ref{fig:example1}
+\end{figure}
+
+For convenience, we fit our rate with the expression used
+in the astrophysical reaction rate library REACLIB \cite{rau01}
+\begin{equation}\label{eq14}
+\begin{aligned}
+N_A=&\exp[134.565-0.352308T_9^{-1}-63.0447T_9^{-1/3}\\
+&-209.006T_9^{1/3}+13.1645T_9-0.6858T_9^{5/3}\\&+83.7921\ln(T_9)]
++\exp[12.4283+0.00154438T_9^{-1}\\&-10.4908T_9^{-1/3}-0.0172274T_9^{1/3}+0.266666T_9\\
+&-0.0429832T_9^{5/3}-0.860093\ln(T_9)] ,
+\end{aligned}
+\end{equation}
+The fitting errors are smaller than $5\%$ over the range from $T_9$ =0.003 to $T_9$ =10.
+
+\section{Summary and conclusion}
+
+Transfer reaction not only is an effective tool to explore the structure of exotic nuclei on present and planned rare isotope accelerators \cite{jon10,liu11}, but also plays an important role in determination of nuclear ANCs and investigation of astrophysical S-factors and/or reaction rates \cite{xu94,azh99,li10,li11}.
+
+In this work we reanalyze the angular distribution for the neutron transfer reaction $^7$Li(d,\,p)$^8$Li leading to the ground state of $^8$Li, and derive the neutron ANC of the virtual decay $^8$Li $\rightarrow$ $^7$Li + n. According to charge symmetry, the proton ANC of $^8$B $\rightarrow$ $^7$Be + p is extracted and used to compute the S-factor and the reaction rate of the direct capture in the $^7$Be(p,\,$\gamma$)$^8$B reaction. We also evaluate the contributions from the $1^+$ and $3^+$ resonances. The present result demonstrates that the direct capture dominates the $^7$Be(p,\,$\gamma$)$^8$B reaction in the whole temperature range of $T_9$ = 0.003-10, especially at temperatures of $T_9 \leq 0.5$ the direct component accounts for more than 99.5\%. The new rate is about 20\% slower than the REACLIB compilation, while is in agreement with the NACRE rate, especially in good agreement with the most recent compilation of NACRE II. This work provides an independent examination to the current results for this reaction.
+
+\vspace*{2mm} \Acknowledgements{\bahao This work was performed with the support of the NSFC under Grant Nos. 11321064, 11490560, 11475264, 11375269 and 11275272, the 973 program of China under Grant No. 2013CB834406.}
+
+\begin{thebibliography}{99}
+
+\bibitem {ade11}Adelberger E G, Garcia, Hamish R, et al. Solar fusion cross sections. II. The pp chain and CNO cycles. Rev Mod Phys, 2011, 83: 195-245
+
+\bibitem {hax13}Haxton W C, Robertson R G H, Serenelli A M. Solar neutrinos: status and prospects. Ann Rev Astron Astrophys. 2013, 51: 21-61
+
+\bibitem {ahm04}Ahmed S N, Anthony A E, Beier E W, et al. Measurement of the total active $^8$B solar neutrino flux at the sudbury neutrino observatory with enhanced neutral current sensitivity. Phys Rev Lett, 2004, 92: 181301
+
+\bibitem {bah04}Bahcall J N, Pinsonneault M H. What do we (not) know theoretically about solar neutrino fluxes? Phys Rev Lett, 2004, 92: 121301
+
+\bibitem {bro04} Bromm V, Larson R B. The first stars. Annu Rev Astron Astrophys, 2004, 42: 79-118
+
+\bibitem {ful86} Fuller G M, Woosley S E, Weaver T A. The evolution of radiation-dominated stars. I. nonrotating supermassive stars. Astrophys J, 1986, 307: 675-686
+
+\bibitem {wie89} Wiescher M, G\"{o}rres J, Graff S, et al. The hot proton-proton chains in low-metallicity objects. Astrophys J, 1989, 343: 352-364
+
+\bibitem {fil83l}Filippone B W, Elwyn A J, Davids C N, et al. Measurement of the $^7$Be(p,\,$\gamma$)$^8$B reaction cross section at low energies. Phys Rev Lett, 1983, 50: 412-416
+
+\bibitem {fil83c}Filippone B W, Elwyn A J, Davids C N, et al. Proton capture cross section of $^7\textrm{Be}$ and the flux of high energy solar neutrinos. Phys Rev C, 1983, 28: 2222-2229
+
+\bibitem {bab03l}Baby L T, Bordeanu C, Goldring G, et al. Precision measurement of the $^7$Be(p,\,$\gamma$)$^8$B cross section with an implanted $^7$Be target. Phys Rev  Lett, 2003, 90: 022501
+
+\bibitem {bab03c}Baby L T, Bordeanu C, Goldring G, et al. New measurement of the proton capture rate on $^7$Be and S$_{17}$(0) factor. Phys Rev C, 2003, 67: 065805
+
+\bibitem {jun03}Junghans A R, Mohrmann E C, Snover K A, et al. Precise measurement of the $^7$Be(p,\,$\gamma$)$^8$B S factor. Phys Rev C, 2003, 68: 065803
+
+\bibitem {ter01}Terrasi F, Gialanella L, Imbriani G, et al. Direct measurement of the absolute cross section of p($^7$Be,$\gamma$)$^8$B. Nucl Phys A, 2001, 688: 539-542
+
+\bibitem {gia00}Gialanella L, Strieder F, Campajola L, et al. Absolute cross section of p($^7$Be,$\gamma$)$^8$B using a novel approach. Eur Phys J A,2000, 7: 303-305
+
+\bibitem {bau86}Baur G, Bertulani C A, Rebel H. Coulomb dissociation as a source of information on radiative capture processes of astrophysical interest. Nucl Phys A, 1986, 458: 188-204
+
+\bibitem {iwa99}Iwasa N, Bou\'{e} F, Sur\'{o}wka G, et al. Measurement of the Coulomb dissociation of $^8$B at 254 MeV/nucleon and the $^8$B solar neutrino flux. Phys Rev Lett, 1999, 83: 2910-2913
+
+\bibitem {dav01}Davids B, Anthony D W, Aumann T, et al. S$_{17}(0)$ determined from the Coulomb breakup of 83 MeV/nucleon $^8\textrm{B}$. Phys Rev Lett, 2001, 86: 2750-2753
+
+\bibitem {sch06} Sch\"{u}mann F, Hammache F, Typel S, et al. Low-energy cross section of the $^7$Be(p,\,$\gamma$)$^8$B solar fusion reaction from the Coulomb dissociation of $^8\textrm{B}$.  Phys Rev C, 2006, 73: 015806
+
+\bibitem {sch03} Sch\"{u}mann F, Hammache F, Typel S, et al. Coulomb dissociation of $^8\textrm{B}$ and the low-energy cross section of the $^7$Be(p,\,$\gamma$)$^8$B solar fusion reaction. Phys Rev Lett, 2003, 90: 232501
+
+\bibitem {wpliu96}Liu W P, Bai X X, Zhou S H, et al. Angular distribution for the $^7$Be(d,\,n)$^8$B reaction at $E_{c.m.}$ $=$ 5.8 MeV and the S$_{17}$(0) factor for the $^7$Be(p,\,$\gamma$)$^8$B reaction. Phys Rev Lett, 1996, 77: 611-614
+
+\bibitem {azh06}Azhari A, Burjan V, Carstoiu F, et al. Asymptotic normalization coefficients and the $^7$Be(p,\,$\gamma$)$^8$B astrophysical S factor. Phys ReV C, 2001, 63: 055803
+
+\bibitem {oga03}Ogata K, Yahiro M, Iseri Y, et al. Determination of S$_{17}$ from $^7$Be(d,\,n)$^8$B reaction. Phys Rev C, 2003, 67: 011602
+
+\bibitem {das06}Das J J, Datar M, Sugathan P, et al. Astrophysical $S_{17}(0)$ factor from a measurement of the $^2$H($^7$Be,$^8$B)n reaction at $E_{c.m.} = $ 4.5 MeV. Phys Rev C, 2006, 73: 015808
+
+\bibitem {bar95}Barker F C. The low-energy $^7$Be(p,\,$\gamma$)$^8$B cross section from an R-matrix approach. Nucl Phys  A, 1995, 588: 693-705
+
+\bibitem {rob73}Robertson G H. Proton Capture by $^7$Be and the solar neutrino problem. Phys Rev C, 1973, 7: 543-547
+
+\bibitem {typ97}Typel S, Wolter H H, Baur G. Higher-order effects in the Coulomb dissociation of $^8\textrm{B}$ into $^7\textrm{Be}$ + p. Nucl Phys A, 1997, 613: 147-164
+
+\bibitem {des94}Descouvemont P, Baye D. Microscopic study of the $^7$Li(n,$\gamma$)$^8$Li and $^7$Be(p,\,$\gamma$)$^8$B reactions in a multiconfiguration three-cluster model. Nucl Phys A, 1994, 567: 341-353
+
+\bibitem {cso95}Cs\'{o}t\'{o} A, Langanke K, Koonin S E, et al. $^7$Be(p,\,$\gamma$)$^8$B cross section and the properties of $^7$Be.
+ Phys Rev C, 1995, 52: 1130-1133
+
+\bibitem {des04}Descouvemont P. Reanalysis of the $^7$Be(p,\,$\gamma$)$^8$B S factor in a microscopic model. Phys Rev C, 2004, 70: 065802
+
+\bibitem {nav06}Navr\'{a}til P, Bertulani C A, Caurier E. $^7$Be(p,\,$\gamma$)$^8$B S factor from ab initio no-core shell model wave functions. Phys Rev C, 2006, 73: 065801
+
+\bibitem {nav11}Navr\'{a}til P, Roth R, Quaglioni S. Ab initio many-body calculation of the $^7$Be(p,\,$\gamma$)$^8$B radiative capture. Phys Lett B, 2011, 704: 379-383
+
+\bibitem {sch67}Schiffer J P, Morrison G C, Siemssen R H. Study of the (d,p) reaction in the $1p$ shell. Phys Rev, 1967, 64: 1274-1284
+
+\bibitem {tim03} Timofeyuk N K, Johnson R C, Mukhamedzhanov A M. Relation between proton and neutron asymptotic normalization coefficients for light mirror nuclei and its relevance to nuclear astrophysics. Phys Rev Lett, 2003, 91: 232501
+
+\bibitem {tim05} Timofeyuk N K, Descouvemont P. Asymptotic normalization coefficients for mirror virtual nucleon decays in a microscopic cluster model. Phys Rev C, 2005, 71: 064305
+
+\bibitem {guo05} Guo B, Li Z H, Liu W P, et al. The $^8$Li(d,\,p)$^9$Li reaction and astrophysical $^{8}$B(p,\,$\gamma$)$^{9}$C reaction rate. Nucl Phys A, 2005, 761: 162-172
+
+\bibitem {guo06} Guo B, Li Z H, Bai X X, et al. Determination of the astrophysical $^{26}$Si(p,\,$\gamma$)$^{27}$P reaction rate from the asymptotic normalization coefficients of $^{27}$Mg $\rightarrow$ $^{26}$Mg + n. Phys Rev C, 2006, 73: 048801
+
+\bibitem {guo07} Guo B, Li Z H, Liu W P, Bai X X. Determination of astrophysical $^{11}$C(p,\,$\gamma$)$^{12}$N reaction rate from the asymptotic normalization coefficients of $^{12}$B $\rightarrow$ $^{11}$B + n. J Phys G, 2007, 34: 103-114
+
+\bibitem {ian88} Thompson I J. Coupled reaction channels calculations in nuclear physics. Comput Phys Rep, 1988, 7: 167
+
+\bibitem {joh70}Johnson R C, Soper P J R. Contribution of deuteron breakup channels to deutron stripping and elastic scattering. Phys Rev C, 1970, 1: 976-990
+
+\bibitem {wal76}Wales G L, Johnson R C. Deuteron break-up effects in (p,d) reactions at 65 MeV. Nucl Phys A, 1976, 274: 168-176
+
+\bibitem {var91}Varner R L, Thompson W J, Mcabee T L, et al. A global nucleon optical model potential. Phys Rev, 1991, 201: 57-119
+
+\bibitem {kon03}Koning A J, Delaroche J P. Local and global nucleon optical models from 1 keV to 200 MeV. Nucl Phys A, 2003, 713: 231-310
+
+\bibitem {blo77} Blokhintsev L D, Borbely I, Dolinskii E I. Nuclear vertex constants. Sov J Part Nucl. 1977, 8: 485
+
+\bibitem {tra03} Trache L, Azhari A, Carstoiu F, et al. Asymptotic normalization coefficients for $^8$B $\rightarrow$ $^7$Be $+$ p from a study of $^8$Li $\rightarrow$ $^7$Li+ n. Phys Rev C, 2003, 67: 062801
+
+\bibitem {ber03} Bertulani C A. RADCAP: A potential model tool for direct capture reactions. Comput Phys Commun, 2003, 156: 123-141
+
+\bibitem {rol88} Rolfs C E, Rodney W S. Cauldrons in the cosmos. Chicago: University of Chicago Press, 1988
+
+\bibitem {ajz88} Ajzenberg-Selove F. Energy levels of light nuclei A$=$ $5-10$. Nucl Phys A, 1988, 490: 1-225
+
+\bibitem {str01} Strieder F, Gialanella L, Gy\"{u}rky, et al. Absolute cross section of $^7$Be(p,\,$\gamma$)$^8$B. Nucl Phys A, 2001, 696:219-230
+
+\bibitem {jun10} Junghans A R, Snover K A, Mohrmann E C, et al. Updated S factors for the $^7$Be(p,\,$\gamma$)$^8$B reaction. Phys Rev C, 2010, 81: 012801
+
+\bibitem {hamm98} Hammache F, Bogaert G, Aguer P, et al. New measurement and analysis of the $^7$Be(p,\,$\gamma$)$^8$B cross section. Phys Rev Lett, 1998, 80: 928-931
+
+\bibitem {hamm01} Hammache F, Bogaert G, Aguer P, et al. Low-energy measurement of the $^7$Be(p,\,$\gamma$)$^8$B cross section. Phys Rev Lett, 2001, 80: 3985-3988
+
+\bibitem {eri98} Adelberger E G, Austin S M, Bahcall J N, et al. Solar fusion cross sections. Rev Mod Phys, 1998, 70: 1265-1291
+
+\bibitem {moto94} Motobayashi T, Iwasa N, Ando Y, et al. Coulomb dissociation of $^8$B and the $^7$Be(p,\,$\gamma$)$^8$B reaction at low energies. Phys Rev Lett, 1994, 73: 2680-2683
+
+\bibitem {howe13} Howell D, Davids B, Greene J P, et al. First determination of the $^8$Li valence neutron asymptotic normalization coefficient using the $^7$Li($^8$Li,$^7$Li)$^8$Li reaction. Phys Rev C, 2013, 88: 025804
+
+\bibitem {reaclib} Caughlan G R, Fowler W A. Thermonuclear reaction rates V. At Data Nucl Data Tables, 1988, 40: 283-334
+
+\bibitem {nacre1} Angulo C, Arnould M, Rayet M, et al. A compilation of charged-particle induced thermonuclear reaction rates. Nucl Phys A, 1999, 656: 3-183
+
+\bibitem {nacre2} Xu Y, Takahashi K, Goriely S, et al. NACRE II: an update of the NACRE compilation of charged-particle-induced thermonuclear reaction rates for nuclei with mass number A$<$16. Nucl Phys A, 2013, 918: 61-169
+
+\bibitem {rau01} Rauscher T, Thielemann F K. Tables of nuclear cross sections and reaction rates: an addendum to the paper ``astrophysical reaction rates from statistical model calculations''. At Data Nucl Data Tables, 2001, 79: 47-64
+
+\bibitem {jon10} Jones K L, Adekola A S, Bardayan D W, et al. The magic nature of $^{132}$Sn explored through the single-particle states of $^{133}$Sn. Nature, 2010, 465: 454-457
+
+\bibitem {liu11} LIU WeiPing, LI ZhiHong, BAI XiXiang, et al. BRIF and CARIF progress. Sci China-Phys Mech Astron, 2011, 54: 14-17
+    
+\bibitem {xu94} Xu H M, Gagliardi C A, Tribble R E, et al. Overall normalization of the astrophysical S factor and the nuclear vertex constant for $^7$Be(p,\,$\gamma$)$^8$B reactions. Phys Rev Lett, 1994, 73: 2027-2030
+
+\bibitem {azh99} Azhari A, Burjan V, Carstoiu F, et al. The $^{10}$B($^7$Be,\,$^8$B)$^9$Be reaction and the $^7$Be(p,\,$\gamma$)$^8$B S factor. Phys Rev Lett, 1999, 82: 3960-3963
+
+\bibitem {li10} LI ZhiHong, SU Jun, GUO Bing, et al. Determination of the $^{12}$C(p,\,$\gamma$)$^{13}$N reaction rates from the $^{12}$C($^7$Li,\,$^6$He)$^{13}$N reaction. Sci China-Phys Mech Astron. 2010, 53: 658-663
+
+\bibitem {li11} LI ZhiHong, LI ErTao, SU Jun, et al. Study of the primordial lithium abundance. Sci China-Phys Mech Astron. 2011, 54: 67-72
+    
+\end{thebibliography}
+
+
+
+\end{multicols}
+
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+

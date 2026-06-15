@@ -1,0 +1,5 @@
+&basicInfo ap=7, zp=3, at=14, zt=7, Elab=44,                      densFileP='7Li-Liatard.den', densFileT='14N-Liatard.den' /
+&calCtrl   rstep=0.05, nrmax=600, rptmax=20.0, mqr=32, mqmu=32, tr=1.25, ti=1.35, ilda=1 /
+
+Note: Elab is total energy in MeV, not in MeV/nucleon
+

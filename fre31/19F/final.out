@@ -1,0 +1,8 @@
+ FRESCO - FRES 3.2: Coupled Reaction Channels
+
+ 19F(6Li,d)23Na at 16 MeV                                                        
+
+  **** Error         5010  reading line: hcm,rmatch,..
+ &FRESCO HCM=0.1 RMATCH=30.0                                                                        
+  **** Data read so far are:
+   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000

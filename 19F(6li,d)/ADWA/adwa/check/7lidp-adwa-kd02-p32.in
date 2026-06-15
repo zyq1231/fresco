@@ -1,0 +1,64 @@
+7Li(d,p)8Li at 12 MeV
+NAMELIST
+ &FRESCO hcm=0.1 rmatch=30.0
+  rintp=0.2 hnl=0.1 rnl=18 centre=-0.00
+  jtmin=0.0 jtmax= 20.0 absend=-1.0
+  thmin=0.0 thmax=180.0 thinc=0.1
+  ips=0.0010 it0=1 iter=1 iblock=1
+  nnu=24 epc=0.00
+  xstabl=1
+  elab = 12.0 /
+
+ &PARTITION namep='d' massp=2.0141  zp=1 nex=-1 pwf=T
+            namet='7Li' masst=7.0160 zt=3 qval=0.0 /
+ &STATES    jp=1.0 ptyp=1  ep=0.00   cpot=1 jt=1.5 ptyt=-1 et=0.0000 /
+
+ &PARTITION namep='p' massp= 1.0078 zp=1 nex=1 pwf=T
+            namet='8Li' masst=8.0225 zt=3 qval=-0.19 /
+ &STATES    jp=0.5 ptyp= 1  ep=0.00   cpot=2 jt=2.0 ptyt=1 et=0.0 /
+
+
+ &partition /
+
+ &pot kp= 1 type= 0  p(1:3)= 7.000  0.00    1.30  /
+ &pot kp= 1 type= 1  p(1:6)= 56.629 1.092 0.677  0.530 1.092 0.677 /
+ &pot kp= 1 type= 2  p(1:6)=  0.000 1.312 0.522  8.133 1.312 0.522 /
+ &pot kp= 1 type= 1  p(1:6)= 49.529 1.092 0.677  0.622 1.092 0.677 /
+ &pot kp= 1 type= 2  p(1:6)=  0.000 1.312 0.543  6.504 1.312 0.543 /
+
+ &pot kp= 2 type= 0  p(1:3)= 8.000  0.00    1.30  /
+ &pot kp= 2 type= 1  p(1:6)= 56.850 1.101 0.677  0.872 1.101 0.677 /
+ &pot kp= 2 type= 2  p(1:6)=  0.000 1.311 0.523  9.645 1.311 0.523 /
+ &pot kp= 2 type= 3  p(1:3)=  5.520 0.862 0.590  /
+
+ &Pot kp= 3 type= 0 shape= 0  p(1:3)=  1.0    0.0    0.0 /
+ &Pot kp= 3 type= 1 shape= 2  p(1:3)= 72.1500 0.0    1.4840 /
+
+ &pot kp= 4 type= 0  p(1:3)= 7.000  0.000  1.25 /
+ &pot kp= 4 type= 1  p(1:3)= 78  1.25  0.65 /
+
+ &pot kp= 5 type= 0  p(1:3)= 7.000  0.00    1.30  /
+ &pot kp= 5 type= 1  p(1:6)= 56.850 1.101 0.677  0.872 1.101 0.677 /
+ &pot kp= 5 type= 2  p(1:6)=  0.000 1.311 0.523  9.645 1.311 0.523 /
+ &pot kp= 5 type= 3  p(1:3)=  5.520 0.862 0.590  /
+
+ &pot /
+
+ &overlap kn1= 1 kn2= 0 ic1=1 ic2=2 in= 1
+    kind=0 ch1=' ' nn= 1 l=0 lmax=0 sn= 0.5 j= 0.5
+    kbpot= 3 be=2.225 isc= 1 ipc=3  /
+
+ &overlap kn1= 2 kn2= 0 ic1=1 ic2=2 in= 2
+    kind=0 ch1=' ' nn= 1 l=1 lmax=0 sn= 0.5 j=1.5
+    kbpot= 4 be=2.034 isc=-1  ipc=3  /
+
+ &overlap /
+
+ &COUPLING icto= -2 icfrom= 1 kind=7 ip1=0 ip2=-1 ip3=5 /
+   &cfp  in= 1 ib= 1 ia= 1 kn=  1  a= 1.0 /
+   &cfp  in=-2 ib= 1 ia= 1 kn=  2  a= 1.0 /
+
+ &COUPLING /
+
+
+

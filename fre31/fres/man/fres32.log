@@ -1,0 +1,439 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/MacPorts 2017_2) (preloaded format=pdflatex 2017.8.29)  10 NOV 2017 07:30
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**fres32.tex
+(./fres32.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 46 language(s) loaded.
+(/opt/local/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/opt/local/share/texmf-texlive/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/opt/local/share/texmf-texlive/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/opt/local/share/texmf-texlive/tex/latex/psnfss/mathptm.sty
+Package: mathptm 2005/04/12 PSNFSS-v9.2a Times w/ Math (SPQR, WaS) 
+
+
+Package mathptm Warning: This package is to be regarded as obsolete.
+(mathptm)                See the PSNFSS documentation.
+
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ptmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptmcm/m/n on input line 31.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 32.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ptmcm/m/it on input line 32.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ptmcm/m/it on input line 32.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 33.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/pzccm/m/n on input line 33.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/pzccm/m/n on input line 33.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 34.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 34.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 34.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 37.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 38.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 38.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 38.
+) (./fres32.aux)
+\openout1 = `fres32.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 24.
+ (/opt/local/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+\big@size=\dimen103
+LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 25
+.
+
+(/opt/local/share/texmf-texlive/tex/latex/psnfss/ot1ptmcm.fd
+File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 25
+.
+
+(/opt/local/share/texmf-texlive/tex/latex/psnfss/omlptmcm.fd
+File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 25
+.
+
+(/opt/local/share/texmf-texlive/tex/latex/psnfss/omspzccm.fd
+File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
+)
+LaTeX Font Info:    Try loading font information for OMX+psycm on input line 25
+.
+
+(/opt/local/share/texmf-texlive/tex/latex/psnfss/omxpsycm.fd
+File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 27.
+ [1
+
+{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 118.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 119.
+
+
+(/opt/local/share/texmf-texlive/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 137.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 137.
+ [3]
+Overfull \hbox (74.75249pt too wide) in paragraph at lines 237--237
+[]\OT1/pcr/m/n/10.95 2I1,F6.4,F8.4,F8.4,I1,3F8.4,I2  KQMAX,PP,THMIN,THMAX,THINC
+,KOORDS,CUTL,CUTR,CUTC,DGAM[] 
+ []
+
+[4] [5] [6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 581--588
+
+ []
+
+
+Overfull \hbox (20.30316pt too wide) in paragraph at lines 644--644
+[]\OT1/pcr/m/n/10 card A: (F10.4,3F8.4)   ENLAB,Bproj,H2SM,e^2    lab energy,pr
+ojectile binding energy[] 
+ []
+
+
+Overfull \hbox (44.30316pt too wide) in paragraph at lines 644--644
+[]\OT1/pcr/m/n/10 card B: (4f8.4)         massp,masst,massc,massv masses projec
+tile, target, core, valence[] 
+ []
+
+
+Overfull \hbox (38.30316pt too wide) in paragraph at lines 644--644
+[]         \OT1/pcr/m/n/10 card J: (10f8.4) delta(IK): nuclear phase shift used
+ in bin integral (radians)[] 
+ []
+
+[8] [9] [10] [11] [12] [13]
+Overfull \hbox (10.66849pt too wide) in paragraph at lines 993--995
+[]\OT1/ptm/m/n/10.95 For Nu-clear de-for-ma-tions P(k) = DEF(k), the de-for-ma-
+tion lengths (in fm.). (P0 = DEF(0) for \OT1/ptm/m/it/10.95 in-elas-tic \OT1/pt
+m/m/n/10.95 monopoles.) 
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 1038--1041
+
+ []
+
+[15] [16]
+Overfull \hbox (40.65125pt too wide) in paragraph at lines 1192--1200
+\OT1/ptm/m/n/10.95 = 6 for $\OMS/pzccm/m/n/10.95 j\OML/ptmcm/m/it/10.95 L[]; \O
+T1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it/10.95 `; S[]\OT1/ptmcm/m/n/10.95 )\OML/ptmc
+m/m/it/10.95 j[]\OT1/ptmcm/m/n/10.95 ; \OML/ptmcm/m/it/10.95 J[]\OMS/pzccm/m/n/
+10.95 i$ \OT1/ptm/m/n/10.95 with isospin $\OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it
+/10.95 :\OT1/ptmcm/m/n/10.95 5\OML/ptmcm/m/it/10.95 ; :\OT1/ptmcm/m/n/10.95 5)\
+OML/ptmcm/m/it/10.95 T$ \OT1/ptm/m/n/10.95 = 9 for $\OT1/ptmcm/m/n/10.95 (\OML/
+ptmcm/m/it/10.95 L[]; \OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it/10.95 `; S[]\OT1/pt
+mcm/m/n/10.95 )\OML/ptmcm/m/it/10.95 j[]\OT1/ptmcm/m/n/10.95 )\OML/ptmcm/m/it/1
+0.95 J[]; J[]\OT1/ptmcm/m/n/10.95 ; \OML/ptmcm/m/it/10.95 J[]\OMS/pzccm/m/n/10.
+95 i$ \OT1/ptm/m/n/10.95 &$\OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it/10.95 :\OT1/pt
+mcm/m/n/10.95 5\OML/ptmcm/m/it/10.95 ; :\OT1/ptmcm/m/n/10.95 5)\OML/ptmcm/m/it/
+10.95 T; T[]\OT1/ptmcm/m/n/10.95 ; \OML/ptmcm/m/it/10.95 T[]$ 
+ []
+
+[17] [18] [19] [20] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 1625--1636
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 1690--1691
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1708--1709
+
+ []
+
+[23] [24] [25] [26]
+Overfull \hbox (22.19255pt too wide) in paragraph at lines 2033--2046
+\OT1/pcr/m/n/10.95 chans, listcc, treneg, cdetr, smats, xstabl, nlpl, waves, la
+mpl, kfus, wdisk, 
+ []
+
+[27]
+Overfull \hbox (15.62256pt too wide) in paragraph at lines 2169--2174
+\OT1/pcr/m/n/10.95 kind, ch1, nn, l, lmax, sn, ia, j, ib, kbpot, krpot, be, isc
+, ipc, nfl, nam,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2169--2174
+
+ []
+
+[28]
+Overfull \hbox (15.23508pt too wide) in paragraph at lines 2210--2212
+ \OT1/ptm/b/n/10.95 &INEL namelist \OT1/ptm/m/n/10.95 The in-for-ma-tion on Car
+d 16 is give by a \OT1/pcr/m/n/10.95 &inel \OT1/ptm/m/n/10.95 namelist with var
+i-ables \OT1/pcr/m/n/10.95 ib,ia,k,no,kp,a\OT1/ptm/m/n/10.95 . 
+ []
+
+
+Overfull \hbox (22.88937pt too wide) in paragraph at lines 2216--2218
+ \OT1/ptm/b/n/10.95 &CFP namelist \OT1/ptm/m/n/10.95 The in-for-ma-tion on Card
+ 17 is give by a \OT1/pcr/m/n/10.95 &cfp \OT1/ptm/m/n/10.95 namelist with vari-
+ables \OT1/pcr/m/n/10.95 in,ib,ia,kn,a,keep\OT1/ptm/m/n/10.95 . 
+ []
+
+[29]
+Missing character: There is no ê in font ptmr7t!
+Missing character: There is no ê in font ptmr7t!
+ [30]
+Overfull \hbox (26.30316pt too wide) in paragraph at lines 2379--2379
+[] \OT1/pcr/m/n/10 &OVERLAP kn1=1 ic1=1 ic2=2 in=1 kind=0 nn=4 l=0 sn=.5 j=0.5 
+kbpot=3 be=11.73 isc=1 /[] 
+ []
+
+
+Overfull \hbox (32.30316pt too wide) in paragraph at lines 2379--2379
+[] \OT1/pcr/m/n/10 &OVERLAP kn1=2 ic1=1 ic2=2 in=2 kind=0 nn=4 l=0 sn=.5 j=0.5 
+kbpot=4 be=17.899 isc=1 /[] 
+ []
+
+
+Overfull \hbox (26.30316pt too wide) in paragraph at lines 2379--2379
+[] \OT1/pcr/m/n/10 &OVERLAP kn1=3 ic1=1 ic2=2 in=1 kind=0 nn=3 l=2 sn=.5 j=2.5 
+kbpot=3 be=11.53 isc=1 /[] 
+ []
+
+[31]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2384.
+
+Overfull \hbox (2.30316pt too wide) in paragraph at lines 2387--2394
+[]\OT1/pcr/m/n/10 hcm, rmatch, rintp, hnl, rnl, centre, rsp, iter, pset, llmax,
+ dry, rasym, accrcy,
+ []
+
+
+Overfull \hbox (14.30316pt too wide) in paragraph at lines 2387--2394
+\OT1/pcr/m/n/10 switch, ajswtch, sinjmax, cutl, cutr, cutc, absend, jtmin, jump
+, jbord, nnu, rmatr,
+ []
+
+
+Overfull \hbox (2.30316pt too wide) in paragraph at lines 2387--2394
+\OT1/pcr/m/n/10 nrbases, nrbmin, pralpha, pcon, meigs, listcc, smats, veff, cha
+ns, xstabl, thmin,
+ []
+
+
+Overfull \hbox (38.30316pt too wide) in paragraph at lines 2387--2394
+\OT1/pcr/m/n/10 thmax, thinc, smallchan, smallcoup, melfil, nosol, cdetr, numno
+de, treneg, nlpl, trans,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2387--2394
+
+ []
+
+
+Overfull \hbox (26.30316pt too wide) in paragraph at lines 2395--2399
+[]\OT1/pcr/m/n/10 hktarg, ncoul, reor, pauli, nk, q, ipc, iscgs, ipcgs, hat, re
+mnant, postprior, quasi,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2395--2399
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2409.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2403--2421
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2425--2435
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2436--2448
+
+ []
+
+[32]
+Overfull \hbox (8.30316pt too wide) in paragraph at lines 2504--2522
+\OT1/pcr/m/n/10 part, a1, a2, rc, ac, v, vr0, a, w, wr0, aw, wd, wdr0, awd, vso
+, rso0, aso, shape,
+ []
+
+
+Overfull \hbox (14.30316pt too wide) in paragraph at lines 2504--2522
+\OT1/pcr/m/n/10 freal, fimag, vsot, rsot0, asot, l, parity, nosub, itt, beta2, 
+beta3, idef, beta2c,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2504--2522
+
+ []
+
+
+Overfull \hbox (0.88033pt too wide) in paragraph at lines 2524--2531
+[]\OT1/ptm/m/n/10 For de-for-ma-tions, \OT1/pcr/m/n/10 beta2m, beta3m \OT1/ptm/
+m/n/10 are the nu-clear \OT1/ptm/m/it/10 frac-tional \OT1/ptm/m/n/10 de-for-ma-
+tions, and \OT1/pcr/m/n/10 beta2c, beta3c \OT1/ptm/m/n/10 are the Coulomb
+ []
+
+[33] [34] [35] [36]
+Underfull \hbox (badness 10000) in paragraph at lines 2724--2732
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 2736
+.
+(/opt/local/share/texmf-texlive/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2736.
+
+ [37] [38]
+Underfull \hbox (badness 10000) in paragraph at lines 2792--2796
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2806--2813
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2814--2819
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2820--2823
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2824--2830
+
+ []
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 2831--2835
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2836--2839
+
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 2893--2906
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2920--2922
+
+ []
+
+[41] [42]
+Overfull \hbox (5.90295pt too wide) in paragraph at lines 2973--2973
+[] \OT1/pcr/m/n/12 &variable kind=1 name='r0' kp=1 pline=2 col=2 valmin=.7 valm
+ax=2.0/[] 
+ []
+
+
+Overfull \hbox (5.90295pt too wide) in paragraph at lines 2973--2973
+[] \OT1/pcr/m/n/12 &variable kind=1 name='rw' kp=1 pline=2 col=5 valmin=.7 valm
+ax=2.0/[] 
+ []
+
+[43] (./fres32.aux) ) 
+Here is how much of TeX's memory you used:
+ 490 strings out of 494108
+ 6261 string characters out of 6155655
+ 74484 words of memory out of 5000000
+ 3854 multiletter control sequences out of 15000+600000
+ 71777 words of font info for 142 fonts, out of 8000000 for 9000
+ 430 hyphenation exceptions out of 8191
+ 24i,12n,21p,179b,307s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/opt/local/share/texmf-texlive/fonts/enc/dvips/base/8r.en
+c}</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></o
+pt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></op
+t/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/loc
+al/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/local/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></opt/local/share/texmf-t
+exlive/fonts/type1/urw/courier/ucrr8a.pfb></opt/local/share/texmf-texlive/fonts
+/type1/urw/symbol/usyr.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/time
+s/utmb8a.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb><
+/opt/local/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
+Output written on fres32.pdf (43 pages, 224940 bytes).
+PDF statistics:
+ 190 PDF objects out of 1000 (max. 8388607)
+ 132 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

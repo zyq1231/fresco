@@ -1,0 +1,26 @@
+An & Cai 2006 Fit
+NAMELIST
+&FRESCO hcm=0.05 rmatch=30.0 jtmin=0.0 jtmax=60.0 absend=0.01
+        thmin=0.0 thmax=180.0 thinc=1.0 chans=1 smats=2 xstabl=1
+        elab=1.979 /
+&PARTITION namep='d' massp=2.014 zp=1.0 nex=1
+           namet='19F' masst=18.998 zt=9.0 qval=0.0 /
+&STATES jp=1.0 ptyp=1 ep=0.0 cpot=1 jt=0.5 ptyt=1 et=0.0 /
+&partition /
+
+! 1. Coulomb
+&POT kp=1 type=0 p(1:3)= 18.998 0.0 1.303 /
+
+! 2. Real Volume
+&POT kp=1 type=1 p(1:3)= 93.5231 1.1490917900221176 0.7526206810180874 /
+
+! 3. Imaginary Volume (·ÅÔÚ type 1 p4-6) + Imaginary Surface (Type 2)
+&POT kp=1 type=1 p(4:6)= 1.2271 1.3423645019065547 0.588169198269147 /
+&POT kp=1 type=2 p(1:3)= 10.7694 1.3909649377110966 0.6964350970731289 /
+
+! 4. Spin-Orbit
+&POT kp=1 type=3 p(1:3)= 3.5570 0.972 1.011 /
+
+&pot /
+&overlap /
+&coupling /

@@ -1,0 +1,507 @@
+.yui3-menu .yui3-menu {
+    position: absolute;
+    z-index: 1;
+    background: url(/templates/jsp/_style4/_ar/images/journal-menu-bg.png) repeat-x;
+    border-right: 2px solid #C2BEBE;
+    border-left: 2px solid #C2BEBE;
+    border-bottom: 2px solid #C2BEBE;
+}
+
+.yui3-menu .yui3-shim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    border: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.yui3-menu-hidden {
+    top: -10000px;
+    left: -10000px;
+    visibility: hidden;
+}
+
+.yui3-menu li {
+    list-style-type: none;
+}
+
+.yui3-menu ul, .yui3-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.yui3-menu-label, .yui3-menuitem-content {
+    text-align: left;
+    white-space: nowrap;
+    display: block;
+}
+
+.yui3-menu-horizontal li {
+    float: left;
+    width: auto;
+}
+
+.yui3-menu-horizontal li li {
+    float: none;
+}
+
+.yui3-menu-horizontal ul {
+    *zoom: 1;
+}
+
+.yui3-menu-horizontal ul ul {
+    *zoom: normal;
+}
+
+.yui3-menu-horizontal>.yui3-menu-content>ul:after {
+    content: "";
+    display: block;
+    clear: both;
+    line-height: 0;
+    font-size: 0;
+    visibility: hidden;
+}
+
+.yui3-menu-content {
+    *zoom: 1;
+}
+
+.yui3-menu-hidden .yui3-menu-content {
+    *zoom: normal;
+}
+
+.yui3-menuitem-content, .yui3-menu-label {
+    _zoom: 1;
+}
+
+.yui3-menu-hiden .yui3-menuitem-content, .yui3-menu-hiden .yui3-menu-label {
+    _zoom: normal;
+}
+
+.yui3-menu-content {
+    font-size: 80%;
+    *line-height: 1.45;
+    padding: 0px;
+    border: none;
+}
+.ie7Body .yui3-menu-horizontal .yui3-menu-content {
+    line-height: 1.5;
+}
+.yui3-menu-horizontal .yui3-menu-content {
+    line-height: 2;
+    *line-height: 1.9;
+    background: none;
+    padding: 0;
+}
+
+.yui3-menu ul, .yui-skin-sam .yui3-menu ul ul {
+    margin-top: 3px;
+    padding-top: 3px;
+    border-top: none;
+}
+
+.yui3-menu-horizontal ul {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.yui3-menu li, .yui3-menu .yui3-menu li {
+    _border-bottom: solid 1px #fff;
+}
+
+.yui3-menu-horizontal li {
+    _border-bottom: 0;
+}
+
+.yui3-menubuttonnav li {
+    border-right: solid 1px #ccc;
+}
+
+.yui3-splitbuttonnav li {
+    border-right: solid 1px #808080;
+}
+
+.yui3-menubuttonnav li li,
+.yui3-splitbuttonnav li li {
+    border-right: 0;
+}
+
+.yui3-menu-label,
+.yui3-menu .yui3-menu .yui3-menu-label,
+.yui3-menuitem-content,
+.yui3-menu .yui3-menu .yui3-menuitem-content {
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    cursor: default;
+    float: none;
+    border: 0;
+    margin: 0;
+}
+
+.yui3-menu .yui3-menu .yui3-menu-label,
+.yui3-menu .yui3-menu .yui3-menuitem-content {
+    background: none;
+    color: #2A4264;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-size: 7pt;
+}
+.yui3-menu-horizontal .yui3-menu-label,
+.yui3-menu-horizontal .yui3-menuitem-content {
+    padding: 0px 0px 6px 0px;
+    border: none;
+    margin: -.5px 0;
+    float: left;
+    width: auto;
+}
+
+#topNavigation .innerMenuitemContentSpan, .innerMenuLabel {
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+    text-transform: uppercase;
+}
+#topNavigation > .yui3-menu-content:first-child > ul:first-child > li:first-child a.yui3-menuitem-content .innerMenuitemContentSpan,
+.innerMenuLabel {
+    background: #236AAD url(/templates/jsp/_style4/_ar/images/sprite.png) no-repeat scroll 105% -1361px;
+    padding: 8px 28px 9px 18px;
+}
+
+.ie8Body #topNavigation > .yui3-menu-content:first-child > ul:first-child > li:first-child a.yui3-menuitem-content .innerMenuitemContentSpan,
+.ie8Body .innerMenuLabel {
+    background: #236AAD url(/templates/jsp/_style4/_ar/images/sprite.png) no-repeat scroll 105% -1361px;
+    padding: 4px 28px 9px 18px;
+}
+
+#topNavigation > .yui3-menu-content:first-child > ul:first-child > li.yui3-menuitem-active:first-child a.yui3-menuitem-content .innerMenuitemContentSpan,
+#topNavigation > .yui3-menu-content:first-child > ul:first-child > li.yui3-menuitem-active:first-child .innerMenuitemContentSpan {
+    background: #E9F2F9 url(/templates/jsp/_style4/_ar/images/sprite.png) no-repeat 105% -118px;
+}
+
+.yui3-menu-label,
+.yui3-menu .yui3-menu .yui3-menu-label {
+    background: none;
+}
+
+.yui3-menu-horizontal .yui3-menu-label {
+    background: none;
+}
+
+.yui3-menubuttonnav .yui3-menu-label,
+.yui3-splitbuttonnav .yui3-menu-label {
+    background-image: none;
+}
+
+.yui3-menubuttonnav .yui3-menu-label {
+    padding-right: 0;
+}
+
+.yui3-menuitem-active .yui3-menuitem-content,
+.yui3-menu .yui3-menu .yui3-menuitem-active .yui3-menuitem-content {
+    border-left-width: 0;
+    margin-left: 0;
+    background: none;
+}
+#topNavigation > .yui3-menu-content:first-child > ul:first-child > .yui3-menuitem-active:first-child .yui3-menuitem-content {
+    color: black;
+}
+.yui3-menu-horizontal .yui3-menu-label-active,
+.yui3-menu-horizontal .yui3-menuitem-active .yui3-menuitem-content,
+.yui3-menu-horizontal .yui3-menu-label-menuvisible {
+    border-color: #fff;
+    background: none;
+}
+.yui3-menuitem .yui3-menu .yui3-menuitem-active .yui3-menuitem-content {
+    color: orange;
+}
+.yui3-menu-horizontal .yui3-menu-label-active .innerMenuLabel,
+.yui3-menu-horizontal .yui3-menuitem-active .yui3-menuitem-content .innerMenuLabel,
+.yui3-menu-horizontal .yui3-menu-label-menuvisible .innerMenuLabel,
+.yui3-menu-horizontal .active .yui3-menu-label .innerMenuLabel,
+#topNavigation > .yui3-menu-content:first-child > ul:first-child > li.active:first-child a.yui3-menuitem-content .innerMenuitemContentSpan {
+    border-color: #fff;
+    background: #E9F2F9 url(/templates/jsp/_style4/_ar/images/sprite.png) no-repeat 105% -118px;
+    color: black;
+}
+
+.yui3-menubuttonnav .yui3-menu-label-active,
+.yui3-menubuttonnav .yui3-menuitem-active .yui3-menuitem-content,
+.yui3-menubuttonnav .yui3-menu-label-menuvisible
+{
+    border-left-width: 1px;
+    margin-left: -1px;
+}
+
+.yui3-menu-horizontal .yui3-menu-label, .yui3-menu-horizontal .yui3-menuitem-content {
+    float: left;
+    width: auto;
+}
+.ie7Body .yui3-menu-horizontal .yui3-menuitem-content {
+    zoom: 1;
+    display: inline-block;
+    width: 100%;
+}
+.ie7Body .yui3-menu-horizontal .yui3-menuitem-content .rnd1,
+.ie7Body .yui3-menu-horizontal .yui3-menuitem-content .rnd2,
+.ie7Body .yui3-menu-horizontal .yui3-menuitem-content .rnd3 {
+    display: block;
+}
+div.navTabs {
+    display:inline;
+    float:right;
+}
+
+.navTabs li a {
+    color: #fff;
+    text-decoration:none;
+    padding: 5px 25px;
+    margin:4px;
+    top: 3px;
+    background: none;
+}
+
+.ie7Body .navTabs li a {
+    margin:0px 2px;
+}
+.ie7Body .navTabs {
+    padding-top: 4px;
+}
+
+.ie7Body .navTabs li {
+   margin-right: 0px;
+}
+
+.navTabs li {
+	position: relative;
+	float: left;
+	margin-right: 5px;
+	padding: 0;
+	text-align: center;
+    list-style:none;
+}
+
+.navTabs li.last {
+    margin-right: 1px;
+}
+
+.navTabs li ul li {
+	clear: left;
+	float: left;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.navTabs li ul li a:hover {
+	cursor: pointer;
+	cursor: hand; /* for IE 5.5 */
+}
+.navTabs .multiColumnListWrapper ul li a {
+    font-size: 7pt;
+    margin: 0px;
+	padding: 0px;
+    background: none;
+    color: #2A4264;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+.navTabs .multiColumnListWrapper ul li a:hover {
+    color: orange;
+}
+.yui3-menu li ul.mainNavJournalList {
+    margin-right: 2px;
+    margin-left: 5px;
+    padding-top: 5px;
+    width: 19%;
+}
+.navTabs li ul.mainNavJournalList li.journal {
+    list-style-type: disc;
+    background-color: transparent;
+    text-transform: uppercase;
+    text-align: left;
+    height: auto;
+}
+
+.yui3-menu ul.mainNavJournalList.lastList {
+    padding-right: 10px;
+    border-right: 1px solid #C2BEBE;
+    height: 215px;
+}
+.ie7Body .yui3-menu ul.mainNavJournalList.lastList {
+    width: 17%;
+}
+.yui3-menu .yui3-menu ul:first-child {
+    padding-top: 5px;
+}
+/* for decent browsers use border radius for rounded corners and set color of additional elements to transparent so that they don't show up */
+#topNavigation > .yui3-menu-content:first-child > ul:first-child > li:first-child a.yui3-menuitem-content .innerMenuitemContentSpan,
+.innerMenuLabel {
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+    border-top-left-radius: 6px 6px;
+    border-top-right-radius: 6px 6px;
+}
+
+li.yui3-menuitem .rnd_corners .rnd1,
+li.yui3-menuitem .rnd_corners .rnd2,
+li.yui3-menuitem .rnd_corners .rnd3 {
+    background-color: transparent;
+}
+
+.ieBody div.navTabs {
+    margin-top: 13px;
+}
+/* ie8 rounded corners */
+.ieBody div.navTabs {
+    margin-top: 12px;
+}
+.ie8Body li.yui3-menuitem .rnd_corners .rnd1,
+.ie8Body li.yui3-menuitem .rnd_corners .rnd2,
+.ie8Body li.yui3-menuitem .rnd_corners .rnd3 {
+    background-color: #236AAD;
+}
+
+.ie8Body li.yui3-menuitem ul.mainNavJournalList li.journal .rnd_corners .rnd1,
+.ie8Body li.yui3-menuitem ul.mainNavJournalList li.journal .rnd_corners .rnd2,
+.ie8Body li.yui3-menuitem ul.mainNavJournalList li.journal .rnd_corners .rnd3
+{
+    background-color: #E9F2F9;
+}
+.ie8Body .navTabs ul li.yui3-menuitem ul li.yui3-menuitem .rnd_corners .rnd1,
+.ie8Body .navTabs ul li.yui3-menuitem ul li.yui3-menuitem .rnd_corners .rnd2,
+.ie8Body .navTabs ul li.yui3-menuitem ul li.yui3-menuitem .rnd_corners .rnd3,
+.ie8Body li.yui3-menuitem .yui3-menu-label-menuvisible .rnd_corners .rnd1,
+.ie8Body li.yui3-menuitem .yui3-menu-label-menuvisible .rnd_corners .rnd2,
+.ie8Body li.yui3-menuitem .yui3-menu-label-menuvisible .rnd_corners .rnd3,
+.ie8Body #topNavigation > .yui3-menu-content:first-child > ul:first-child > li.yui3-menuitem-active:first-child a.yui3-menuitem-content .rnd_corners .rnd1,
+.ie8Body #topNavigation > .yui3-menu-content:first-child > ul:first-child > li.yui3-menuitem-active:first-child a.yui3-menuitem-content .rnd_corners .rnd2,
+.ie8Body #topNavigation > .yui3-menu-content:first-child > ul:first-child > li.yui3-menuitem-active:first-child a.yui3-menuitem-content .rnd_corners .rnd3 {
+    background-color: #E9F2F9;
+}
+
+.ie8Body .yui3-menu-horizontal .active .rnd_corners .rnd1,
+.ie8Body .yui3-menu-horizontal .active .rnd_corners .rnd2,
+.ie8Body .yui3-menu-horizontal .active .rnd_corners .rnd3 {
+    border-color: #fff;
+    background: #E9F2F9 url(/templates/jsp/_style4/_ar/images/sprite.png) no-repeat 105% -118px;
+    color: black;
+}
+/* ie8 rounded corners */
+/* ie7 specific fix for top menu rounded corners...TODO: this is ugly find a better way to implement */
+.ie7Body div.navTabs {
+    margin-top: 11px;
+}
+.ie7Body #topNavigation ul > li .rnd_corners {
+    display: block;
+    margin-bottom: 3px;
+}
+.ie7Body #topNavigation ul > li:first-child .rnd_corners .rnd1 {
+    width: 100px;
+}
+.ie7Body #topNavigation ul > li:first-child .rnd_corners .rnd2 {
+    width: 102px;
+}
+.ie7Body #topNavigation ul > li:first-child .rnd_corners .rnd3 {
+    width: 103px;
+}
+
+.ie7Body #topNavigation ul > li:first-child+li .rnd_corners .rnd1 {
+    width: 134px;
+}
+.ie7Body #topNavigation ul > li:first-child+li .rnd_corners .rnd2 {
+    width: 136px;
+}
+.ie7Body #topNavigation ul > li:first-child+li .rnd_corners .rnd3 {
+    width: 137px;
+}
+
+.ie7Body #topNavigation ul > li:first-child+li+li .rnd_corners .rnd1 {
+    width: 102px;
+}
+.ie7Body #topNavigation ul > li:first-child+li+li .rnd_corners .rnd2 {
+    width: 104px;
+}
+.ie7Body #topNavigation ul > li:first-child+li+li .rnd_corners .rnd3 {
+    width: 105px;
+}
+
+.ie7Body #topNavigation ul > li:first-child+li+li+li .rnd_corners .rnd1 {
+    width: 176px;
+}
+.ie7Body #topNavigation ul > li:first-child+li+li+li .rnd_corners .rnd2 {
+    width: 178px;
+}
+.ie7Body #topNavigation ul > li:first-child+li+li+li .rnd_corners .rnd3 {
+    width: 179px;
+}
+
+.ie7Body #topNavigation ul > li:first-child+li+li+li+li .rnd_corners .rnd1 {
+    width: 82px;
+}
+.ie7Body #topNavigation ul > li:first-child+li+li+li+li .rnd_corners .rnd2 {
+    width: 84px;
+}
+.ie7Body #topNavigation ul > li:first-child+li+li+li+li .rnd_corners .rnd3 {
+    width: 85px;
+}
+/* ie7 specific fix for top menu rounded corners */
+
+/* ie6 specific fix for top menu */
+.ie6Body div.navTabs {
+    margin-top: 6px;
+}
+.ie6Body #topNavigation ul {
+    float: right;
+}
+.ie6Body #topNavigation ul li {
+    position: static;
+    width: 30px;
+    background-color: #236AAD;
+}
+.ie6Body #topNavigation ul li {
+    position: static;
+    width: 30px;
+    background-color: #236AAD;
+}
+.ie6Body .ui-tabs ul li {
+    width: 110px;
+}
+.ie6Body .savedSearchTabs ul li {
+    width: 110px;
+    float: left;
+}
+.ie6Body .savedSearchTabs ul li.savedSearchTabs-hd-active {
+    background-color: #fff;
+}
+.ie6Body .layout_25_50_25 .sidebar .yui3-b .yui3-u {
+    width: expression(this.nextSibling==null?'62%':'');
+}
+.ie6Body .articleBoxWrapper {
+    position: static;
+}
+.ie6Body .articleBoxMeta {
+    width: 55%;
+}
+.ie6Body .browseBySection .ui_activeTabs-hd li,
+.ie6Body .browse_byCategory .ui_activeTabs-hd li {
+    width: 100px;
+}
+.ie6Body .browseByAlphabet .ui_activeTabs-hd li {
+    width: 10px;
+}
+.ie6Body #yui3-main .ui_activeTabs .yui-carousel-nav {
+    right: -90px;
+}
+.ie6Body #yui3-main .ui_activeTabs ol li div.caption {
+    right: 150px;
+}
+.fullwidth {
+    float: none;
+    display: block;
+}
+/* ie6 specific fix for top menu */

@@ -1,0 +1,97 @@
+ FRESCO - FRES 3.2: Coupled Reaction Channels
+ Assuming NAMELIST input.
+
+ 19F(6Li,d)23Na at 16 MeV                                                        
+
+   0.100  30.000   0.100   0.100  18.000  -0.000   0.000   0.000   0.000   0.000
+
+ Centre-of-mass Range is    302 * 0.1000 fm., Maximum at  30.00 fm., Interpolating NL forms every  0.10 fm.
+ Non - locality width is    181 * 0.1000 fm., Maximum of  18.00 fm., Centred at  0.00 fm.
+ 2-Nucleon Separation of      0 * 0.1000 fm., Maximum of   0.00 fm., Minimum at  0.00 fm.
+ Maximum single particle bins of 30.0000 fm.
+               M,Mint =          301         301
+
+
+ Range of total J is     0.0 <= J <=    40.0 (at least     0.0) and Absorbtion =>    -1.0000 mb.
+ Dry Run = F, CC set limits =  0  0, Relativistic kinematics =  , Both/Far/Near Analyses =  1
+
+ Cross Sections (and up to T0 for 0=projectile) for Theta from   0.0 to  80.0 in steps of  0.1 degrees, DGAM=0,  Coordinates = 0 (Mads)
+
+ Lower Radial Cutoff = maximum of -2.00*L*h &       0.0 fm.,  Lower Cutoff for Couplings =   0.0  fm.
+
+
+ Iterate Couplings between   1 and   1 times, to  0.001 % if sooner.                                          
+  Block solved exactly =   8 chs., with Pade = 0 & Isocen =  =0, NOSOL = F, initwf =  0
+  NL quadrature with   24 Gaussian points, Calculate multipoles up to    46 from   0
+  M-transfers for lp+lt greater than or equal to  6, Angular Integration Cutoff below  1.5625 %
+
+
+ Trace switches are :  CHANS =  0, LISTCC =  0, TRENEG =  0, CDETR =  0, SMATS =  0, XSTABL =  1, NLPL =  0
+
+                       WAVES =  0, LAMPL =  0, VEFF =  0, KFUS =  0, WDISK =  0, BPM =  0, MELFIL =  0
+
+                       CDCC =  0, NFUS =  0
+
+ Using unit mass = 1.000000 amu and 1/fine-structure constant = 137.03599 ( 1.000000 * true ) with hc = 197.32705 MeV.fm,
+  thus 2*amu/hbar^2 = 0.0478450 = 1/20.9008 and Coulomb constant = 0.1574855 so e^2 = 1.43997, and nuclear magneton= 0.1261183
+
+ Now pre-scan input and save to file 3
+
+  Input namelist POT read error:           -1
+&POT
+ KP=0          ,
+ TYPE=0          ,
+ ITT=F,
+ NOSUB=F,
+ SHAPE=0          ,
+ DEF= 9*0.00000000      ,
+ MNEP= 9*0.00000000      ,
+ MNET= 9*0.00000000      ,
+ AP=  0.00000000    ,
+ AT=  0.00000000    ,
+ RC=  0.00000000    ,
+ AC=  0.00000000    ,
+ P= 9*0.00000000      ,
+ P0=  0.00000000    ,
+ P1=  0.00000000    ,
+ P2=  0.00000000    ,
+ P3=  0.00000000    ,
+ P4=  0.00000000    ,
+ P5=  0.00000000    ,
+ P6=  0.00000000    ,
+ P7=  0.00000000    ,
+ V=  0.00000000    ,
+ R0=  0.00000000    ,
+ RV=  0.00000000    ,
+ VR0=  0.00000000    ,
+ A=  0.00000000    ,
+ AV=  0.00000000    ,
+ W=  0.00000000    ,
+ WR0=  0.00000000    ,
+ RW=  0.00000000    ,
+ AW=  0.00000000    ,
+ WA=  0.00000000    ,
+ R0W=  0.00000000    ,
+ VSO=  0.00000000    ,
+ RSO=  0.00000000    ,
+ RSO0=  0.00000000    ,
+ ASO=  0.00000000    ,
+ VSOI=  0.00000000    ,
+ RSOI=  0.00000000    ,
+ ASOI=  0.00000000    ,
+ WD=  0.00000000    ,
+ WDR=  0.00000000    ,
+ WDA=  0.00000000    ,
+ WDR0=  0.00000000    ,
+ AWD=  0.00000000    ,
+ DEFP= 9*0.00000000      ,
+ DEFT= 9*0.00000000      ,
+ VD=  0.00000000    ,
+ VDR=  0.00000000    ,
+ VDA=  0.00000000    ,
+ LSHAPE=0          ,
+ JL=" ",
+ XLVARY=  0.0000000000000000     ,
+ ALVARY=  0.0000000000000000     ,
+ CITT=" ",
+ /

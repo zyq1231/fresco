@@ -1,0 +1,26 @@
+6Li-16O, 25.7MeV, JLM single-folding
+NAMELIST
+ &FRESCO  hcm= 0.050 rmatch= 30.0 
+     jtmin=  0.0 jtmax= 200.0 absend= -0.10
+     thmin= 1 thmax=-180.0 thinc=1
+	 ips= 0.0010
+     iso=' ' nnu=36 maxl= 0 minl=  0 mtmin= 8 epc= 0.0010
+     treneg= 0 cdetr= 0 xstabl= 1 nlpl= 0
+     elab= 25.7 /
+
+ &PARTITION namep='6Li'  massp= 6.0151 zp= 3  nex= 1 pwf=T
+            namet='16O'  masst= 15.9949 zt= 8 qval= 0.0000 /
+ &STATES jp= 1 ptyp= 1 ep= 0.0000  cpot= 1
+         jt= 0 ptyt= 1 et= 0.0000 /
+ &partition /
+
+ &pot kp= 1 type= 0  p(1:3)= 16.000  6.00  1.30 /
+ &pot kp= 1 type= 1  shape=9   p(1:3) = 1 1 0 /
+
+ &pot /
+
+ &overlap /
+
+ &COUPLING /
+
+

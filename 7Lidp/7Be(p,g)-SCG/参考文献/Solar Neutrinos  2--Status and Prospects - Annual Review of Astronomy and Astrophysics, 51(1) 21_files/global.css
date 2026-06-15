@@ -1,0 +1,376 @@
+a {
+    text-decoration: none;
+}
+div#headerContent {
+    clear: left;
+    margin: auto;
+    min-width: 750px;
+    width: 68.3496em;
+}
+
+.mobileHeader {
+    background-color: #2A5170;
+}
+
+div#doc4 {
+    background: url(/templates/jsp/_style4/_ar/images/content-bg.png) repeat-x;
+}
+div#bd {
+    padding: 0px 19px;
+}
+div.outerBorder {
+    margin-left: -5px;
+    background: transparent url(/templates/jsp/_style4/_ar/images/page-border-right.png) repeat-y left top;
+}
+
+div.innerBorder {
+    margin-right: -5px;
+    background: transparent url(/templates/jsp/_style4/_ar/images/page-border-left.png) repeat-y right top;
+}
+
+div.bottomBorder {
+    line-height: 1px;
+    height: 5px;
+    background: transparent url(/templates/jsp/_style4/_ar/images/border-bottom-corners.png) no-repeat bottom;
+}
+
+div.headerTop {
+    height: 130px;
+}
+
+div.headerBottom {
+    height: 47px;
+}
+
+span.logo, span.institutionalCredits {
+    float:left;
+}
+
+div.identities-bar {
+    float: right;
+}
+
+div.identities-bar {
+    display: inline;
+}
+
+span.shoppingCart {
+    background: transparent url(/templates/jsp/_style4/_ar/images/sprite.png) no-repeat 0px -254px;
+    width: 50px;
+    margin-top: 5px;
+    border:medium none;
+}
+
+span.topNavigation {
+    padding-top: 12px;
+}
+.labelTextGroup input[type="text"], .labelTextGroup select {
+    color:#2A5170;
+    font-size:9pt;
+}
+.labelTextGroup input[type="text"] {
+    height:16.5px;
+    padding: 2px 0px 2px 6px;
+    width:23.5em;
+}
+.ie7Body .labelTextGroup input[type="text"] {
+    height: 13px;
+}
+.labelTextGroup select {
+    padding:1px 0 0 6px;
+    height:25px;
+    width:22.5em;
+}
+
+
+.searchBtnImg input.formbutton, .labelTextGroup input.formbutton,
+.dbPubContent input.formbutton {
+    width: 60px;
+    height: 25px;
+    border:medium none;
+    background: transparent url(/templates/jsp/_style4/_ar/images/search.png) no-repeat;
+    cursor: pointer;
+}
+
+div.homeJournalsNavHeader, div.homeSidebarNavHeader {
+    background-color: #7A8D60;
+    color: #fff;
+    font-size: 11pt;
+    font-weight: bold;
+    height: 40px;
+    margin-top: -4px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+div.homeSidebarNavHeader {
+    height: 33px;
+}
+
+div.homeJournalsNavBody {
+    background-color: #D7D8DC;
+}
+
+div.accessLegend {
+    text-align: center;
+    font-size: 80%;
+    height:30px;
+}
+div.accessLegend > p{
+    padding-top: 2px;
+}
+span.accessLegendFromVol1, span.accessLegendCurr, span.accessLegendFree  {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0px 2px;
+}
+span.accessLegendFromVol1 {
+    background: transparent url(/templates/jsp/_style4/_ar/images/sprite.png) no-repeat 0px -982px;
+}
+
+span.accessLegendCurr {
+    background: transparent url(/templates/jsp/_style4/_ar/images/sprite.png) no-repeat 0px 0px;
+}
+
+span.accessLegendFree {
+    background: transparent url(/templates/jsp/_style4/_ar/images/access_free.gif) no-repeat;
+}
+
+.browseCategoryHome .outerBoxWrapper {
+    width: 33.3%;
+    float:left;
+    padding: 0px;
+}
+
+.browseCategoryHome .homeJournalsNavBody{
+    background-color: #fff;
+}
+
+.simpleBoxjournalsNavLast .yui3-bd,
+.sidebarBox .yui3-bd {
+    border: none;
+}
+
+.browseCategoryHome div.simpleBoxjournalsNav .yui3-hd,
+.browseCategoryHome div.simpleBoxjournalsNavLast .yui3-hd {
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+    background: transparent url(/templates/jsp/_style4/_ar/images/category-section-bg.png);
+    color: #474646;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 10pt;
+    padding: 0.3em 1em;
+    font-weight: bold;
+}
+
+.homeJournalsNavBody ul li {
+    list-style: none;
+    padding-bottom: 8px;
+}
+.ie7Body .homeJournalsNavBody ul li img,
+.ie6Body .homeJournalsNavBody ul li img {
+    margin-left: -15px;
+}
+
+.homeJournalsNavBody ul li a {
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+    color: #2A4264;
+    font-size: 7.5pt;
+    text-decoration: none;
+    text-transform: uppercase;
+    /*display: block;*/
+    /*padding-left: 15px;*/
+    /*margin-top: -7.5%;*/
+}
+
+.specialCompHome .outerBoxWrapper{
+    width: 66.6%;
+}
+div#journalsCat {
+    margin-top: 3px;
+    background-color: #fff;
+}
+
+div#footer {
+    margin: 5px 0px;
+}
+
+div#footer .rnd_corners .rnd1,
+div#footer .rnd_corners .rnd2,
+div#footer .rnd_corners .rnd3 {
+    background-color: #2A5170;
+}
+
+div#main div.headerImages div.headerDecoration1 a,
+div#main div.headerImages div.headerDecoration2 a {
+    background: none;
+    display:inline;
+    margin-top: -1.3em;
+    width: 11em;
+    height: 25px;
+    float:right;
+    text-indent: 0px;
+}
+
+div#main div.headerImages div.headerDecoration2 a {
+    width: 12em;
+}
+
+div.outerFooter {
+    padding:0 19px 10px 19px;
+}
+.ie7Body div.outerFooter {
+    display: inline-block;
+    width: 66em;
+}
+div.footerSnip {
+    background-color: #2A5170;
+    height: 25px;
+    color: #fff;
+    padding: 5px;
+}
+
+.ie8Body .labelTextGroup input[class="formbutton"],
+.ie7Body .labelTextGroup input[class="formbutton"],
+.ie6Body .labelTextGroup input[class="formbutton"] {
+    width: 5em;
+}
+
+hr {
+    clear:both;
+    margin:0px;
+    padding: 0px;
+    background-color:#C1DCEF;
+    border:0 none;
+    color:#C1DCEF;
+    height:1px;
+}
+
+div.simpleBox .yui3-hd > p {
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+}
+
+h3 {
+    font-size: 13pt;
+    font-weight: bold;
+    color: #2A5170;
+}
+.bodyTopToolBar {
+    font-size: 85%;
+    padding: 5px 0;
+    height:30px;
+}
+.quickLinks {
+    float:right;
+}
+.breadcrumbs {
+    float:left;
+    padding-top: 3px;
+}
+.bodyTopToolBar a {
+    color: #2A5170;
+}
+.quickLinks a {
+    padding-right: 10px;
+}
+.sidebarBox div.homeJournalsNavBody {
+    background-color: transparent;
+}
+.instAdminUpdateInput, .instAdminUploadInput, .srEmailUpdateSetting, .removeBannerImageInput {
+    height: 20px;
+    width: 55px;
+    border: none;
+}
+.instAdminUploadInput {
+    margin: 9px 0px 0px 20px;
+}
+.removeBannerImageInput {
+    width: 111px;
+    height: 25px;
+    background: transparent url(/templates/jsp/_style4/_ar/images/remove-this-logo.png) no-repeat;
+}
+.instAdminUpdateInput, .srEmailUpdateSetting {
+    background: transparent url(/templates/jsp/_style4/_ar/images/update.png) no-repeat;
+}
+.instAdminUploadInput {
+    background: transparent url(/templates/jsp/_style4/_ar/images/upload.png) no-repeat;
+}
+.listOfIssues a.formerTitleTocLink {
+    display: inline;
+}
+
+.mobileDevicePairing {
+    border: 1px solid #E1E1E1;
+    padding: 1em;
+    margin-bottom: 1em;
+    width: 731px;
+    float: left;
+}
+.mobileDevicePairing h1 {
+    font-size: 1.2em;
+    height: 46px;
+    margin-left: -5px;
+    padding: 10px 0 0 1em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: #2A5170;
+    background: url(/templates/jsp/_style4/_ar/images/title-background-white-75pct.png) no-repeat scroll 0 0 transparent;
+}
+
+.mobileDevicePairing h2 {
+    font-size: large;
+}
+#mobileDevicePairing_login ol {
+    margin-left: 3em;
+}
+.mobileDevicePairing p, .mobileDevicePairing h2,
+#mobileDevicePairing_login form {
+    margin: 1em 0;
+}
+#mobileDevicePairing_login form {
+    display: block;
+    width: 47%;
+    float: left;
+}
+#mobileDevicePairing_login label {
+    font-weight: bold;
+}
+#mobileDevicePairing_login .personLogin label,#mobileDevicePairing_login .emailLogin label {
+    display: block;
+    float: left;
+    width: 8em;
+}
+#mobileDevicePairing_login .personLogin {
+    border-right: 1px solid #E1E1E1;
+    margin-right: 5%;
+}
+#mobileDevicePairing_login .checkboxField input {
+    float: left;
+}
+#mobileDevicePairing_login .login_link {
+    margin-left: 5px;
+    border-left: 1px solid #E1E1E1;
+    padding-left: 5px;
+    display: block;
+    float: left;
+}
+#mobileDevicePairing_login .field {
+    margin: .25em 0;
+    clear: left;
+}
+#mobileDevicePairing_login span.hint{
+    color:green;
+    font-size:0.7em;
+    font-weight:bold;
+}
+.registrationConfirm .page_header {
+    background: transparent url(/templates/jsp/_style4/_ar/images/title-background-white-100pct.png) no-repeat;
+}
+.citedByTopTxt {
+    font-size: 90%;
+}
+table#templateSelector td{
+    align-content: center;
+    padding: 10px 15px;
+    width: 150px;
+}

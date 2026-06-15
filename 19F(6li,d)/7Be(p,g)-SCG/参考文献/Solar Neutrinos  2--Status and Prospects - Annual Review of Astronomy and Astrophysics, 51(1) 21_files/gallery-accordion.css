@@ -1,0 +1,129 @@
+.yui3-accordion {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow:  auto;
+}
+
+
+.yui3-accordion-item {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+}
+
+.yui3-accordion-item .yui3-widget-hd {
+    overflow: hidden;
+}
+
+.yui3-accordion-item .yui3-widget-bd {
+    cursor: default;
+    overflow: hidden;
+    position: relative;
+}
+
+.yui3-accordion-item-icons {
+    position: relative;
+    float: right;
+    overflow: hidden;
+    padding: 1px;
+    height: 25px;
+}
+
+.yui3-accordion-item-icon, .yui3-accordion-item-iconexpanded {
+    width: 22px;
+    height: 22px;
+}
+.yui3-accordion-item-iconalwaysvisible, .yui3-accordion-item-iconclose {
+    width: 0px;
+    height: 0px;
+}
+
+.yui3-accordion-item-icon, .yui3-accordion-item-label {
+    float: left;
+}
+
+.yui3-accordion-item-label {
+    position: relative;
+    top: 4px;
+    _height: 22px;
+}
+
+.yui3-accordion-item-iconexpanded, .yui3-accordion-item-iconalwaysvisible, .yui3-accordion-item-iconclose {
+    float: left;
+}
+
+.yui3-accordion-item-iconclose-hidden {
+    display: none;
+}
+
+.yui3-accordion-item-icon,
+.yui-skin-sam .yui3-accordion-item-iconexpanded,
+.yui-skin-sam .yui3-accordion-item-iconalwaysvisible,
+.yui-skin-sam .yui3-accordion-item-iconclose {
+    background-repeat: no-repeat;
+}
+
+.yui3-accordion-item-label {
+    text-decoration: none;
+    background: transparent;
+    overflow: hidden;
+    color: #7A8D60;
+    font-weight: normal;
+}
+.ie7Body .ui_teaserBox-hd .yui3-accordion-item-icon,
+.ie6Body .ui_teaserBox-hd .yui3-accordion-item-icon {
+    display: none;
+}
+
+.search .yui3-accordion-item-label {
+    color: #35659A;
+    text-transform: uppercase;
+}
+
+.yui3-accordion-item .yui3-widget-hd {
+    background: url(/templates/jsp/_style4/_ar/images/accordion-section-bg.png) repeat-x;
+    padding: 5px;
+}
+
+.search .yui3-accordion-item .yui3-widget-hd {
+    background: url(/templates/jsp/_style4/_ar/images/search-filter-bg.png) repeat-x;
+}
+
+.yui3-accordion-item-icon,
+.yui3-accordion-item-iconexpanded,
+.yui3-accordion-item-iconalwaysvisible,
+.yui3-accordion-item-iconclose {
+    background-repeat: no-repeat;
+}
+
+.yui3-accordion-item-iconexpanded, .yui-skin-sam .yui3-accordion-item-iconexpanded-off {
+    background: url(/templates/jsp/_style4/_ar/images/ar-sprites.png) no-repeat 0px -916px;
+}
+
+.yui3-accordion-item-iconexpanded-on {
+    background: url(/templates/jsp/_style4/_ar/images/ar-sprites.png) no-repeat 0px -847px;
+}
+.search .yui3-accordion-item-iconexpanded, .yui-skin-sam .search .yui3-accordion-item-iconexpanded-off {
+    background: url(/templates/jsp/_style4/_ar/images/ar-sprites.png) no-repeat 0px -185px;
+}
+
+.search .yui3-accordion-item-iconexpanded-on {
+    background: url(/templates/jsp/_style4/_ar/images/ar-sprites.png) no-repeat 0px -59px;
+}
+.yui3-widget-bd {
+    padding-left: 10px;
+    color: #000;
+}
+.yui3-accordion-proxyel-visible {
+    border-color: blue;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    opacity: .7;
+    filter: alpha(opacity = 70);
+}
+
+.yui3-widget-bd {
+    color: black;
+}

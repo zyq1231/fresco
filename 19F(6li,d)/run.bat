@@ -1,0 +1,1 @@
+frescoR < 7lidp-dwba1.in > 7lidp-dwba1te.out

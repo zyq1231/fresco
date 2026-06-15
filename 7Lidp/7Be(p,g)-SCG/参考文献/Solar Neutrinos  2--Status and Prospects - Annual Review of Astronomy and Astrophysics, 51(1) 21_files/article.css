@@ -1,0 +1,797 @@
+.bodyTopHeader {
+    padding: 5px 0;
+    height:40px;
+}
+.bodyTopHeader {
+    margin: 5px -7px 0px;
+    background: url(/templates/jsp/_style4/_ar/images/title-background-white-100pct.png) no-repeat;
+}
+.bodyTopHeaderTitle, .fullTextLabel, .headerTitle {
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+    float:left;
+    padding-top: 5px;
+}
+.headerTitle {
+    padding-bottom: 5px;
+    width: 95%;
+}
+.bodyTopHeaderTitle h3 {
+    font-family: Lucida Sans Unicode,Lucida Grande,sans-serif;
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+.bodyTopHeaderVolumeInfo, .prevNextLinks, .headerSelect {
+    font-size: 90%;
+    float:right;
+    display: inline;
+}
+span.prevNextInactive {
+    vertical-align: top;
+}
+.bodyTopHeaderVolumeInfo {
+    padding: 2px 12px;
+    margin: 5px 20px 5px 0px;
+    font-size: 0.7em;
+    width: 110px;
+    background: url(/templates/jsp/_style4/_ar/images/blank-light-blue.png) no-repeat;
+}
+.bodyTopHeaderVolumeInfo a {
+    color: #fff;
+}
+.yui3-u.first .yui3-bd {
+    font-size: 90%;
+}
+.journalTitle, .issueInfo, .string-date,
+.article_link, .articleLinks2, .contrib,
+.fulltext, .NLM_author-notes {
+    font-size: 90%;
+    padding-bottom: 3px;
+}
+.journalTitle {
+    color: #000000;
+}
+.prevNextLinks {
+    padding-top: 5px;
+}
+.prevNextLinks a {
+    color: #2A4264;
+    vertical-align: top;
+}
+
+.prevNextLinks a img {
+    vertical-align: top;
+}
+
+.prevNextLinks span.divider {
+    color: #000000;
+    vertical-align: top;
+}
+
+.fullTextLabel, .arttitle {
+    font-weight: bold;
+}
+.article_link {
+    padding-bottom: 5px;
+    margin-top: 1em;
+}
+.article_link a, .article_link a img,
+.articleLinks2 a, .articleLinks2 a img {
+    padding-right: 5px;
+    color: #2A4264;
+}
+
+.articleFullText .yui3-hd, .articleAbstract .yui3-hd {
+    background-color: #2A5170;
+    color: #fff;
+    font-weight: bold;
+    font-size: 80%;
+}
+.articleFullText .fullTextSidebar .yui3-hd {
+    background-color: #7A8D60;
+}
+.fulltextdd {
+    font-weight: normal;
+}
+.articleFullText div.simpleBox .yui3-bd, .articleAbstract div.simpleBox .yui3-bd  {
+    border: 1px #E1E1E1 solid;
+    background-color: #fff;
+}
+.articleFullText .simpleBox .yui3-hd,.articleAbstract .simpleBox .yui3-hd  {
+    padding:0.2em 1em;
+}
+.articleFullText .simpleBox .rnd_corners .rnd1,.articleAbstract .simpleBox .rnd_corners .rnd1,
+.articleFullText .simpleBox .rnd_corners .rnd2,.articleAbstract .simpleBox .rnd_corners .rnd2,
+.articleFullText .simpleBox .rnd_corners .rnd3,.articleAbstract .simpleBox .rnd_corners .rnd3
+{
+    background:#2A5170 none repeat scroll 0 50%;
+}
+
+.articleFullText .fullTextSidebar .ui-tabs .rnd_corners .rnd1,
+.articleFullText .fullTextSidebar .ui-tabs .rnd_corners .rnd2,
+.articleFullText .fullTextSidebar .ui-tabs .rnd_corners .rnd3 {
+    background:#7A8D60 none repeat scroll 0 50%;
+}
+.articleFullText .fullTextSidebar .ui-tabs-hd .rnd_corners .rnd1,
+.articleFullText .fullTextSidebar .ui-tabs-hd .rnd_corners .rnd2,
+.articleFullText .fullTextSidebar .ui-tabs-hd .rnd_corners .rnd3 {
+    background:#A4BA82 none repeat scroll 0 50%;
+}
+.articleFullText .ui-tabs .ui-tabs-hd-active .rnd_corners .rnd1,
+.articleFullText .ui-tabs .ui-tabs-hd-active .rnd_corners .rnd2,
+.articleFullText .ui-tabs .ui-tabs-hd-active .rnd_corners .rnd3
+{
+    background:#fff none repeat scroll 0 50%;
+}
+.ui-tabs-hd {
+    padding: 7px 15px 0px 15px;
+    background-color: #7A8D60;
+    font-size: 90%;
+}
+
+.ui-tabs-hd li, .imageTabs-hd li {
+    text-transform: uppercase;
+    list-style: none;
+    display: inline-block;
+}
+.ie7Body .ui-tabs-hd li {
+    display: inline;
+    margin-right: 5px;
+    height: auto;
+}
+.imageTabs-hd ul.medImgtabs {
+    width: 55%;
+    float:left;
+}
+.ie7Body .imageTabs-hd ul.medImgtabs {
+    width: 50%;
+}
+.imageTabs-hd .imageLinks {
+    width: 45%;
+    float:right;
+    /*margin-top: 2%;*/
+}
+.imageTabs-hd li a {
+    padding: 0 5px 0px 5px;
+    color: #fff;
+}
+.ui-tabs-hd li a {
+    display: block;
+    font-size: 90%;
+    /*padding: 0 9px 5px;*/
+    padding: 0 7px 3px; /*changing property for iPad UI cleanup bug#48227 */
+    color: #fff;
+    line-height: 1.8;
+}
+
+.ui-tabs-hd .ui-tabs-hd-active a,
+.imageTabs-hd .imageTabs-hd-active a
+{
+    background: #fff;
+}
+.figCaptionContent, .figRefContent, #reviewsTab, #kwdSearchTab {
+    font-size: 90%;
+}
+
+.ui-tabs-hd .ui-tabs-hd-active a:link,
+.ui-tabs-hd .ui-tabs-hd-active a:visited,
+.ui-tabs-hd .ui-tabs-hd-active a:hover,
+.ui-tabs-hd .ui-tabs-hd-active a:focus,
+.ui-tabs-hd .ui-tabs-hd-active a:active,
+.imageTabs-hd .imageTabs-hd-active a:link,
+.imageTabs-hd .imageTabs-hd-active a:visited,
+.imageTabs-hd .imageTabs-hd-active a:hover,
+.imageTabs-hd .imageTabs-hd-active a:focus,
+.imageTabs-hd .imageTabs-hd-active a:active{
+    color: orange;
+    text-decoration: none;
+}
+.ui-tabs-bd, .imageTabs-bd {
+    color: #fff;
+}
+
+.ui-tabs-bd .ui-tabs-bd-hidden,
+.imageTabs-bd .imageTabs-bd-hidden{
+    display: none;
+}
+
+#mainTabsContent {
+    border-right: 1px #DADADA solid;
+    border-left: 1px #DADADA solid;
+    border-bottom: 1px #DADADA solid;
+    overflow: auto;
+    max-height: 770px;
+}
+.topImgNav {
+    padding: 2px;
+    background-color: #fff;
+}
+
+.topSlide {
+    margin: 0px;
+}
+
+.innerSlider {
+    background: url(/templates/jsp/_style4/_ar/images/image-carousel-bg.png) repeat-x;
+    margin: 5px 7px;
+}
+#view-port {
+    height: 84px;
+    width: 89%;
+    padding:0px 5px;
+    overflow: hidden;
+    position: relative;
+}
+ul.carousel {
+    overflow: hidden;
+    height: 85px;
+    width: 5000%;
+}
+
+ul.carousel li {
+    list-style-type: none;
+    float: left;
+    overflow: hidden;
+    margin: 5px 8px;
+}
+
+ul.carousel li img {
+    height: 70px;
+}
+.popupLayer {
+    overflow: visible;
+    top: 80px;
+    left: -20px;
+}
+ul.carousel li .popupLayer img{
+    height: auto;
+    width: auto;
+    margin:20px;
+    padding: 20px;
+}
+a.right_scroll {
+    background: url(/templates/jsp/_style4/_ar/images/carousel-right.png) no-repeat;
+    padding: 10px 8px;
+    overflow:hidden;
+    float: right;
+    margin-top: -14.5%;
+}
+a.left_scroll {
+    background: url(/templates/jsp/_style4/_ar/images/carousel-left.png) no-repeat;
+    padding: 10px;
+    overflow:hidden;
+    margin-top: 6%;
+    margin-left: -1px;
+    float: left;
+}
+.mainImageContent {
+    padding: 10px;
+    overflow: auto;
+}
+
+#main_preview img {
+    max-width: 99.5%;
+}
+
+.imageTabs {
+    margin-top: 20px;
+}
+.ie7Body .clearfix {
+    display: inline;
+}
+.clearfix {
+    clear: both;
+}
+.imageTabs-hd {
+    margin-bottom: 0px;
+    padding-bottom: 27px;
+}
+
+@-moz-document url-prefix() {
+    .imageTabs-hd {
+        padding-bottom: 32px;
+    }
+}
+
+.imageTabs-bd{
+    border: 1px solid #DADADA;
+}
+.ie7Body .medImgtabs li {
+    margin-bottom: -30px;
+}
+.ie7Body .medImgtabs li.imageTabs-hd-active {
+    margin-bottom: -30px;
+}
+.medImgtabs li {
+    float: left;
+    margin-right: 1px;
+    /*margin-top: 6%;*/
+    padding: 5px 2px;
+}
+.medImgtabs li.imageTabs-hd-active {
+    border-top: 4px solid orange;
+    border-right: 1px solid #DADADA;
+    border-left: 1px solid #DADADA;
+    margin-right: 1px;
+    /*margin-top: 6%;*/
+    background-color: #fff;
+    padding: 5px 2px;
+    /*margin-bottom: -2px;*/
+    /*margin-top:-4px;*/
+}
+.medImgtabs li a {
+    color: #7A8D60;
+    font-size: 70%;
+    font-weight: bold;
+}
+
+.imageTabs-bd {
+    color: black;
+    background-color: #fff;
+}
+
+.figCaptionContent {
+    padding: 5px;
+}
+.figureThumbnail, .boxedText {
+    margin: 3px 15px;
+}
+.boxedText {
+    clear: both;
+    display: block;
+    background-color: #E0EEEE;
+    margin: 0px 13px 5px 15px;
+    padding: 0px 5px 5px 5px;
+}
+.figureThumbnail table {
+    background-color: #E0EEEE;
+    float:left;
+    margin-right: 20px;
+}
+.figureThumbnail table td.caption {
+    padding-bottom: 5px;
+    padding-top: 0px;
+}
+.formula th,
+.formula td,
+.figureThumbnail th,
+.figureThumbnail td {
+    border: none;
+    padding: 10px;
+    font-size: 80%;
+    text-align: center;
+}
+.figRefContent ull.references {
+    padding: 10px;
+}
+
+ul.references li {
+    margin: 7px;
+    color: #06F;
+    font-size: 86%;
+    cursor: pointer;
+    list-style: none;
+}
+div#figuresTab, div#reviewsTab, div#referencesTab, div#kwdSearchTab {
+    background-color: #fff;
+    height: 100%;
+}
+div#referencesTab {
+    overflow: auto;
+}
+#referencesTab ul li {
+    list-style-type: none;
+}
+.ie7Body #referencesTab div.citation {
+    margin-left: 65px;
+}
+#referencesTab div.citation{
+    display:block;
+    margin-top: -1.25em;
+    margin-left: 50px;
+}
+#referencesTab .fulltext {
+    color: black;
+    margin: 10px;
+}
+span.toggleImg {
+    display:inline-block;
+    height: 18px;
+    width: 22px;
+    margin-top: 3px;
+    float: left;
+}
+.ie7Body span.toggleImg {
+    width: 16px;
+}
+span.whiteToggleImg {
+    background: url(/templates/jsp/_style4/_ar/images/white-plus.png) no-repeat;
+}
+span.orangeToggleImg {
+    background: url(/templates/jsp/_style4/_ar/images/orange-plus.png) no-repeat;
+}
+span.magnifier {
+    display:inline-block;
+    height: 15px;
+    width: 15px;
+    background: url(/templates/jsp/_style4/_ar/images/magnifying-glass.png) no-repeat;
+    float: left;
+}
+span.powerpoint {
+    display:inline-block;
+    height: 14px;
+    width: 14px;
+    background: url(/templates/jsp/_style4/_ar/images/ppt-icon.png) no-repeat;
+}
+.figurethumbnail td.image img {
+    width: 130px;
+}
+.figurethumbnail td.image a.ref,
+.figurethumbnail td.image a.pptLink {
+    font-size: 88%;
+}
+ul.refSnip, div.otherReviews {
+    margin: 10px 10px 10px 47px;
+}
+.ie7Body ul.refSnip {
+    padding-top: 0px;
+    margin: 0px 10px 10px 47px;
+}
+.ie7Body .otherReviewsTitle h2,
+.ie7Body .otherReviewSnipp li a {
+    text-indent:-15px;
+}
+.ie7Body ul.otherReviewsList {
+    margin: 10px 25px 0px 25px;
+}
+.ie7Body div.otherReviews {
+    margin: 10px 10px 0px 47px;
+}
+.ie7Body #referencesTab .fulltext {
+    margin: 10px 10px 0px 10px;
+}
+.ie7Body .arrowImage {
+    display: inline;
+}
+.ie7Body .textSnippet {
+    display: inline-block;
+    padding-left: 10px;
+}
+ul.refSnip li {
+    margin-top: 10px;
+    list-style-type: none;
+}
+ul.refSnip li {
+    font-size: 86%;
+    color: #0066FF;
+}
+.quickSearch_content {
+    color: black;
+}
+#reviewsTab .yui3-bd {
+    border: none;
+    color: black;
+}
+#reviewsTab table tr,
+#reviewsTab table td,
+#reviewsTab table th {
+    border: none;
+}
+#reviewsTab table td,
+#kwdSearchTab table td {
+    padding-bottom: 10px;
+}
+#reviewsTab .pageTitle,
+#reviewsTab table th {
+    color: #7A8D60;
+    font-weight: bold;
+    font-size: 90%;
+}
+#reviewsTab .pageTitle {
+    padding: 5px;
+}
+#reviewsTab table th {
+    padding: 5px 0px;
+}
+#reviewsTab .yui3-bd > table,
+#reviewsTab div.citedByEntry table,
+{
+    margin-left : 10px;
+}
+#reviewsTab div.citedByEntry td {
+    padding: 0px;
+}
+.articleFullText #reviewsTab .yui3-hd {
+    background: url(/templates/jsp/_style4/_ar/images/accordion-section-bg.png) repeat-x;
+    color: #7A8D60;
+    padding: 5px;
+}
+#reviewsTab .head_toggle {
+    display: inline;
+    float: right;
+}
+#reviewsTab .yui3-hd a.yui3-toggle {
+    background: url(/templates/jsp/_style4/_ar/images/ar-sprites.png) no-repeat 0px -847px;
+    width: 20px;
+    height: 18px;
+}
+#reviewsTab .yui3-closed .yui3-hd .head_toggle a.yui3-toggle {
+    background: url(/templates/jsp/_style4/_ar/images/ar-sprites.png) no-repeat 0px -916px;
+}
+#reviewsTab .yui3-hd {
+    overflow: auto;
+}
+#reviewsTab .yui3-hd .hdtxt {
+    display: inline;
+    float: left;
+}
+#reviewsTab table.thisChainCitation td {
+    padding : 0px;
+}
+#reviewsTab .citedByEntry {
+    padding: 10px 15px;
+    margin: 0px;
+}
+p.otherReviewsHeader {
+    font-weight: bold;
+}
+p.otherReviewsHeader, ul.otherReviewsList {
+    margin: 10px 25px;
+}
+div.otherReviewsTitle {
+    color: #0066FF;
+}
+div.otherReviewSnipp {
+    margin: 10px 0px;
+}
+.otherReviewSnipp ul li {
+    margin: 5px 0px;
+    color: gray;
+    font-size: 86%;
+}
+.highlight {
+    background-color: #FFFF44;
+}
+.yui3-bd p {
+    padding: 0.1em 1em 1em 1em;
+}
+.yui3-bd .caption p {
+    padding: 2px;
+}
+.kwdSearch .kwdSearch-bd {
+    color: black;
+    padding: 10px;
+}
+.kwdSearch .kwdSearch-hd {
+    background: url(/templates/jsp/_style4/_ar/images/accordion-section-bg.png) repeat-x;
+    padding: 10px;
+}
+.kwdSearch .kwdSearch-label {
+    background: transparent;
+    color: #7A8D60;
+    font-weight: bold;
+    overflow: hidden;
+    text-decoration: none;
+}
+.kwdSearch-bd > p {
+    margin-bottom: 10px;
+}
+.quickSearch_content .entry {
+    padding: 5px 5px 10px 5px;
+}
+.quickSearch_content .pageTitle {
+    color: #7A8D60;
+    margin-bottom: 5px;
+}
+.figureThumbnail .captionText {
+    display: none;
+}
+.table-wrap {
+    background-color: #E0EEEE;
+    margin: 5px 13px;
+}
+.table-wrap .tableImg {
+    float: left;
+    width: 150px;
+    padding: 5px;
+}
+.table-wrap .tableCaption {
+    padding-top: 5px;
+    float: right;
+    width: 210px;
+}
+.table-wrap .tableImg, .table-wrap .tableCaption {
+    display: inline;
+}
+.article_header #headerGraphic{
+    background:transparent url(/templates/jsp/_style4/_ar/images/blank-light-blue.png) no-repeat scroll 0 0;
+    font-size:0.7em;
+    height:20px;
+    line-height:20px;
+    margin:2px 10px 5px 0;
+    padding:0 0 0 8px;
+    vertical-align:middle;
+    width:122px;
+}
+.article_header #headerGraphic a{
+    text-decoration:none;
+    color:#fff;
+}
+#topArticlesNav{
+    font-size:0.8em;
+    padding-right:1em;
+}
+.article_nav{
+    display:inline;
+    /*position:absolute;*/
+    /*right:0;*/
+    /*top:8px;*/
+    font-size:0.8em;
+    float:right;
+}
+.yui3-bd .quote p {
+    padding: 0px 0px 15px 0px;
+    font-style: italic;
+}
+#pm1 .relatedEntry {
+    padding: 15px 15px 0px;
+}
+.relatedEntry span.art_authors, .citedByEntry .art_authors {
+    font-size: 95%;
+}
+.thisChainCitation {
+    margin: 10px 15px;
+}
+.thisChainCitation  td.art_meta a {
+    font-size: 1.2em;
+}
+#firstPage {
+    padding:10px;
+}
+.collapsedSections, .expandedSections {
+    display: block;
+    height: 15px;
+    width: 15px;
+    margin-top: 5px;
+}
+.expandedSections {
+    background: url(/templates/jsp/_style4/_ar/images/white-minus.png) no-repeat;
+}
+.collapsedSections {
+    background: url(/templates/jsp/_style4/_ar/images/white-plus.png) no-repeat;
+}
+.chooseSections {
+    border: 1px solid #2A5170;
+    position: absolute;
+    background-color: #E0EEEE;
+    width: 477px;
+    z-index: 1000;
+}
+.hiddenSection {
+    display: none;
+}
+.chooseSections .section {
+    color: #2A5170;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 5px 2px 5px 10px;
+    cursor: pointer;
+    font-family: Lucida Sans Unicode,Lucida Grande,sans-serif;
+    font-size: 75%;
+}
+.chooseSections .section:hover {
+    color: orange;
+}
+.chooseSections .section.current {
+    font-weight: bold;
+}
+.articleFullText .first .yui3-hd {
+    cursor: pointer;
+}
+.refSnip .arrowImage, .refElement .arrowImage {
+    float:left;
+    padding-top: 3px;
+}
+.ie7Body .refSnip .arrowImage {
+    padding-top: 15px;
+}
+.textSnippet {
+    padding-left: 25px;
+    display: block;
+    cursor: pointer;
+}
+#main_preview img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.art_meta, .art_source {
+    font-size: 95%;
+}
+.art_source .links {
+    font-size: 0.95em;
+}
+#pm2 .pageTitle {
+    padding: 5px 5px 5px 15px;
+}
+acronym {
+    color: #628DA8;
+    cursor: pointer;
+}
+.ui-tabs-hd a {
+    background-color: #A4BA82;
+    font-family: Lucida Sans Unicode,Lucida Grande,sans-serif;
+}
+.ui-tabs-hd a:hover {
+    color: orange;
+}
+.fullTextSidebar .emptyText {
+    padding: 10px;
+    font-family: Lucida Sans Unicode,Lucida Grande,sans-serif;
+    font-size: 90%;
+    color: #000;
+}
+.otherReviewSnipp ul {
+    margin-left: 25px;
+}
+.firstPageImageNote {
+    color: orange;
+    margin-top: 10px;
+}
+.articleFullText {
+    min-height: 300px;
+}
+.itemBody .thisChainCitation {
+    margin: 0px;
+}
+.itemBody th.seriesTitle, .itemBody .pageTitle {
+    padding: 5px 0px;
+}
+.itemBody .CitedBySectionContent .citedByEntry {
+    margin: 0px 0px 0.5em 0px;
+}
+.itemBody .CitedBySectionContent .citedByEntry table {
+    margin: 0px;
+}
+#browseRelated .thisChainCitation .art_title,
+#browseRelated .thisChainCitation .art_authors {
+    padding-bottom: 0px;
+}
+#browseRelated .thisChainCitation .art_authors {
+    color: #474646;
+}
+.CitedBySectionContent {
+    margin-bottom: 10px;
+}
+.page_header #headerGraphic {
+    text-transform: none;
+}
+.CitedBySectionContent .citedByEntry table {
+    margin-bottom: 0px;
+}
+.itemBody .relatedEntry {
+    margin-bottom: .5em;
+}
+.simpleBox .itemBody .pageTitle {
+    padding: 5px 5px 5px 0px;
+}
+.itemBody .artAuthors, .citedBySection .artAuthors {
+    color: #474646;
+}
+#browseRelated .art_source .links a {
+    font-size: 0.85em;
+}
+.citedBySection .articleLinks2 {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.articleFullText .article_link {
+    color: #0066FF;
+}
+.articleAbstract .article_link .grayed{
+    color: #d3d3d3;
+}
+.fullTextLink {
+    color: #2A4264;
+    background:url("/templates/jsp/_style4/_ar/images/ar-sprites.png") no-repeat scroll 0 -645px transparent;
+}

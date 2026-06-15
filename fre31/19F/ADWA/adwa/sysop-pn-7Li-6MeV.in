@@ -1,0 +1,27 @@
+&syspot title="p+7Li 6 MeV", ap=1, zp=1, energy=6.0,  at=7, zt=3, ipot=2 /
+&syspot title="n+7Li 6 MeV", ap=1, zp=0, energy=6.0,  at=7, zt=3, ipot=2 /
+&syspot title="p+8Li 6 MeV", ap=1, zp=1, energy=10.3, at=8, zt=3, ipot=2 /
+
+&syspot title="p+7Li 6 MeV", ap=1, zp=1, energy=6.0,  at=7, zt=3, ipot=1 /
+&syspot title="n+7Li 6 MeV", ap=1, zp=0, energy=6.0,  at=7, zt=3, ipot=1 /
+&syspot title="p+8Li 6 MeV", ap=1, zp=1, energy=10.3, at=8, zt=3, ipot=1 /
+
+options for proton and neutrons (ipot) are:
+[1]: Chapel-Hill 89 Global set (A>40 E>10 MeV)
+[2]: Koning-Delaroche, NPA, 2003
+[3]: Bechetti-Greenlees (A>40 20<E<50 MeV)
+[4]: Watson&Singh Phys Rev, 1969, 1p-shell, 10-50 MeV
+
+options for deuteron (ipot) are:
+[1]: Daehnick Global (A>27 12<E<90 MeV)
+[2]: Lohr-Haeberli (A>40 8<E<13 MeV)
+[3]: Perey-Perey (12<E<25 MeV) no spin-orbit
+
+options for 3He/3H (ipot) are:
+[1]: GDP08, Phys. Rev. C, 2009
+[2]: Li-potential, Nucl. Phys. A789, (2007) 103
+[3]: Bechetti-Greenlees (A>40 20<E<50 MeV)
+[4]: Liang Chuntian 3He (A>9 E<270 MeV)
+
+
+For 4He, 6Li, and 7Li: only ipot=1 is possible

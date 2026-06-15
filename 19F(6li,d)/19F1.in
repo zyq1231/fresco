@@ -1,0 +1,40 @@
+19F(6Li,d)23Na at 16 MeV
+NAMELIST
+ &FRESCO hcm=0.1 rmatch=30.0 rintp=0.1 hnl=0.1 rnl=18.0 centre=-0.00
+  jtmin=0.0 jtmax=40.0 absend=-1.0 cutl=-2 thmin=0.1 thmax=80.0 thinc=0.1
+  ips=0.001 iter=1 iblock=8 nnu=24 epc=0.00 xstabl=1 elab=16.0 /
+
+ &PARTITION namep='6Li' massp=6.0151 zp=3 nex=-1 pwf=T namet='19F' masst=18.998 zt=9 qval=0.0 /
+ &STATES jp=1.0 ptyp=1 ep=0.0 cpot=1 jt=0.5 ptyt=1 et=0.0 /
+
+ &PARTITION namep='d' massp=2.0141 zp=1 nex=-1 pwf=T namet='23Na' masst=22.989 zt=11 qval=8.993 /
+ &STATES jp=1.0 ptyp=1 ep=0.0 cpot=2 jt=1.5 ptyt=1 et=0.0 /
+
+ &PARTITION/
+
+ &pot kp=1 type=0 p=19.000 6.00 1.30 /
+ &pot kp=1 type=1 p=265.8 1.0002 0.6924 /
+ &pot kp=1 type=2 p=19.0 1.23 0.97 /
+ &pot kp=1 type=3 p=2.0 1.16 0.65 /
+
+ &pot kp=2 type=0 p=23.00 2.00 1.30 /
+ &pot kp=2 type=1 p=89.75 1.15 0.76 /
+ &pot kp=2 type=2 p=10.51 1.34 0.57 /
+ &pot kp=2 type=3 p=3.56 0.97 1.01 /
+
+ &pot kp=3 type=0 p=6.0 2.0 1.25/
+ &pot kp=3 type=1 p=79.0 1.25 0.65 /
+
+ &pot kp=4 type=0 p=19.0 2.0 1.25/
+ &pot kp=4 type=1 p=120.0 1.25 0.65 /
+
+ &pot /
+
+ &overlap kn1=1 kn2=0 ic1=1 ic2=2 in=1 kind=0 ch1=' ' nn=2 l=0 lmax=0 sn=0.0 j=0.0 kbpot=3 krpot=0 be=1.474 isc=1 ipc=3 /
+ &overlap kn1=2 kn2=0 ic1=2 ic2=1 in=1 kind=0 ch1=' ' nn=4 l=2 lmax=0 sn=0.0 j=2.0 kbpot=4 krpot=0 be=10.467 isc=1 ipc=3 /
+ &overlap /
+
+ &COUPLING icto=2 icfrom=1 kind=7 ip1=1 ip2=2 ip3=3 p1=1.0 /
+ &cfp in=1 ib=1 ia=1 kn=1 a=1.0 /
+ &cfp in=1 ib=1 ia=1 kn=2 a=1.0 /
+ &COUPLING /
