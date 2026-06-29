@@ -127,7 +127,7 @@ Allocating FORMF(  602      15) in   0.000 GB
    NLL,NLN,NLO = 598 601 121
 0File  11 needs RL =   72358    REAL*8 numbers, and NR =    40. i.e.  23.15 Megabytes
    File  11  RECL = 580800
-0RECOMMENDED NON-LOCAL WIDTH IS GREATER THAN    5.30 FM.,  RECOMMENDED CENTRATION  -0.25, after    0.17 secs.
+0RECOMMENDED NON-LOCAL WIDTH IS GREATER THAN    5.30 FM.,  RECOMMENDED CENTRATION  -0.25, after    0.21 secs.
 0Relative non-local usages (rms) are
     0.001   0.001   0.001   0.001   0.001   0.001   0.001   0.001   0.001   0.001   0.001   0.001   0.002   0.002   0.002
     0.002   0.002   0.002   0.003   0.003   0.003   0.004   0.004   0.004   0.005   0.005   0.006   0.006   0.007   0.007
@@ -147,7 +147,7 @@ Allocating FORMF(  602      15) in   0.000 GB
    from    0.00000     to   0.00000     in     0 intervals
 
  Largest real,imaginary parts of any form factor at R=   29.45 are   4.89E-02  5.78E-12 MeV
- Finished all Couplings @  0.171875
+ Finished all Couplings @  0.21875
 
  Symmetric Hamiltonian
 1***********************************************************************************************************************************
@@ -320,7 +320,7 @@ Allocating FORMF(  602      15) in   0.000 GB
 
  1.6885841061355734E+14 4.684219170965281E+10 2.220446049250313E-16
  Reaction Xsec    32.5-/33 @ 3 =   0.018 , Out:   0.000#   6.108#   0.018f
- Finished all CC sets @  6.046875
+ Finished all CC sets @  7.453125
 0CUMULATIVE REACTION cross section                 = 1090.81060  <L> =    10.74  <L**2> =    138.5
 0CUMULATIVE outgoing cross sections in partition 1 :    0.00000
 0CUMULATIVE outgoing cross sections in partition 2 :    0.27139
@@ -787,7 +787,7 @@ Allocating FORMF(  602      15) in   0.000 GB
     89.60 deg.: X-S =     0.012159 mb/sr,
     89.80 deg.: X-S =     0.012345 mb/sr,
     90.00 deg.: X-S =     0.012507 mb/sr,
- Finished all xsecs @  6.0625
+ Finished all xsecs @  7.484375
 
   The following files have been created:
    3:local copy of User input.            6:standard output.                   
@@ -821,4 +821,4 @@ Allocating FORMF(  602      15) in   0.000 GB
  1: Recommended RNL: non-local width >   5.30 cf:  12.00 fm: OK      
     Recommended CENTRE: centration   ~  -0.25 cf:  -2.20 fm
 
- Total CPU  0 time =       6.06 seconds
+ Total CPU  0 time =       7.48 seconds
