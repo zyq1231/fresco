@@ -211,161 +211,6 @@ def write_comparison(
             ])
 
 
-def plot_fit_svg(
-    path: Path,
-    theory: list[tuple[float, float]],
-    matched: list[tuple[ExperimentalPoint, float, float]],
-    scale: float,
-    excitation: float,
-    reduced_chi2: float,
-) -> None:
-    width, height = 900, 650
-    left, right, top, bottom = 105, 35, 65, 85
-    plot_width = width - left - right
-    plot_height = height - top - bottom
-
-    positive_curve = [(x, scale * y) for x, y in theory if y > 0.0]
-    if not positive_curve:
-        raise ValueError("Scaled theory has no positive values to plot on a logarithmic axis")
-    exp_values = [point.value for point, _, _ in matched if point.value > 0.0]
-    all_y = [y for _, y in positive_curve] + exp_values
-    x_max = max([x for x, _ in positive_curve] + [point.angle for point, _, _ in matched])
-    x_max = max(10.0, math.ceil(x_max / 10.0) * 10.0)
-    log_min = math.floor(math.log10(min(all_y)))
-    log_max = math.ceil(math.log10(max(all_y)))
-    if log_max == log_min:
-        log_max += 1
-
-    def sx(x: float) -> float:
-        return left + x / x_max * plot_width
-
-    def sy(y: float) -> float:
-        return top + (log_max - math.log10(max(y, 10.0**log_min))) / (log_max - log_min) * plot_height
-
-    lines = [
-        '<?xml version="1.0" encoding="UTF-8"?>',
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
-        '<rect width="100%" height="100%" fill="white"/>',
-        '<g font-family="Arial, sans-serif" fill="#111">',
-        f'<text x="{width/2}" y="34" font-size="24" text-anchor="middle">Ex = {excitation:g} MeV</text>',
-    ]
-
-    for exponent in range(log_min, log_max + 1):
-        y = sy(10.0**exponent)
-        lines.append(
-            f'<line x1="{left}" y1="{y:.2f}" x2="{width-right}" y2="{y:.2f}" stroke="#d5d5d5" stroke-width="1"/>'
-        )
-        lines.append(
-            f'<text x="{left-14}" y="{y+6:.2f}" font-size="18" text-anchor="end">10^{exponent}</text>'
-        )
-
-    x_tick = 0
-    while x_tick <= x_max:
-        x = sx(float(x_tick))
-        lines.append(
-            f'<line x1="{x:.2f}" y1="{top}" x2="{x:.2f}" y2="{height-bottom}" stroke="#e3e3e3" stroke-width="1"/>'
-        )
-        lines.append(
-            f'<text x="{x:.2f}" y="{height-bottom+30}" font-size="18" text-anchor="middle">{x_tick}</text>'
-        )
-        x_tick += 10
-
-    lines.extend([
-        f'<rect x="{left}" y="{top}" width="{plot_width}" height="{plot_height}" fill="none" stroke="#111" stroke-width="2"/>',
-        f'<text x="{left+plot_width/2}" y="{height-24}" font-size="21" text-anchor="middle">theta_c.m. (deg)</text>',
-        f'<text x="28" y="{top+plot_height/2}" font-size="21" text-anchor="middle" transform="rotate(-90 28 {top+plot_height/2})">d sigma / d Omega (mb/sr)</text>',
-    ])
-
-    polyline = " ".join(f"{sx(x):.2f},{sy(y):.2f}" for x, y in positive_curve)
-    lines.append(
-        f'<polyline points="{polyline}" fill="none" stroke="#1769aa" stroke-width="3" stroke-linejoin="round"/>'
-    )
-
-    for point, _, _ in matched:
-        if point.value <= 0.0:
-            continue
-        x = sx(point.angle)
-        y = sy(point.value)
-        if point.uncertainty is not None and point.uncertainty > 0.0:
-            low = max(point.value - point.uncertainty, 10.0**log_min)
-            high = point.value + point.uncertainty
-            y_low, y_high = sy(low), sy(high)
-            lines.extend([
-                f'<line x1="{x:.2f}" y1="{y_high:.2f}" x2="{x:.2f}" y2="{y_low:.2f}" stroke="#111" stroke-width="2"/>',
-                f'<line x1="{x-5:.2f}" y1="{y_high:.2f}" x2="{x+5:.2f}" y2="{y_high:.2f}" stroke="#111" stroke-width="2"/>',
-                f'<line x1="{x-5:.2f}" y1="{y_low:.2f}" x2="{x+5:.2f}" y2="{y_low:.2f}" stroke="#111" stroke-width="2"/>',
-            ])
-        lines.append(
-            f'<circle cx="{x:.2f}" cy="{y:.2f}" r="5.5" fill="white" stroke="#111" stroke-width="2.5"/>'
-        )
-
-    legend_x, legend_y = left + 18, top + 28
-    lines.extend([
-        f'<line x1="{legend_x}" y1="{legend_y}" x2="{legend_x+42}" y2="{legend_y}" stroke="#1769aa" stroke-width="3"/>',
-        f'<text x="{legend_x+52}" y="{legend_y+6}" font-size="17">Scaled FRESCO (C = {scale:.5g})</text>',
-        f'<circle cx="{legend_x+5}" cy="{legend_y+32}" r="5.5" fill="white" stroke="#111" stroke-width="2.5"/>',
-        f'<text x="{legend_x+52}" y="{legend_y+38}" font-size="17">Experiment</text>',
-        f'<text x="{width-right-10}" y="{height-bottom-16}" font-size="17" text-anchor="end">reduced chi-square = {reduced_chi2:.4g}</text>',
-        '</g>',
-        '</svg>',
-    ])
-    path.write_text("\n".join(lines), encoding="utf-8")
-
-
-def plot_fit(
-    path: Path,
-    theory: list[tuple[float, float]],
-    matched: list[tuple[ExperimentalPoint, float, float]],
-    scale: float,
-    excitation: float,
-    reduced_chi2: float,
-) -> None:
-    if path.suffix.lower() == ".svg":
-        plot_fit_svg(path, theory, matched, scale, excitation, reduced_chi2)
-        return
-    try:
-        import matplotlib
-        matplotlib.use("Agg")
-        import matplotlib.pyplot as plt
-    except ImportError as exc:
-        raise RuntimeError(
-            "Plotting requires matplotlib. Install it with: python -m pip install matplotlib"
-        ) from exc
-
-    curve_x = [angle for angle, value in theory if value > 0.0]
-    curve_y = [scale * value for _, value in theory if value > 0.0]
-    exp_x = [point.angle for point, _, _ in matched]
-    exp_y = [point.value for point, _, _ in matched]
-    exp_err = [
-        0.0 if point.uncertainty is None else point.uncertainty
-        for point, _, _ in matched
-    ]
-
-    fig, ax = plt.subplots(figsize=(7.2, 5.4), constrained_layout=True)
-    ax.plot(
-        curve_x, curve_y, color="#1769aa", linewidth=2.0,
-        label=f"Scaled FRESCO (C = {scale:.4g})",
-    )
-    ax.errorbar(
-        exp_x, exp_y, yerr=exp_err, fmt="o", markersize=5.5,
-        markerfacecolor="white", markeredgecolor="#111111",
-        ecolor="#111111", elinewidth=1.0, capsize=2.5,
-        label="Experiment",
-    )
-    ax.set_yscale("log")
-    ax.set_xlabel(r"$\theta_{\mathrm{c.m.}}$ (deg)")
-    ax.set_ylabel(r"$d\sigma/d\Omega$ (mb/sr)")
-    ax.set_title(f"Ex = {excitation:g} MeV")
-    ax.grid(True, which="both", color="#d8d8d8", linewidth=0.7, alpha=0.8)
-    ax.legend(frameon=False)
-    ax.text(
-        0.98, 0.04, rf"$\chi^2_\nu={reduced_chi2:.3g}$",
-        transform=ax.transAxes, ha="right", va="bottom",
-    )
-    fig.savefig(path, dpi=220)
-    plt.close(fig)
-
-
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Fit one normalization coefficient to FRESCO differential cross sections."
@@ -405,10 +250,6 @@ def main() -> None:
         "--comparison-output", type=Path, default=Path("fit_comparison.csv"),
         help="Output CSV comparing theory and experiment at measured angles",
     )
-    parser.add_argument(
-        "--plot-output", type=Path, default=Path("fit_plot.svg"),
-        help="Output plot; SVG needs no extra package, PNG needs matplotlib (default: fit_plot.svg)",
-    )
     args = parser.parse_args()
 
     if args.relative_uncertainty <= 0.0:
@@ -427,9 +268,6 @@ def main() -> None:
 
     write_scaled_curve(args.scaled_output, theory, scale)
     write_comparison(args.comparison_output, matched, scale)
-    plot_fit(
-        args.plot_output, theory, matched, scale, args.ex, statistics["reduced_chi2"]
-    )
 
     print(f"Excitation energy : {args.ex:g} MeV")
     print(f"Matched points    : {int(statistics['n'])}")
@@ -439,7 +277,6 @@ def main() -> None:
     print(f"reduced chi-square: {statistics['reduced_chi2']:.10g}")
     print(f"Scaled curve      : {args.scaled_output}")
     print(f"Point comparison  : {args.comparison_output}")
-    print(f"Fit plot          : {args.plot_output}")
 
 
 if __name__ == "__main__":
